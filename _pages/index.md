@@ -25,7 +25,7 @@ Los capítulos de Horizontes están disponibles [aquí](https://www.youtube.com/
 
 ## Contacto
 
-Puedes revisar nuestros datos de contacto [aquí](https://labdemgob.github.io).
+Puedes revisar nuestros datos de contacto [aquí](https://labdemgob.github.io/contacto).
 
 
 <!-- Favicon -->

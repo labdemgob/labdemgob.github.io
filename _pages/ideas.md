@@ -2,7 +2,7 @@
 layout: single
 title: "Ideas"
 permalink: /ideas/
-description: Colección Ideas.
+description: LabDemGob - Colección Ideas.
 author_profile: true
 ---
 

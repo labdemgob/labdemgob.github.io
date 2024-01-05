@@ -13,19 +13,14 @@ redirect_from:
 El Laboratorio de Democracia y Gobierno opera dentro de las dependencias de la Facultad de Economía y Gobierno de la Universidad San Sebastián.  El propósito principal del Laboratorio es impulsar investigación científica en las líneas de instituciones democráticas, gestión pública y economía política. 
 
 
-
 ## Estudios: Colección de Ideas
 
 Los estudios de la serie Ideas están disponibles para la comunidad académica y la ciudadanía en general de forma abierta, estandarizada y comprensible [aquí](https://www.researchgate.net/lab/Laboratorio-de-Democracia-y-Gobierno-Kenneth-Bunker).
 
 
-
-
 ## Podcast: Horizontes de Democracia USS 
 
 Los capítulos de Horizontes están disponibles [aquí](https://www.youtube.com/playlist?list=PLZW9RpnDbfbR0F-KvwxdKXRcyHT7KN3kI).
-
-
 
 
 ## Contacto

@@ -6,3 +6,9 @@ main:
 
  - title: "Podcast: Horizontes"
    url: /horizontes/
+
+- title: "Equipo"
+  url: /equipo/
+
+- title: "Contacto"
+  url: /contacto/

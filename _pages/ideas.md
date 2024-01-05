@@ -2,12 +2,12 @@
 layout: single
 title: "Ideas"
 permalink: /ideas/
-description: Colección de Ideas.
+description: Colección Ideas.
 author_profile: true
 ---
 
 
-## Ideas
+## Colección Ideas
 
 Abajo puedes revisar los títulos de Ideas, la colección de estudios del Laboratorio de Democracia y Gobierno de la Facultad de Economía y Gobierno de la Universidad San Sebastián. Todos los estudios se pueden descargar [aquí](https://www.researchgate.net/lab/Laboratorio-de-Democracia-y-Gobierno-Kenneth-Bunker).
 

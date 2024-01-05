@@ -7,8 +7,6 @@ author_profile: true
 ---
 
 
-## Contacto
-
 Kenneth Bunker, kenneth.bunker@uss.cl
 
 Luz Poblete, luz.poblete@uss.cl

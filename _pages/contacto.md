@@ -7,8 +7,6 @@ author_profile: true
 ---
 
 
-## Contacto
-
 Laboratorio de Democracia y Gobierno
 
 Facultad de Economía y Gobierno
@@ -23,4 +21,4 @@ Región Metropolitana
 
 Chile
 
-kenneth.bunker@uss.cl
+Email: kenneth.bunker@uss.cl

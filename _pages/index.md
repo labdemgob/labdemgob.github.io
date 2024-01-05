@@ -25,19 +25,7 @@ Los capítulos de Horizontes están disponibles [aquí](https://www.youtube.com/
 
 ## Contacto
 
-Laboratorio de Democracia y Gobierno
-
-Facultad de Economía y Gobierno
-
-Universidad San Sebastián 
-
-Bellavista 7, Piso 5
-
-Recoleta, Santiago
-
-Región Metropolitana
-
-Chile
+Puedes revisar nuestros datos de contacto [aquí](https://labdemgob.github.io).
 
 
 <!-- Favicon -->

@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "es-ES"
-title                    : "Tresquintos"
+title                    : "LabDemGob"
 title_separator          : "-"
 name                     : &name ""
-description              : &description "Información electoral + análisis político"
+description              : &description "Facultad de Economía y Gobierno / USS"
 url                      : https://tresquintos.cl # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  :  "" # the subpath of your site, e.g. "/blog"
-repository               : "tresquintos/tresquintos.github.io"
+repository               : "labdemgob/labdemgob.github.io"
 teaser                   : "pc.png" # default: 500x300
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
@@ -57,70 +57,65 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : "tresquintos"
+  username               : ""
 facebook:
-  username               : 3quintos
+  username               : 
   app_id                 :
   publisher              :
-og_image                 : "pc.png"
+og_image                 : "logo.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://www.twitter.com/tresquintos"
-    - "https://www.facebook.com/3quintos"
-    - "https://www.instagram.com/3quintos"
-    - "https://www.youtube.com/c/Tresquintos/"
-    - "https://www.twitch.tv/tresquintos"
 
 # Analytics
 analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : "" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-159671494-1
+    tracking_id          : 
 
 
 # Site Author
 author:
   name             : "Tresquintos"
-  avatar           : "logo_short.png"
-  inicio           : "tresquintos.cl" # avatar links here (I made this)
+  avatar           : "logo.png"
+  inicio           : "labdemgob.github-io" # avatar links here (I made this)
   bio              : "Información electoral + análisis político"
   location         : #
   employer         :
   pubmed           : #
   googlescholar    : #
-  email            : "comunicaciones@tresquintos.cl"
+  email            : "kenneth.bunker@uss.cl"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "3quintos"
+  facebook         : ""
   foursquare       :
-  github           : "tresquintos"
+  github           : ""
   google_plus      :
   keybase          :
-  instagram        : "3quintos"
+  instagram        : ""
   impactstory      :
   lastfm           :
-  linkedin         : "tresquintos"
+  linkedin         : ""
   orcid            : #
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "tresquintos"
+  twitter          : ""
   vine             :
   weibo            :
   xing             :
-  youtube          : "Tresquintos"
+  youtube          : ""
   wikipedia        :
-  twitch           : "tresquintos"
+  twitch           : ""
   discord          : 
   patreon          :
 

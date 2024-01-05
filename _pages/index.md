@@ -10,40 +10,25 @@ redirect_from:
 
 # LabDemGob USS
 
-Tresquintos es una organización que produce análisis político y procesa información electoral para clientes que necesitan soluciones inmediatas, sostenibles y rigurosas. Para más información, pincha [aquí](https://tresquintos.cl/contacto/).
+El Laboratorio de Democracia y Gobierno opera dentro de las dependencias de la Facultad de Economía y Gobierno de la Universidad San Sebastián.  El propósito principal del Laboratorio es impulsar investigación científica en las líneas de instituciones democráticas, gestión pública y economía política.  Los estudios de la serie Ideas están disponibles para la comunidad académica y la ciudadanía en general de forma abierta, estandarizada y comprensible [aquí](https://uss.cl).
 
 
-## Colección de Ideas
+## Estudios: Colección de Ideas
 
 
-## Horizontes USS Podcast 
-
-Descarga el reporte actualizado en los siguientes idiomas.
+## Podcast: Horizontes de Democracia USS 
 
 
-## Equipo
 
-Los enlaces a nuestras redes sociales están en la barra lateral. Nos puedes contactar directamente por [X](https://www.twitter.com/tresquintos) o por [e-mail](mailto:comunicaciones@tresquintos.cl).
+## Contacto
 
----
-
-<!-- NES -->
-<style>
-.aligncenter {
-    text-align: center;
-}
-</style>
-<p class="aligncenter">
-    <img src="/images/nes.png" width="30" height="30" alt="konami" />
-</p>
-<script src="/js/topsecret.js"></script>
-
-<script src="/js/cyberdelia.js"></script>
-
-<script type="text/javascript"> var msTag = {"site":"tnw","page":"home","cyberdelia_page_type":"home","data":{"sponsorName":false,"isSponsoredCategory":false}}</script>
-
-<script src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/js/app.min.js?v=1585558461" type="text/javascript" async=""></script>
-
+Laboratorio de Democracia y Gobierno 
+Facultad de Economía y Gobierno
+Universidad San Sebastián 
+Bellavista 7, Piso 5
+Recoleta, Santiago
+Región Metropolitana
+Chile
 
 
 <!-- Favicon -->

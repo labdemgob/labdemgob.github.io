@@ -11,7 +11,7 @@ title                    : "LabDemGob"
 title_separator          : "-"
 name                     : &name ""
 description              : &description "Facultad de Economía y Gobierno / USS"
-url                      : https://tresquintos.cl # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://labdemgob.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  :  "" # the subpath of your site, e.g. "/blog"
 repository               : "labdemgob/labdemgob.github.io"
 teaser                   : "pc.png" # default: 500x300
@@ -79,10 +79,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Tresquintos"
+  name             : "LabDemGob"
   avatar           : "logo.png"
-  inicio           : "labdemgob.github-io" # avatar links here (I made this)
-  bio              : "Información electoral + análisis político"
+  inicio           : "labdemgob.github.io" # avatar links here (I made this)
+  bio              : "Facultad de Economía y Gobierno"
   location         : #
   employer         :
   pubmed           : #

@@ -1,2 +1,2 @@
-# kennethbunker.github.io
-personal website
+# labdemgob.github.io
+lab website

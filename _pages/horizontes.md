@@ -7,7 +7,7 @@ author_profile: true
 ---
 
 
-Abajo puedes revisar los capítulos de Horizontes de Democracia, el podcast oficial del Laboratorio de Democracia y Gobierno de la Facultad de Economía y Gobierno de la Universidad San Sebastián. Los episodios se pueden ver [aquí](https://www.researchgate.net/lab/Laboratorio-de-Democracia-y-Gobierno-Kenneth-Bunker).
+Abajo puedes revisar los capítulos de Horizontes de Democracia, el podcast oficial del Laboratorio de Democracia y Gobierno. Los episodios se pueden ver [aquí](https://www.youtube.com/playlist?list=PLZW9RpnDbfbR0F-KvwxdKXRcyHT7KN3kI).
 
 
 

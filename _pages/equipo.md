@@ -15,4 +15,4 @@ José Miguel Cabezas, jose.cabezas@uss.cl
 
 Hugo Jofré, hugo.jofré@uss.cl
 
-Tito Orellana, tito.orellana@uss.cl
+Tito Olavarría, tito.olavarria@uss.cl

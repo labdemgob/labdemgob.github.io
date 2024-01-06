@@ -7,9 +7,15 @@ author_profile: true
 ---
 
 
-<img align="left" src="/ideas/estudio%201.png" alt="My Image">
-Align the image to the left, if you want the text to be on the right. If you want the text on the left, align the image to the right.
 
+<img src="/ideas/estudio%201.png" align="left" width="200px"/>
+some text floating around the image
+
+<br clear="left"/>
+
+A "newline". This text doesn't float anymore, is left-aligned.
+
+Macarena Apablaza, macarena.apablaza@uss.cl
 
 Valentina Barraza, vbarrazar@correo.uss.cl
 

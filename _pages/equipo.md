@@ -7,6 +7,8 @@ author_profile: true
 ---
 
 
+| I am text to the left  | ![Flowers](/labdemgob/estudio%201.png) |
+
 Valentina Barraza, vbarrazar@correo.uss.cl
 
 Kenneth Bunker, kenneth.bunker@uss.cl

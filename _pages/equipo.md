@@ -7,7 +7,6 @@ author_profile: true
 ---
 
 
-
 <img src="/images/maca.png" align="left" width="100px"/>
 Macarena Apablaza
 <br clear="left"/>
@@ -27,7 +26,7 @@ Rhayza Cifuentes<br clear="left"/>
 Hugo Jofré, hugo.jofré@uss.cl
 <br clear="left"/>
 
-<img src="/images/maca.png" align="left" width="100px"/>
+<img src="/images/tito.png" align="left" width="100px"/>
 Tito Olavarría, tito.olavarria@uss.cl
 <br clear="left"/>
 
@@ -35,7 +34,7 @@ Tito Olavarría, tito.olavarria@uss.cl
 Luz Poblete, luz.poblete@uss.cl
 <br clear="left"/>
 
-<img src="/images/maca.png" align="left" width="100px"/>
+<img src="/images/kenneth.png" align="left" width="100px"/>
 Kenneth Bunker, kenneth.bunker@uss.cl
 <br clear="left"/>
 

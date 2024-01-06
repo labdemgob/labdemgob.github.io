@@ -7,7 +7,9 @@ author_profile: true
 ---
 
 
-| I am text to the left  | ![Flowers](/labdemgob/estudio%201.png) |
+<img align="left" src="/ideas/estudio%201.png" alt="My Image">
+Align the image to the left, if you want the text to be on the right. If you want the text on the left, align the image to the right.
+
 
 Valentina Barraza, vbarrazar@correo.uss.cl
 

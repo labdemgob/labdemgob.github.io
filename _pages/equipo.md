@@ -12,20 +12,16 @@ author_profile: true
 Macarena Apablaza
 <br clear="left"/>
 
-
 <img src="/images/valentina.png" align="left" width="100px"/>
 Valentina Barraza, vbarrazar@correo.uss.cl
 <br clear="left"/>
-
 
 <img src="/images/jose.png" align="left" width="100px"/>
 Jose Miguel Cabezas
 <br clear="left"/>
 
-
 <img src="/images/rhayza.png" align="left" width="100px"/>
 Rhayza Cifuentes<br clear="left"/>
-
 
 <img src="/images/hugo.png" align="left" width="100px"/>
 Hugo Jofré, hugo.jofré@uss.cl

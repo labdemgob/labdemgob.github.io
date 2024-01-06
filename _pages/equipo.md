@@ -8,25 +8,38 @@ author_profile: true
 
 
 
-<img src="/ideas/estudio%201.png" align="left" width="200px"/>
-some text floating around the image
-
+<img src="/images/maca.png" align="left" width="100px"/>
+Macarena Apablaza
 <br clear="left"/>
 
-A "newline". This text doesn't float anymore, is left-aligned.
 
-Macarena Apablaza, macarena.apablaza@uss.cl
-
+<img src="/images/valentina.png" align="left" width="100px"/>
 Valentina Barraza, vbarrazar@correo.uss.cl
+<br clear="left"/>
 
-Kenneth Bunker, kenneth.bunker@uss.cl
 
-José Miguel Cabezas, jose.cabezas@uss.cl
+<img src="/images/jose.png" align="left" width="100px"/>
+Jose Miguel Cabezas
+<br clear="left"/>
 
-Rhayza Cifuentes, rcifuentesc3@correo.uss.cl
 
+<img src="/images/rhayza.png" align="left" width="100px"/>
+Rhayza Cifuentes<br clear="left"/>
+
+
+<img src="/images/hugo.png" align="left" width="100px"/>
 Hugo Jofré, hugo.jofré@uss.cl
+<br clear="left"/>
 
+<img src="/images/maca.png" align="left" width="100px"/>
 Tito Olavarría, tito.olavarria@uss.cl
+<br clear="left"/>
 
+<img src="/images/luz.png" align="left" width="100px"/>
 Luz Poblete, luz.poblete@uss.cl
+<br clear="left"/>
+
+<img src="/images/maca.png" align="left" width="100px"/>
+Kenneth Bunker, kenneth.bunker@uss.cl
+<br clear="left"/>
+

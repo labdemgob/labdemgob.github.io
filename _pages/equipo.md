@@ -26,7 +26,7 @@ Rhayza Cifuentes<br clear="left"/>
 Hugo Jofré, hugo.jofré@uss.cl
 <br clear="left"/>
 
-<img src="/images/tito.png" align="left" width="100px"/>
+<img src="/images/tito.png" align="left" width="150px"/>
 Tito Olavarría, tito.olavarria@uss.cl
 <br clear="left"/>
 

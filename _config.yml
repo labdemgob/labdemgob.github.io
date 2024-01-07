@@ -14,7 +14,7 @@ description              : &description "Facultad de Economía y Gobierno USS"
 url                      : https://labdemgob.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  :  "" # the subpath of your site, e.g. "/blog"
 repository               : "labdemgob/labdemgob.github.io"
-teaser                   : "logo.png" # default: 500x300
+teaser                   : "logo2.png" # default: 500x300
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 future                   : false

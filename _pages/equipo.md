@@ -8,34 +8,38 @@ author_profile: true
 
 
 <img src="/images/maca.png" align="left" width="100px"/>
-  Macarena Apablaza
+  	Macarena Apablaza
 <br clear="left"/>
 
 <img src="/images/valentina.png" align="left" width="100px"/>
-  Valentina Barraza, vbarrazar@correo.uss.cl
+  	Valentina Barraza
+  	vbarrazar@correo.uss.cl
 <br clear="left"/>
 
 <img src="/images/jose.png" align="left" width="100px"/>
-  José Miguel Cabezas
+  	José Miguel Cabezas
 <br clear="left"/>
 
 <img src="/images/rhayza.png" align="left" width="100px"/>
-  Rhayza Cifuentes<br clear="left"/>
+  	Rhayza Cifuentes<br clear="left"/>
 <br clear="left"/>
 
 <img src="/images/hugo.png" align="left" width="100px"/>
-  Hugo Jofré, hugo.jofré@uss.cl
+  	Hugo Jofré
+  	hugo.jofré@uss.cl
 <br clear="left"/>
 
 <img src="/images/tito.png" align="left" width="150px"/>
-Tito Olavarría, tito.olavarria@uss.cl
+	Tito Olavarría
+	tito.olavarria@uss.cl
 <br clear="left"/>
 
 <img src="/images/luz.png" align="left" width="100px"/>
-Luz Poblete, luz.poblete@uss.cl
+	Luz Poblete
 <br clear="left"/>
 
 <img src="/images/kenneth.png" align="left" width="100px"/>
-Kenneth Bunker, kenneth.bunker@uss.cl
+	Kenneth Bunker
+	kenneth.bunker@uss.cl
 <br clear="left"/>
 

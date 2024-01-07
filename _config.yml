@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "es-ES"
-title                    : "LabDemGob - USS"
+title                    : "LabDemGob"
 title_separator          : "-"
 name                     : &name ""
 description              : &description "Facultad de Economía y Gobierno USS"
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          : "labdemgob"
   vine             :
   weibo            :
   xing             :

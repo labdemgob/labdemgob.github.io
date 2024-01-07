@@ -29,15 +29,11 @@ Puedes revisar nuestros datos de contacto [aquí](https://labdemgob.github.io/co
 
 <!-- Favicon -->
 
-<link rel="apple-touch-icon" sizes="180x180" href="/logo.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/logo.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/logo.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#b91d47">
-<meta name="theme-color" content="#ffffff">
-
-
+   <meta name="twitter:card" content="summary">
+   <meta property="og:title" content="Thumbnail example">
+   <meta property="og:description" content="Only for Nic Cage fans">
+   <meta property="og:image" content="https://labdemgob.github.io/images/logo.png">
+   <meta property="og:url" content="https://labdemgob.github.io/">
 
 
 <!-- Finisce sempre così, con la morte.

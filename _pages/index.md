@@ -29,12 +29,6 @@ Puedes revisar nuestros datos de contacto [aquí](https://labdemgob.github.io/co
 
 <!-- Favicon -->
 
-   <meta name="twitter:card" content="summary">
-   <meta property="og:title" content="Thumbnail example">
-   <meta property="og:description" content="Only for Nic Cage fans">
-   <meta property="og:image" content="logo.png" />
-   <meta property="og:url" content="https://labdemgob.github.io/">
-
 <!-- Finisce sempre così, con la morte.
 Prima però c’è stata la vita,
 nascosta sotto i bla, bla, bla, bla, bla.

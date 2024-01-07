@@ -5,7 +5,9 @@ permalink: /
 author_profile: true
 description: Laboratorio Democracia y Gobierno
 redirect_from:
-     
+header:
+  image: "logo.png"
+  og_image: /logo.png     
 ---
 
 # LabDemGob USS

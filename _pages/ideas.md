@@ -55,7 +55,7 @@ Abajo puedes revisar los títulos de Ideas, la colección de estudios del Labora
 
 ### Volumen 1 (2023-2024)
 
-[![1](/ideas/estudio%201.png){:height="32%" width="30%"}](/ideas/estudio%201.png) [![2](/ideas/estudio%202.png){:height="32%" width="32%"}](/ideas/estudio%202.png) [![3](/ideas/estudio%203.png){:height="32%" width="32%"}](/ideas/estudio%203.png)
+[![1](/ideas/estudio%201.png){:height="32%" width="32%"}](/ideas/estudio%201.png) [![2](/ideas/estudio%202.png){:height="32%" width="32%"}](/ideas/estudio%202.png) [![3](/ideas/estudio%203.png){:height="32%" width="32%"}](/ideas/estudio%203.png)
 
 [![4](/ideas/estudio%204.png){:height="32%" width="32%"}](/ideas/estudio%204.png) [![5](/ideas/estudio%205.png){:height="32%" width="32%"}](/ideas/estudio%205.png) [![6](/ideas/estudio%206.png){:height="32%" width="32%"}](/ideas/estudio%206.png)
 

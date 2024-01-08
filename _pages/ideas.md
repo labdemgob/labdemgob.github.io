@@ -2,7 +2,7 @@
 layout: single
 title: "Estudios: Ideas"
 permalink: /ideas/
-description: LabDemGob - Colección Ideas.
+description: LabDemGob - Colección de Ideas.
 author_profile: true
 ---
 
@@ -10,7 +10,7 @@ author_profile: true
 Abajo puedes revisar los títulos de Ideas, la colección de estudios del Laboratorio de Democracia y Gobierno de la Facultad de Economía y Gobierno de la Universidad San Sebastián. Todos los estudios se pueden descargar [aquí](https://www.researchgate.net/lab/Laboratorio-de-Democracia-y-Gobierno-Kenneth-Bunker).
 
 
-### Áreas temáticas
+### Áreas de Investigación
 
 ![1](/ideas/temas/A1.png){:height="10%" width="10%"}
 ![1](/ideas/temas/A2.png){:height="10%" width="10%"}

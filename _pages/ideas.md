@@ -32,7 +32,6 @@ Abajo puedes revisar los títulos de Ideas, la colección de estudios del Labora
 ![2](/ideas/temas/B8.png){:height="10%" width="10%"}
 ![2](/ideas/temas/B9.png){:height="10%" width="10%"}
 
-
 ![3](/ideas/temas/C1.png){:height="10%" width="10%"}
 ![3](/ideas/temas/C2.png){:height="10%" width="10%"}
 ![3](/ideas/temas/C3.png){:height="10%" width="10%"}
@@ -42,6 +41,16 @@ Abajo puedes revisar los títulos de Ideas, la colección de estudios del Labora
 ![3](/ideas/temas/C7.png){:height="10%" width="10%"}
 ![3](/ideas/temas/C8.png){:height="10%" width="10%"}
 ![3](/ideas/temas/C9.png){:height="10%" width="10%"}
+
+![4](/ideas/temas/D1.png){:height="10%" width="10%"}
+![4](/ideas/temas/D2.png){:height="10%" width="10%"}
+![4](/ideas/temas/D3.png){:height="10%" width="10%"}
+![4](/ideas/temas/D4.png){:height="10%" width="10%"}
+![4](/ideas/temas/D5.png){:height="10%" width="10%"}
+![4](/ideas/temas/D6.png){:height="10%" width="10%"}
+![4](/ideas/temas/D7.png){:height="10%" width="10%"}
+![4](/ideas/temas/D8.png){:height="10%" width="10%"}
+![4](/ideas/temas/D9.png){:height="10%" width="10%"}
 
 
 ### Volumen 1 (2023-2024)

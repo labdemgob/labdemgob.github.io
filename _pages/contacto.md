@@ -13,12 +13,10 @@ Facultad de Economía y Gobierno
 
 Universidad San Sebastián 
 
-Bellavista 7, Piso 5
+Bellavista 7
 
 Recoleta, Santiago
 
 Región Metropolitana
 
 Chile
-
-Email: kenneth.bunker@uss.cl

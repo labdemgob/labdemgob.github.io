@@ -37,7 +37,6 @@ Puedes revisar nuestros datos de contacto [aquí](https://labdemgob.github.io/co
 ![1](/ideas/temas/A7.png){:height="2%" width="2%"}
 ![1](/ideas/temas/A8.png){:height="2%" width="2%"}
 ![1](/ideas/temas/A9.png){:height="2%" width="2%"}
-
 ![2](/ideas/temas/B1.png){:height="2%" width="2%"}
 ![2](/ideas/temas/B2.png){:height="2%" width="2%"}
 ![2](/ideas/temas/B3.png){:height="2%" width="2%"}
@@ -47,7 +46,6 @@ Puedes revisar nuestros datos de contacto [aquí](https://labdemgob.github.io/co
 ![2](/ideas/temas/B7.png){:height="2%" width="2%"}
 ![2](/ideas/temas/B8.png){:height="2%" width="2%"}
 ![2](/ideas/temas/B9.png){:height="2%" width="2%"}
-
 ![3](/ideas/temas/C1.png){:height="2%" width="2%"}
 ![3](/ideas/temas/C2.png){:height="2%" width="2%"}
 ![3](/ideas/temas/C3.png){:height="2%" width="2%"}
@@ -57,7 +55,6 @@ Puedes revisar nuestros datos de contacto [aquí](https://labdemgob.github.io/co
 ![3](/ideas/temas/C7.png){:height="2%" width="2%"}
 ![3](/ideas/temas/C8.png){:height="2%" width="2%"}
 ![3](/ideas/temas/C9.png){:height="2%" width="2%"}
-
 ![4](/ideas/temas/D1.png){:height="2%" width="2%"}
 ![4](/ideas/temas/D2.png){:height="2%" width="2%"}
 ![4](/ideas/temas/D3.png){:height="2%" width="2%"}

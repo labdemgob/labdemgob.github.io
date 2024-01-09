@@ -3,7 +3,7 @@ layout: single
 title: "Podcast: Horizontes"
 permalink: /horizontes/
 description: LabDemGob - Horizontes.
-author_profile: false
+author_profile: true
 ---
 
 

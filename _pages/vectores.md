@@ -13,5 +13,5 @@ Abajo puedes revisar los eventos de Vectores, el grupo de estudios del Laborator
 
 ### 2024: Primer semestre
 
-[![4](/vectores/20240529.png){:height="32%" width="32%"}](/vectores/20240529.png) [![4](/vectores/20240605.png){:height="32%" width="32%"}](/vectores/20240605.png) [![4](/vectores/2024-01.png){:height="30%" width="30%"}](/vectores/2024-01.png) 
+[![4](/vectores/20240529.png){:height="32%" width="32%"}](/vectores/20240529.png) [![4](/vectores/20240605.png){:height="32%" width="32%"}](/vectores/20240605.png) [![4](/vectores/2024-01.png){:height="31%" width="31%"}](/vectores/2024-01.png) 
 

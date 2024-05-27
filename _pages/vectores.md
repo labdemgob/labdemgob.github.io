@@ -11,7 +11,11 @@ Abajo puedes revisar los eventos de Vectores, el grupo de estudios del Laborator
 
 
 
-### 2024: Primer semestre
+### Calendario 2024: Primer semestre
 
-[![4](/vectores/20240529.png){:height="32%" width="32%"}](/vectores/20240529.png) [![4](/vectores/20240605.png){:height="32%" width="32%"}](/vectores/20240605.png) [![4](/vectores/2024-01.png){:height="29%" width="29%"}](/vectores/2024-01.png) 
+[![4](/vectores/2024-01.png){:height="29%" width="29%"}](/vectores/2024-01.png) 
 
+
+### Eventos 2024: Primer semestre
+
+[![4](/vectores/20240529.png){:height="49%" width="49%"}](/vectores/20240529.png) [![4](/vectores/20240605.png){:height="49%" width="49%"}](/vectores/20240605.png)

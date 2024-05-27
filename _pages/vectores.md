@@ -13,10 +13,4 @@ Abajo puedes revisar los capítulos de Horizontes de Democracia, el podcast ofic
 
 ### 2024: Primer semestre
 
-[![4](/vectores/20240529%20-%20Sebastián%20Carrasco.jpeg){:height="32%" width="32%"}](/horizontes/s01e04.png) 
-
-[![3](/horizontes/s01e03.png){:height="32%" width="32%"}](/horizontes/s01e03.png) 
-
-[![2](/horizontes/s01e02.png){:height="32%" width="32%"}](/horizontes/s01e02.png) 
-
-[![1](/horizontes/s01e01.png){:height="32%" width="32%"}](/horizontes/s01e01.png) 
+[![4](/vectores/20240529%20-%20Sebastián%20Carrasco.jpeg){:height="32%" width="32%"}](/horizontes/20240529%20-%20Sebastián%20Carrasco.jpeg) 

@@ -7,10 +7,10 @@ author_profile: true
 ---
 
 
-Abajo puedes revisar los capítulos de Horizontes de Democracia, el podcast oficial del Laboratorio de Democracia y Gobierno. Los episodios se pueden ver [aquí](https://www.youtube.com/playlist?list=PLZW9RpnDbfbR0F-KvwxdKXRcyHT7KN3kI).
+Abajo puedes revisar los eventos de Vectores, el grupo de estudios del Laboratorio de Democracia y Gobierno.
 
 
 
 ### 2024: Primer semestre
 
-[![4](/vectores/20240529%20-%20Sebastián%20Carrasco.jpeg){:height="32%" width="32%"}](/vectores/20240529%20-%20Sebastián%20Carrasco.jpeg) 
+[![4](/vectores/20240529%20-%20Sebastián%20Carrasco.png){:height="32%" width="32%"}](/vectores/20240529%20-%20Sebastián%20Carrasco.png) 

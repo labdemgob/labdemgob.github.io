@@ -13,4 +13,4 @@ Abajo puedes revisar los eventos de Vectores, el grupo de estudios del Laborator
 
 ### 2024: Primer semestre
 
-[![4](/vectores/20240529%20-%20Sebastián%20Carrasco.png){:height="32%" width="32%"}](/vectores/20240529%20-%20Sebastián%20Carrasco.png) 
+[![4](/vectores/20240529.png){:height="32%" width="32%"}](/vectores/20240529.png) 

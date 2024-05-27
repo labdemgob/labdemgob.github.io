@@ -9,11 +9,11 @@ redirect_from:
 
 # Laboratorio de Democracia y Gobierno USS
 
-El Laboratorio de Democracia y Gobierno opera dentro de las dependencias de la Facultad de Economía y Gobierno de la Universidad San Sebastián.   El propósito principal del Lab es impulsar investigación científica en las líneas de instituciones democráticas, gestión pública y economía política.   Aquí podrás descargar los trabajos investigativos que han sido publicados en la colección de estudios **Ideas** y revisar los capítulos del podcast del Lab **Horizontes de Democracia**.
+El Laboratorio de Democracia y Gobierno forma parte de la Facultad de Economía y Gobierno de la Universidad San Sebastián.   El propósito principal del Lab es impulsar investigación científica en las líneas de instituciones democráticas, gestión pública y economía política.   Aquí podrás descargar los trabajos investigativos que han sido publicados en la colección de estudios **Ideas**, escuchar los capítulos del podcast **Horizontes de Democracia**, y revisar los eventos que de **Vectores**.
 
 
 
-## Estudios: Colección de Ideas
+## Estudios: Ideas
 
 Los estudios de la serie **Ideas** están disponibles para la comunidad académica y la ciudadanía en general de forma abierta, estandarizada y comprensible [aquí](https://labdemgob.github.io/ideas).
 
@@ -21,6 +21,11 @@ Los estudios de la serie **Ideas** están disponibles para la comunidad académi
 ## Podcast: Horizontes de Democracia USS 
 
 Los capítulos del podcast oficial del Lab **Horizontes** están disponibles [aquí](https://labdemgob.github.io/horizontes).
+
+
+## Eventos: Vectores USS 
+
+Los eventos del grupo **Vectores** está disponible [aquí](https://labdemgob.github.io/vectores).
 
 
 ## Contacto

@@ -20,7 +20,7 @@ Abajo puedes revisar los títulos de Ideas, la colección de estudios del Labora
 
 [![10](/ideas/estudio%2010.png){:height="32%" width="32%"}](/ideas/estudio%2010.png) [![11](/ideas/estudio%2011.png){:height="32%" width="32%"}](/ideas/estudio%2011.png) [![12](/ideas/estudio%2012.png){:height="32%" width="32%"}](/ideas/estudio%2012.png)
 
-[![13](/ideas/estudio%2012.png){:height="32%" width="32%"}](/ideas/estudio%2012.png)
+[![13](/ideas/estudio%2013.png){:height="32%" width="32%"}](/ideas/estudio%2013.png)
 
 
 

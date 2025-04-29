@@ -10,7 +10,7 @@ locale                   : "es-ES"
 title                    : "LabDemGob"
 title_separator          : "-"
 name                     : &name ""
-description              : &description "Facultad de Economía y Gobierno USS"
+description              : &description "Facultad de Economía, Negocios y Gobierno USS"
 url                      : https://labdemgob.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  :  "" # the subpath of your site, e.g. "/blog"
 repository               : "labdemgob/labdemgob.github.io"
@@ -82,7 +82,7 @@ author:
   name             : "LabDemGob"
   avatar           : "logo2.png"
   inicio           : "labdemgob.github.io" # avatar links here (I made this)
-  bio              : "Facultad de Economía y Gobierno + Universidad San Sebastián"
+  bio              : "Facultad de Economía, Negocios y Gobierno + Universidad San Sebastián"
   location         : #
   employer         : 
   pubmed           : #
@@ -99,10 +99,10 @@ author:
   github           : "labdemgob"
   google_plus      :
   keybase          :
-  instagram        : 
+  instagram        : "https://www.instagram.com/labdemgobuss"
   impactstory      :
   lastfm           :
-  linkedin         : 
+  linkedin         : "https://www.linkedin.com/company/laboratorio-democracia-y-gobierno"
   orcid            : #
   pinterest        :
   soundcloud       :

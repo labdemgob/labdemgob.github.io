@@ -7,7 +7,7 @@ author_profile: true
 ---
 
 
-Abajo puedes revisar los eventos de Vectores, el grupo de estudios del Laboratorio de Democracia y Gobierno.
+Abajo puedes revisar los eventos del seminario permanente Vectores, el grupo de estudios del Laboratorio Democracia y Gobierno.
 
 
 

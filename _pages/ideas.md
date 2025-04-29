@@ -7,7 +7,7 @@ author_profile: true
 ---
 
 
-Abajo puedes revisar los títulos de Ideas, la colección de estudios del Laboratorio de Democracia y Gobierno de la Facultad de Economía y Gobierno de la Universidad San Sebastián. Todos los estudios se pueden descargar [aquí](https://www.researchgate.net/lab/Laboratorio-de-Democracia-y-Gobierno-Kenneth-Bunker).
+Abajo puedes revisar los títulos de Ideas, la colección de estudios del Laboratorio Democracia y Gobierno de la Facultad de Economía, Negocios y Gobierno de la Universidad San Sebastián. Todos los estudios se pueden descargar [aquí](https://www.researchgate.net/lab/Laboratorio-de-Democracia-y-Gobierno-Kenneth-Bunker).
 
 
 ### Estudios: Ideas

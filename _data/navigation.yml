@@ -4,10 +4,7 @@ main:
  - title: "Estudios: Ideas"
    url: /ideas/
 
- - title: "Podcast: Horizontes"
-   url: /horizontes/
-
- - title: "Eventos: Vectores"
+ - title: "Seminario: Vectores"
    url: /vectores/
 
  - title: "Equipo"

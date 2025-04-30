@@ -9,7 +9,7 @@ author_profile: true
 
 Laboratorio de Democracia y Gobierno
 
-Facultad de Economía y Gobierno
+Facultad de Economía, Negocios y Gobierno
 
 Universidad San Sebastián 
 

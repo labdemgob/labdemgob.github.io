@@ -14,7 +14,7 @@ Abajo puedes revisar los eventos del seminario permanente Vectores, el grupo de 
 
 [![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) 
 
-[![1](/images/vectores2025/Vectores 2 - Ryan Carlin.png{:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 2 - Ryan Carlin.png) 
+[![1](/images/vectores2025/Vectores 2 - Ryan Carlin.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 2 - Ryan Carlin.png) 
 
 [![1](/images/vectores2025/Vectores 3 - Rodolfo Disi.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 3 - Rodolfo Disi.png) 
 

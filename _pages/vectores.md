@@ -14,13 +14,13 @@ Abajo puedes revisar los eventos del seminario permanente Vectores, el grupo de 
 
 [![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png)  [![1](/images/vectores2025/Vectores 2 - Ryan Carlin.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 2 - Ryan Carlin.png) 
 
-[![1](/images/vectores2025/Vectores 3 - Rodolfo Disi.png){:height="49.9%" width="49.9%"}](/images/vectores2025/Vectores 3 - Rodolfo Disi.png)  [![1](/images/vectores2025/Vectores 4 - Maria Luisa Puig.png){:height="49.9%" width="49.9%"}](/images/vectores2025/Vectores 4 - Maria Luisa Puig.png) 
+[![1](/images/vectores2025/Vectores 3 - Rodolfo Disi.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 3 - Rodolfo Disi.png)  [![1](/images/vectores2025/Vectores 4 - Maria Luisa Puig.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 4 - Maria Luisa Puig.png) 
 
-[![1](/images/vectores2025/Vectores 5 - Andres Dockendorff.png){:height="49.9%" width="49.9%"}](/images/vectores2025/Vectores 5 - Andres Dockendorff.png)  [![1](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png){:height="49.9%" width="49.9%"}](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png) 
+[![1](/images/vectores2025/Vectores 5 - Andres Dockendorff.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 5 - Andres Dockendorff.png)  [![1](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png) 
 
-[![1](/images/vectores2025/Vectores 7 - Fabian Tort Kayser.png){:height="49.9%" width="49.9%"}](/images/vectores2025/Vectores 7 - Fabian Tort Kayser.png)  [![1](/images/vectores2025/Vectores 8 - Alejandro Olivares.png){:height="49.9%" width="49.9%"}](/images/vectores2025/Vectores 8 - Alejandro Olivares.png) 
+[![1](/images/vectores2025/Vectores 7 - Fabian Tort Kayser.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 7 - Fabian Tort Kayser.png)  [![1](/images/vectores2025/Vectores 8 - Alejandro Olivares.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 8 - Alejandro Olivares.png) 
 
-[![1](/images/vectores2025/Vectores 9 - Benedetta Calandra.png){:height="49.9%" width="49.9%"}](/images/vectores2025/Vectores 9 - Benedetta Calandra.png)  [![1](/images/vectores2025/Vectores 10 - Daniel Brieba.png){:height="49.9%" width="49.9%"}](/images/vectores2025/Vectores 10 - Daniel Brieba.png) 
+[![1](/images/vectores2025/Vectores 9 - Benedetta Calandra.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 9 - Benedetta Calandra.png)  [![1](/images/vectores2025/Vectores 10 - Daniel Brieba.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 10 - Daniel Brieba.png) 
 
 
 

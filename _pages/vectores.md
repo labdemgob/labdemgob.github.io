@@ -12,7 +12,7 @@ Abajo puedes revisar los eventos del seminario permanente Vectores, el grupo de 
 
 ### Calendario 2025
 
-[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="49.9%" width="49.9%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png)  [![1](/images/vectores2025/Vectores 2 - Ryan Carlin.png){:height="49.9%" width="49.9%"}](/images/vectores2025/Vectores 2 - Ryan Carlin.png) 
+[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png)  [![1](/images/vectores2025/Vectores 2 - Ryan Carlin.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 2 - Ryan Carlin.png) 
 
 [![1](/images/vectores2025/Vectores 3 - Rodolfo Disi.png){:height="49.9%" width="49.9%"}](/images/vectores2025/Vectores 3 - Rodolfo Disi.png)  [![1](/images/vectores2025/Vectores 4 - Maria Luisa Puig.png){:height="49.9%" width="49.9%"}](/images/vectores2025/Vectores 4 - Maria Luisa Puig.png) 
 

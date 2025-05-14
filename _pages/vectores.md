@@ -22,24 +22,16 @@ Abajo puedes revisar los eventos del seminario permanente Vectores, el grupo de 
 
 [![1](/images/vectores2025/Vectores 5 - Andrés Dockendorff.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 5 - Andrés Dockendorff.png) 
 
-[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) 
+[![1](/images/vectores2025/Vectores 6 - Cristóbal Bellolio.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 6 - Cristóbal Bellolio.png) 
 
-[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) 
+[![1](/images/vectores2025/Vectores 7 - Fabián Tort Kayser.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 7 - Fabián Tort Kayser.png) 
 
-[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) 
+[![1](/images/vectores2025/Vectores 8 - Alejandro Olivares.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 8 - Alejandro Olivares.png) 
 
-[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) 
+[![1](/images/vectores2025/Vectores 9 - Benedetta Calandra.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 9 - Benedetta Calandra.png) 
 
-[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) 
+[![1](/images/vectores2025/Vectores 10 - Daniel Brieba.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 10 - Daniel Brieba.png) 
 
-
-
-Vectores 5 - Andrés Dockendorff.png
-Vectores 6 - Cristóbal Bellolio.png
-Vectores 7 - Fabián Tort Kayser.png
-Vectores 8 - Alejandro Olivares.png
-Vectores 9 - Benedetta Calandra.png
-Vectores 10 - Daniel Brieba.png
 
 
 ### Calendario 2024

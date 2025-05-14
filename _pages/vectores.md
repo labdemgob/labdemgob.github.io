@@ -18,13 +18,13 @@ Abajo puedes revisar los eventos del seminario permanente Vectores, el grupo de 
 
 [![1](/images/vectores2025/Vectores 3 - Rodolfo Disi.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 3 - Rodolfo Disi.png) 
 
-[![1](/images/vectores2025/Vectores 4 - María Luisa Puig.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 4 - María Luisa Puig.png) 
+[![1](/images/vectores2025/Vectores 4 - Maria Luisa Puig.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 4 - Maria Luisa Puig.png) 
 
-[![1](/images/vectores2025/Vectores 5 - Andrés Dockendorff.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 5 - Andrés Dockendorff.png) 
+[![1](/images/vectores2025/Vectores 5 - Andres Dockendorff.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 5 - Andres Dockendorff.png) 
 
-[![1](/images/vectores2025/Vectores 6 - Cristóbal Bellolio.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 6 - Cristóbal Bellolio.png) 
+[![1](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png) 
 
-[![1](/images/vectores2025/Vectores 7 - Fabián Tort Kayser.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 7 - Fabián Tort Kayser.png) 
+[![1](/images/vectores2025/Vectores 7 - Fabian Tort Kayser.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 7 - Fabian Tort Kayser.png) 
 
 [![1](/images/vectores2025/Vectores 8 - Alejandro Olivares.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 8 - Alejandro Olivares.png) 
 

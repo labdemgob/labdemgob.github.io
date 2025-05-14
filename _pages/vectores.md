@@ -14,11 +14,26 @@ Abajo puedes revisar los eventos del seminario permanente Vectores, el grupo de 
 
 [![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) 
 
+[![1](/images/vectores2025/Vectores 2 - Ryan Carlin.png{:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 2 - Ryan Carlin.png) 
 
-Vectores 1 - Pamela Figueroa.png
-Vectores 2 - Ryan Carlin.png
-Vectores 3 - Rodolfo Disi.png
-Vectores 4 - María Luisa Puig.png
+[![1](/images/vectores2025/Vectores 3 - Rodolfo Disi.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 3 - Rodolfo Disi.png) 
+
+[![1](/images/vectores2025/Vectores 4 - María Luisa Puig.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 4 - María Luisa Puig.png) 
+
+[![1](/images/vectores2025/Vectores 5 - Andrés Dockendorff.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 5 - Andrés Dockendorff.png) 
+
+[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) 
+
+[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) 
+
+[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) 
+
+[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) 
+
+[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="18.7%" width="18.7%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) 
+
+
+
 Vectores 5 - Andrés Dockendorff.png
 Vectores 6 - Cristóbal Bellolio.png
 Vectores 7 - Fabián Tort Kayser.png

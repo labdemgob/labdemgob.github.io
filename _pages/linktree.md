@@ -8,20 +8,23 @@ author_profile: true
 
 <style>
 .linktree-wrapper {
-  text-align: center; /* Center the buttons */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center boxes horizontally */
 }
 
 .link-button {
-  display: inline-block; /* Makes the boxes centerable */
-  width: 220px;
-  margin: 15px 0;
-  padding: 10px;
-  text-align: left; /* Align content inside the box */
+  width: 260px;
+  margin: 10px 0;
+  padding: 10px 12px;
+  text-align: left; /* align content inside the box */
   background-color: #f1f1f1;
   border-radius: 10px;
   text-decoration: none !important;
   color: inherit;
   transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
 }
 
 .link-button:hover {
@@ -29,14 +32,12 @@ author_profile: true
 }
 
 .link-button img {
-  vertical-align: middle;
   margin-right: 10px;
   width: 24px;
   height: 24px;
 }
 
 .link-button span {
-  vertical-align: middle;
   font-size: 16px;
   color: #333;
   text-decoration: none;

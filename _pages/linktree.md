@@ -50,7 +50,7 @@ author_profile: true
 </a>
 
 <a href="https://labdemgob.github.io/vectores" class="link-button" target="_blank">
-  <img src="https://cdn-icons-png.flaticon.com/512/2842/2842523.png" alt="Seminario"><span>Seminario Vectores</span>
+  <img src="https://media.badgr.com/uploads/badges/badge-Xd-j2FpuRomXhCXOX18blA.png" alt="Seminario"><span>Seminario Vectores</span>
 </a>
 
 <a href="https://badgr.com/public/issuers/BtjkdWqYTcaZ9HX-f8LQzg/badges" class="link-button" target="_blank">

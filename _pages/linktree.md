@@ -35,8 +35,6 @@ author_profile: true
 
 <div align="center">
 
-## Mis Enlaces
-
 <a href="https://www.linkedin.com/company/laboratorio-democracia-y-gobierno/" class="link-button" target="_blank">
   <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"><span>LinkedIn</span>
 </a>

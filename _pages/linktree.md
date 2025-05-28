@@ -67,7 +67,7 @@ author_profile: true
 </a>
 
 <a href="https://badgr.com/public/issuers/BtjkdWqYTcaZ9HX-f8LQzg/badges" class="link-button" target="_blank">
-  <img src="https://scontent.fscl38-1.fna.fbcdn.net/v/t1.6435-9/101387032_3310615965637814_6494069402856587264_n.png" alt="Badgr"><span>Badgr</span>
+  <img src="https://img.freepik.com/premium-psd/golden-badge-gold-award-shield-transparent-background_1019762-723.jpg" alt="Badgr"><span>Badgr</span>
 </a>
 
 <a href="https://github.com/labdemgob" class="link-button" target="_blank">

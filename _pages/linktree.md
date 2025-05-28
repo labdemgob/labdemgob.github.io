@@ -8,15 +8,15 @@ author_profile: true
 
 <style>
 .linktree-wrapper {
-  margin-left: 20px;
+  text-align: center; /* Center the buttons */
 }
 
 .link-button {
-  display: block;
+  display: inline-block; /* Makes the boxes centerable */
   width: 220px;
   margin: 15px 0;
   padding: 10px;
-  text-align: left;
+  text-align: left; /* Align content inside the box */
   background-color: #f1f1f1;
   border-radius: 10px;
   text-decoration: none !important;
@@ -66,9 +66,7 @@ author_profile: true
 </a>
 
 <a href="https://github.com/labdemgob" class="link-button" target="_blank">
-  <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Badgr"><span>Badgr</span>
+  <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub"><span>GitHub</span>
 </a>
-
-
 
 </div>

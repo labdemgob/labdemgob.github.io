@@ -46,11 +46,11 @@ author_profile: true
 </a>
 
 <a href="https://www.researchgate.net/lab/Laboratorio-de-Democracia-y-Gobierno-USS-Kenneth-Bunker" class="link-button" target="_blank">
-  <img src="https://cdn.iconscout.com/icon/free/png-512/free-researchgate-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-6-pack-logos-icons-2945204.png" alt="ResearchGate"><span>Sitio Web</span>
+  <img src="https://cdn.iconscout.com/icon/free/png-512/free-researchgate-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-6-pack-logos-icons-2945204.png" alt="ResearchGate"><span>ResearchGate</span>
 </a>
 
 <a href="https://labdemgob.github.io/vectores" class="link-button" target="_blank">
-  <img src="https://media.badgr.com/uploads/badges/badge-Xd-j2FpuRomXhCXOX18blA.png" alt="Seminario"><span>Seminario Vectores</span>
+  <img src="https://media.badgr.com/uploads/badges/badge-Xd-j2FpuRomXhCXOX18blA.png" alt="Seminario"><span>Vectores</span>
 </a>
 
 <a href="https://badgr.com/public/issuers/BtjkdWqYTcaZ9HX-f8LQzg/badges" class="link-button" target="_blank">

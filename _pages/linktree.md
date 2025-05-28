@@ -54,7 +54,7 @@ author_profile: true
 </a>
 
 <a href="https://badgr.com/public/issuers/BtjkdWqYTcaZ9HX-f8LQzg/badges" class="link-button" target="_blank">
-  <img src="https://wac-cdn.atlassian.com/dam/jcr:4b63a062-709e-4c2c-80c9-4f6303c6c0a1/badgr-logo.png" alt="Badgr"><span>Badgr</span>
+  <img src="https://media.badgr.com/uploads/issuers/issuer_logo_b3158a06-8f73-449a-a91b-0e9199e00e73.png" alt="Badgr"><span>Badgr</span>
 </a>
 
 </div>

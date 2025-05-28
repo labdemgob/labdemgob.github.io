@@ -74,4 +74,10 @@ author_profile: true
   <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub"><span>GitHub</span>
 </a>
 
+<a href="https://docs.google.com/forms/d/1d_YzE0oSNqTw4ZociZu1EIOF7Sz9YJu9V6j87BxCnio/edit
+" class="link-button" target="_blank">
+  <img src="https://w7.pngwing.com/pngs/165/758/png-transparent-qr-code-scan-program-barcode-general-pack-icon-thumbnail.png" alt="Regístrate"><span>Regístrate</span>
+</a>
+
+
 </div>

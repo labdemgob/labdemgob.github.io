@@ -45,8 +45,8 @@ author_profile: true
   <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"><span>Instagram</span>
 </a>
 
-<a href="https://labdemgob.github.io" class="link-button" target="_blank">
-  <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Sitio Web"><span>Sitio Web</span>
+<a href="https://www.researchgate.net/lab/Laboratorio-de-Democracia-y-Gobierno-USS-Kenneth-Bunker" class="link-button" target="_blank">
+  <img src="https://cdn.iconscout.com/icon/free/png-512/free-researchgate-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-6-pack-logos-icons-2945204.png" alt="ResearchGate"><span>Sitio Web</span>
 </a>
 
 <a href="https://labdemgob.github.io/vectores" class="link-button" target="_blank">

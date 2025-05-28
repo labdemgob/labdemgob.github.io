@@ -7,12 +7,16 @@ author_profile: true
 ---
 
 <style>
+.linktree-wrapper {
+  margin-left: 20px;
+}
+
 .link-button {
   display: block;
   width: 220px;
-  margin: 15px auto;
+  margin: 15px 0;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   background-color: #f1f1f1;
   border-radius: 10px;
   text-decoration: none !important;
@@ -39,8 +43,7 @@ author_profile: true
 }
 </style>
 
-
-<div align="center">
+<div class="linktree-wrapper">
 
 <a href="https://www.linkedin.com/company/laboratorio-democracia-y-gobierno/" class="link-button" target="_blank">
   <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"><span>LinkedIn</span>

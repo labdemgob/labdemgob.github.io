@@ -15,18 +15,22 @@ author_profile: true
   text-align: center;
   background-color: #f1f1f1;
   border-radius: 10px;
-  text-decoration: none;
+  text-decoration: none !important;
+  color: inherit;
   transition: background-color 0.2s ease;
 }
+
 .link-button:hover {
   background-color: #e0e0e0;
 }
+
 .link-button img {
   vertical-align: middle;
   margin-right: 10px;
   width: 24px;
   height: 24px;
 }
+
 .link-button span {
   vertical-align: middle;
   font-size: 16px;
@@ -34,6 +38,7 @@ author_profile: true
   text-decoration: none;
 }
 </style>
+
 
 <div align="center">
 

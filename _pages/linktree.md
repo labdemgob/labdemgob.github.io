@@ -58,6 +58,10 @@ author_profile: true
   <img src="https://cdn.iconscout.com/icon/free/png-512/free-researchgate-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-brand-vol-6-pack-logos-icons-2945204.png" alt="ResearchGate"><span>ResearchGate</span>
 </a>
 
+<a href="https://x.com/labdemgobuss" class="link-button" target="_blank">
+  <img src="https://loodibee.com/wp-content/uploads/Twitter-X-Logo.png" alt="GitHub"><span>Twitter</span>
+</a>
+
 <a href="https://labdemgob.github.io/vectores" class="link-button" target="_blank">
   <img src="https://media.badgr.com/uploads/badges/badge-Xd-j2FpuRomXhCXOX18blA.png" alt="Seminario"><span>Vectores</span>
 </a>

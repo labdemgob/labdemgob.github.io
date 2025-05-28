@@ -15,6 +15,7 @@ author_profile: true
   text-align: center;
   background-color: #f1f1f1;
   border-radius: 10px;
+  text-decoration: none;
   transition: background-color 0.2s ease;
 }
 .link-button:hover {
@@ -30,6 +31,7 @@ author_profile: true
   vertical-align: middle;
   font-size: 16px;
   color: #333;
+  text-decoration: none;
 }
 </style>
 

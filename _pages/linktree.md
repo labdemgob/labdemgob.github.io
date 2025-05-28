@@ -63,7 +63,7 @@ author_profile: true
 </a>
 
 <a href="https://badgr.com/public/issuers/BtjkdWqYTcaZ9HX-f8LQzg/badges" class="link-button" target="_blank">
-  <img src="https://media.badgr.com/uploads/issuers/issuer_logo_b3158a06-8f73-449a-a91b-0e9199e00e73.png" alt="Badgr"><span>Badgr</span>
+  <img src="https://scontent.fscl38-1.fna.fbcdn.net/v/t1.6435-9/101387032_3310615965637814_6494069402856587264_n.png" alt="Badgr"><span>Badgr</span>
 </a>
 
 <a href="https://github.com/labdemgob" class="link-button" target="_blank">

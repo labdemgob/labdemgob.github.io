@@ -14,7 +14,7 @@ Abajo puedes revisar los eventos del seminario permanente Vectores, el grupo de 
 
 [![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) [![1](/images/vectores2025/Vectores 2 - Rodolfo Disi.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 2 - Rodolfo Disi.png)  
 
-[![1](/images/vectores2025/Vectores 3 - Ryan Carlin.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 3 - Ryan Carlin.png)  [![1](/images/vectores2025/Vectores 4 - Maria Luisa Puig.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 4 - Maria Luisa Puig.png) 
+[![1](/images/vectores2025/Vectores 3 - Maria Luisa Puig.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 3 - Maria Luisa Puig.png) [![1](/images/vectores2025/Vectores 4 - Ryan Carlin.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 4 - Ryan Carlin.png)  
 
 [![1](/images/vectores2025/Vectores 5 - Andres Dockendorff.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 5 - Andres Dockendorff.png)  [![1](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png) 
 

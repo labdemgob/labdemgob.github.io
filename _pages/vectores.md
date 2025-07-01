@@ -7,22 +7,22 @@ author_profile: true
 ---
 
 
-Abajo puedes revisar los eventos del seminario permanente Vectores, el ciclo de charlas del Laboratorio Democracia y Gobierno.
+Abajo puedes revisar los eventos del seminario permanente Vectores, el ciclo de charlas del Laboratorio Democracia y Gobierno. ¡Pincha en los afiches para inscribirte en las charlas!
 
 
 ### Calendario 2025
 
-[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSdIgVMQeEIU9BdhGjdqV9R2f4l9T6Sr1NhtlrmczVjfqIi-lw/viewform?usp=header) [![1](/images/vectores2025/Vectores 2 - Rodolfo Disi.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 2 - Rodolfo Disi.png)  
+[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSdIgVMQeEIU9BdhGjdqV9R2f4l9T6Sr1NhtlrmczVjfqIi-lw/viewform?usp=header) [![1](/images/vectores2025/Vectores 2 - Rodolfo Disi.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLScY6xQx0iO4c5dW7rxIoh3CU5Oau6212xnDVsz6LTBknR2KPQ/viewform?usp=header)  
 
-[![1](/images/vectores2025/Vectores 3 - Maria Luisa Puig.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 3 - Maria Luisa Puig.png) [![1](/images/vectores2025/Vectores 4 - Ryan Carlin.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 4 - Ryan Carlin.png)  
+[![1](/images/vectores2025/Vectores 3 - Maria Luisa Puig.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSeFurfH1v-4E14v7qGgjJHP2yc_OewvJNMOLOUkG5k2fm1H5w/viewform?usp=header) [![1](/images/vectores2025/Vectores 4 - Ryan Carlin.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSfz9P9JHBkQcJi0weA3i5TzxrvUNNb2o7ZHe2BnN2NcxrSYVQ/viewform?usp=header)  
 
-[![1](/images/vectores2025/Vectores 5 - Andres Dockendorff.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 5 - Andres Dockendorff.png)  [![1](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png) 
+[![1](/images/vectores2025/Vectores 5 - Andres Dockendorff.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSfqjQqZ7FLrkq7HL8LrPXesELbzBwjaDO0y42A81PHKQHjwwg/viewform?usp=header)  [![1](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSeYirpCJ1zP1gbtb3YoW1K7ZCc5pUZoN8VtAeoQw_FUs7Uvkg/viewform?usp=header) 
 
-[![1](/images/vectores2025/Vectores 7 - Christopher Martinez.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 7 - Christopher Martinez.png)  [![1](/images/vectores2025/Vectores 8 - Fabián Tort Kayser.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 8 - Fabian Tort Kayser.png) 
+[![1](/images/vectores2025/Vectores 7 - Christopher Martinez.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSfexhH6RlsuZrTtTVrpzjmJI29WZ2JCQ5qRly1jODJ6T-9opQ/viewform?usp=header)  [![1](/images/vectores2025/Vectores 8 - Fabián Tort Kayser.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSfcWonCYX32sVCuN7PdpyO-9r3vs6ki1NkWCds-lIhT2dy7Rg/viewform?usp=header) 
 
-[![1](/images/vectores2025/Vectores 9 - Alejandro Olivares.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 9 - Alejandro Olivares.png) [![1](/images/vectores2025/Vectores 10 - Benedetta Calandra.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 10 - Benedetta Calandra.png)  
+[![1](/images/vectores2025/Vectores 9 - Alejandro Olivares.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSedgreAfamqULPLiY4o2qiuyOpi2g-s_K1BhqaWKghfHoSBgw/viewform?usp=header) [![1](/images/vectores2025/Vectores 10 - Benedetta Calandra.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSeXWIx_6xRwZ6n-__5_tw3SbjOWHBZYYuhQfiVoqArRGAW0cg/viewform?usp=header)  
 
-[![1](/images/vectores2025/Vectores 11 - Daniel Brieba.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 11 - Daniel Brieba.png) 
+[![1](/images/vectores2025/Vectores 11 - Daniel Brieba.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSeYdGbgHPyur0aAGyU_vvQA9NL82No9bXgeBgm5yziIbFd8gA/viewform?usp=header) 
 
 
 

@@ -74,7 +74,7 @@ author_profile: true
   <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub"><span>GitHub</span>
 </a>
 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScY6xQx0iO4c5dW7rxIoh3CU5Oau6212xnDVsz6LTBknR2KPQ/viewform?usp=header
+<a href="hhttps://docs.google.com/forms/d/e/1FAIpQLSfz9P9JHBkQcJi0weA3i5TzxrvUNNb2o7ZHe2BnN2NcxrSYVQ/viewform?usp=header
 " class="link-button" target="_blank">
   <img src="https://w7.pngwing.com/pngs/165/758/png-transparent-qr-code-scan-program-barcode-general-pack-icon-thumbnail.png" alt="Regístrate"><span>Regístrate</span>
 </a>

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Eventos: Vectores"
+title: "Seminario: Vectores"
 permalink: /vectores/
 description: LabDemGob - Vectores.
 author_profile: true

@@ -18,7 +18,7 @@ Abajo puedes revisar los eventos del seminario permanente Vectores, el ciclo de 
 
 [![1](/images/vectores2025/Vectores 5 - Andres Dockendorff.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSfqjQqZ7FLrkq7HL8LrPXesELbzBwjaDO0y42A81PHKQHjwwg/viewform?usp=header)  [![1](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSeYirpCJ1zP1gbtb3YoW1K7ZCc5pUZoN8VtAeoQw_FUs7Uvkg/viewform?usp=header) 
 
-[![1](/images/vectores2025/Vectores 7 - Christopher Martinez.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSfexhH6RlsuZrTtTVrpzjmJI29WZ2JCQ5qRly1jODJ6T-9opQ/viewform?usp=header)  [![1](/images/vectores2025/Vectores 8 - Fabián Tort Kayser.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSfcWonCYX32sVCuN7PdpyO-9r3vs6ki1NkWCds-lIhT2dy7Rg/viewform?usp=header) 
+[![1](/images/vectores2025/Vectores 7 - Christopher Martinez.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSfexhH6RlsuZrTtTVrpzjmJI29WZ2JCQ5qRly1jODJ6T-9opQ/viewform?usp=header)  [![1](/images/vectores2025/Vectores 8 - Fabian Tort Kayser.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSfcWonCYX32sVCuN7PdpyO-9r3vs6ki1NkWCds-lIhT2dy7Rg/viewform?usp=header) 
 
 [![1](/images/vectores2025/Vectores 9 - Alejandro Olivares.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSedgreAfamqULPLiY4o2qiuyOpi2g-s_K1BhqaWKghfHoSBgw/viewform?usp=header) [![1](/images/vectores2025/Vectores 10 - Benedetta Calandra.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSeXWIx_6xRwZ6n-__5_tw3SbjOWHBZYYuhQfiVoqArRGAW0cg/viewform?usp=header)  
 

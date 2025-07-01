@@ -7,20 +7,22 @@ author_profile: true
 ---
 
 
-Abajo puedes revisar los eventos del seminario permanente Vectores, el grupo de estudios del Laboratorio Democracia y Gobierno.
+Abajo puedes revisar los eventos del seminario permanente Vectores, el ciclo de charlas del Laboratorio Democracia y Gobierno.
 
 
 ### Calendario 2025
 
-[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 1 - Pamela Figueroa.png) [![1](/images/vectores2025/Vectores 2 - Rodolfo Disi.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 2 - Rodolfo Disi.png)  
+[![1](/images/vectores2025/Vectores 1 - Pamela Figueroa.png){:height="49%" width="49%"}](https://docs.google.com/forms/d/e/1FAIpQLSdIgVMQeEIU9BdhGjdqV9R2f4l9T6Sr1NhtlrmczVjfqIi-lw/viewform?usp=header) [![1](/images/vectores2025/Vectores 2 - Rodolfo Disi.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 2 - Rodolfo Disi.png)  
 
 [![1](/images/vectores2025/Vectores 3 - Maria Luisa Puig.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 3 - Maria Luisa Puig.png) [![1](/images/vectores2025/Vectores 4 - Ryan Carlin.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 4 - Ryan Carlin.png)  
 
 [![1](/images/vectores2025/Vectores 5 - Andres Dockendorff.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 5 - Andres Dockendorff.png)  [![1](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 6 - Cristobal Bellolio.png) 
 
-[![1](/images/vectores2025/Vectores 7 - Fabian Tort Kayser.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 7 - Fabian Tort Kayser.png)  [![1](/images/vectores2025/Vectores 8 - Alejandro Olivares.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 8 - Alejandro Olivares.png) 
+[![1](/images/vectores2025/Vectores 7 - Christopher Martinez.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 7 - Christopher Martinez.png)  [![1](/images/vectores2025/Vectores 8 - Fabián Tort Kayser.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 8 - Fabian Tort Kayser.png) 
 
-[![1](/images/vectores2025/Vectores 9 - Benedetta Calandra.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 9 - Benedetta Calandra.png)  [![1](/images/vectores2025/Vectores 10 - Daniel Brieba.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 10 - Daniel Brieba.png) 
+[![1](/images/vectores2025/Vectores 9 - Alejandro Olivares.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 9 - Alejandro Olivares.png) [![1](/images/vectores2025/Vectores 10 - Benedetta Calandra.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 10 - Benedetta Calandra.png)  
+
+[![1](/images/vectores2025/Vectores 11 - Daniel Brieba.png){:height="49%" width="49%"}](/images/vectores2025/Vectores 11 - Daniel Brieba.png) 
 
 
 

@@ -74,8 +74,7 @@ author_profile: true
   <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub"><span>GitHub</span>
 </a>
 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSeYirpCJ1zP1gbtb3YoW1K7ZCc5pUZoN8VtAeoQw_FUs7Uvkg/viewform
-" class="link-button" target="_blank">
+<a href="https://labdemgob.github.io/vectores" class="link-button" target="_blank">
   <img src="https://w7.pngwing.com/pngs/165/758/png-transparent-qr-code-scan-program-barcode-general-pack-icon-thumbnail.png" alt="Regístrate"><span>Regístrate</span>
 </a>
 

@@ -22,8 +22,11 @@ Abajo puedes revisar los títulos de Ideas, la colección de estudios del Labora
 
 [![13](/ideas/estudio%2013.png){:height="32%" width="32%"}](/ideas/estudio%2013.png) [![14](/ideas/estudio%2014.png){:height="32%" width="32%"}](/ideas/estudio%2014.png) [![15](/ideas/estudio%2015.png){:height="32%" width="32%"}](/ideas/estudio%2015.png) 
 
-[![16](/ideas/estudio%2013.png){:height="32%" width="32%"}](/ideas/estudio%2013.png)
+[![16](/ideas/estudio%2016.png){:height="32%" width="32%"}](/ideas/estudio%2016.png) [![17](/ideas/estudio%2017.png){:height="32%" width="32%"}](/ideas/estudio%2017.png) [![18](/ideas/estudio%2018.png){:height="32%" width="32%"}](/ideas/estudio%2018.png)
 
+[![19](/ideas/estudio%2019.png){:height="32%" width="32%"}](/ideas/estudio%2019.png) [![20](/ideas/estudio%2020.png){:height="32%" width="32%"}](/ideas/estudio%2020.png) [![16](/ideas/estudio%2021.png){:height="32%" width="32%"}](/ideas/estudio%2021.png)
+
+[![22](/ideas/estudio%2022.png){:height="32%" width="32%"}](/ideas/estudio%2022.png) [![23](/ideas/estudio%2023.png){:height="32%" width="32%"}](/ideas/estudio%2023.png) [![24](/ideas/estudio%2024.png){:height="32%" width="32%"}](/ideas/estudio%2024.png)
 
 
 ### Áreas de Investigación

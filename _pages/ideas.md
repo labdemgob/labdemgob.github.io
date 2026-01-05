@@ -12,7 +12,7 @@ Abajo puedes revisar los títulos de Ideas, la colección de estudios del Labora
 
 ### Estudios: Ideas
 
-[![1](/ideas/estudio%201.png){:height="32%" width="32%"}](/ideas/estudio%201.png) [![2](/ideas/estudio%202.png){:height="32%" width="32%"}](/ideas/estudio%202.png) [![3](/ideas/estudio%203.png){:height="32%" width="32%"}](/ideas/estudio%203.png)
+[![1](/ideas/estudio%201.png){:height="32%" width="32%"}](https://doi.org/10.13140/RG.2.2.13055.38560) [![2](/ideas/estudio%202.png){:height="32%" width="32%"}](/ideas/estudio%202.png) [![3](/ideas/estudio%203.png){:height="32%" width="32%"}](/ideas/estudio%203.png)
 
 [![4](/ideas/estudio%204.png){:height="32%" width="32%"}](/ideas/estudio%204.png) [![5](/ideas/estudio%205.png){:height="32%" width="32%"}](/ideas/estudio%205.png) [![6](/ideas/estudio%206.png){:height="32%" width="32%"}](/ideas/estudio%206.png)
 
@@ -24,7 +24,7 @@ Abajo puedes revisar los títulos de Ideas, la colección de estudios del Labora
 
 [![16](/ideas/estudio%2016.png){:height="32%" width="32%"}](/ideas/estudio%2016.png) [![17](/ideas/estudio%2017.png){:height="32%" width="32%"}](/ideas/estudio%2017.png) [![18](/ideas/estudio%2018.png){:height="32%" width="32%"}](/ideas/estudio%2018.png)
 
-[![19](/ideas/estudio%2019.png){:height="32%" width="32%"}](/ideas/estudio%2019.png) [![20](/ideas/estudio%2020.png){:height="32%" width="32%"}](/ideas/estudio%2020.png) [![16](/ideas/estudio%2021.png){:height="32%" width="32%"}](/ideas/estudio%2021.png)
+[![19](/ideas/estudio%2019.png){:height="32%" width="32%"}](/ideas/estudio%2019.png) [![20](/ideas/estudio%2020.png){:height="32%" width="32%"}](/ideas/estudio%2020.png) [![21](/ideas/estudio%2021.png){:height="32%" width="32%"}](/ideas/estudio%2021.png)
 
 [![22](/ideas/estudio%2022.png){:height="32%" width="32%"}](/ideas/estudio%2022.png) [![23](/ideas/estudio%2023.png){:height="32%" width="32%"}](/ideas/estudio%2023.png) [![24](/ideas/estudio%2024.png){:height="32%" width="32%"}](/ideas/estudio%2024.png)
 

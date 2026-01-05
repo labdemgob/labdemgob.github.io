@@ -12,7 +12,7 @@ Abajo puedes revisar los títulos de Ideas, la colección de estudios del Labora
 
 ### Estudios: Ideas
 
-[![1](/ideas/estudio%201.png){:height="32%" width="32%"}](https://doi.org/10.13140/RG.2.2.13055.38560) [![2](/ideas/estudio%202.png){:height="32%" width="32%"}](/ideas/estudio%202.png) [![3](/ideas/estudio%203.png){:height="32%" width="32%"}](/ideas/estudio%203.png)
+[![1](/ideas/estudio%201.png){:height="32%" width="32%"}](https://www.researchgate.net/publication/373976533_Ha_aumentado_la_fragmentacion_en_el_sistema_de_partidos_a_traves_de_los_anos) [![2](/ideas/estudio%202.png){:height="32%" width="32%"}](/ideas/estudio%202.png) [![3](/ideas/estudio%203.png){:height="32%" width="32%"}](/ideas/estudio%203.png)
 
 [![4](/ideas/estudio%204.png){:height="32%" width="32%"}](/ideas/estudio%204.png) [![5](/ideas/estudio%205.png){:height="32%" width="32%"}](/ideas/estudio%205.png) [![6](/ideas/estudio%206.png){:height="32%" width="32%"}](/ideas/estudio%206.png)
 

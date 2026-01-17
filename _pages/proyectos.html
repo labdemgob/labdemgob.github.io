@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | LABDEMGOB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --uss-blue: #004990;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-300: #d1d5db;
+            --gray-500: #6b7280;
+            --gray-700: #374151;
+            --gray-900: #111827;
+            --font: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font); background: var(--white); color: var(--gray-900); min-height: 100vh; display: flex; flex-direction: column; }
+        nav { padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--gray-100); }
+        .logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: var(--gray-900); }
+        .logo-icon { width: 36px; height: 36px; background: var(--uss-blue); display: flex; align-items: center; justify-content: center; }
+        .logo-icon svg { width: 20px; height: 20px; fill: var(--white); }
+        .logo-text { font-size: 1rem; font-weight: 700; }
+        .nav-links { display: flex; gap: 0.25rem; list-style: none; }
+        .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--gray-700); text-decoration: none; padding: 0.5rem 0.875rem; border-radius: 6px; }
+        .nav-links a:hover { background: var(--gray-50); }
+        .nav-links a.active { background: var(--gray-100); }
+        main { flex: 1; padding: 3rem 2rem; max-width: 900px; margin: 0 auto; width: 100%; }
+        .page-header { margin-bottom: 3rem; }
+        .page-header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; }
+        .page-header p { font-size: 1rem; color: var(--gray-500); line-height: 1.6; }
+        .projects-list { display: flex; flex-direction: column; gap: 2rem; }
+        .project-card { padding: 2rem; border: 1px solid var(--gray-100); border-radius: 8px; }
+        .project-card:hover { border-color: var(--gray-300); }
+        .project-tag { display: inline-block; font-size: 0.7rem; font-weight: 600; color: var(--uss-blue); background: rgba(0,73,144,0.08); padding: 0.25rem 0.5rem; border-radius: 4px; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        .project-card h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; }
+        .project-card p { font-size: 0.9375rem; color: var(--gray-500); line-height: 1.6; margin-bottom: 1rem; }
+        .project-meta { font-size: 0.8125rem; color: var(--gray-500); }
+        .project-meta strong { color: var(--gray-700); }
+        footer { padding: 1.5rem 2rem; border-top: 1px solid var(--gray-100); }
+        .footer-copy { font-size: 0.8125rem; color: var(--gray-500); }
+        @media (max-width: 768px) { nav { padding: 1rem; } .nav-links { display: none; } main { padding: 2rem 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"/></svg></div>
+            <span class="logo-text">LABDEMGOB</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="vectores.html">Vectores</a></li>
+            <li><a href="ideas.html">Ideas</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="proyectos.html" class="active">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="page-header">
+            <h1>Proyectos</h1>
+            <p>Iniciativas de colaboración internacional, formación académica avanzada e internacionalización institucional.</p>
+        </div>
+
+        <div class="projects-list">
+            <article class="project-card">
+                <span class="project-tag">Colaboración Internacional</span>
+                <h3>COIL: Collaborative Online International Learning</h3>
+                <p>Proyecto de aprendizaje colaborativo en línea desarrollado junto al Pollitik Lab de Georgia State University. Estudiantes de Chile y Estados Unidos trabajan conjuntamente en el análisis de elecciones democráticas, integrando herramientas de ciencias sociales y ciencia de datos para elaborar proyecciones electorales y visualizaciones.</p>
+                <p class="project-meta"><strong>Socios:</strong> Georgia State University, Atlanta Global Studies Center</p>
+            </article>
+
+            <article class="project-card">
+                <span class="project-tag">Formación Académica</span>
+                <h3>Workshops en Metodología Cuantitativa</h3>
+                <p>Talleres intensivos de formación práctica en metodología cuantitativa avanzada, desarrollados en alianza con el Proyecto FONDECYT de Iniciación #11250786. Capacitación en R Studio, importación de datos desde GitHub, y aplicación de modelos de regresión lineal y no lineal.</p>
+                <p class="project-meta"><strong>Sedes:</strong> Puerto Montt, Concepción</p>
+            </article>
+
+            <article class="project-card">
+                <span class="project-tag">Internacionalización</span>
+                <h3>Convenio de Movilidad Académica</h3>
+                <p>Gestión de convenio bilateral de movilidad académica con la Sapienza Università di Roma, Italia. Marco formal de cooperación institucional para movilidad recíproca de estudiantes, docentes e investigadores.</p>
+                <p class="project-meta"><strong>Socio:</strong> Sapienza Università di Roma</p>
+            </article>
+
+            <article class="project-card">
+                <span class="project-tag">Investigación</span>
+                <h3>Pasantía Académica Internacional</h3>
+                <p>Estancia de investigación avanzada en la Università di Verona, Italia. Estudios comparados sobre sistemas electorales y gobernabilidad, con publicación de 4 artículos académicos y 1 libro (Palgrave Macmillan).</p>
+                <p class="project-meta"><strong>Institución:</strong> Università di Verona</p>
+            </article>
+
+            <article class="project-card">
+                <span class="project-tag">En Postulación</span>
+                <h3>Costo de la Política en Chile</h3>
+                <p>Postulación a fondo de investigación de la Westminster Foundation for Democracy (Reino Unido). Análisis de cómo el financiamiento y gastos de campaña influyen en el acceso a cargos de elección popular.</p>
+                <p class="project-meta"><strong>Fondo:</strong> Westminster Foundation for Democracy</p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <span class="footer-copy">© 2026 Laboratorio Democracia y Gobierno · Universidad San Sebastián</span>
+    </footer>
+</body>
+</html>

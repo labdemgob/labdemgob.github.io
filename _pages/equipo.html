@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo | LABDEMGOB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --uss-blue: #004990;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-300: #d1d5db;
+            --gray-500: #6b7280;
+            --gray-700: #374151;
+            --gray-900: #111827;
+            --font: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font); background: var(--white); color: var(--gray-900); min-height: 100vh; display: flex; flex-direction: column; }
+        nav { padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--gray-100); }
+        .logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: var(--gray-900); }
+        .logo-icon { width: 36px; height: 36px; background: var(--uss-blue); display: flex; align-items: center; justify-content: center; }
+        .logo-icon svg { width: 20px; height: 20px; fill: var(--white); }
+        .logo-text { font-size: 1rem; font-weight: 700; }
+        .nav-links { display: flex; gap: 0.25rem; list-style: none; }
+        .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--gray-700); text-decoration: none; padding: 0.5rem 0.875rem; border-radius: 6px; }
+        .nav-links a:hover { background: var(--gray-50); }
+        .nav-links a.active { background: var(--gray-100); }
+        main { flex: 1; padding: 3rem 2rem; max-width: 900px; margin: 0 auto; width: 100%; }
+        .page-header { margin-bottom: 3rem; }
+        .page-header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; }
+        .page-header p { font-size: 1rem; color: var(--gray-500); line-height: 1.6; }
+        .section { margin-bottom: 3rem; }
+        .section h2 { font-size: 0.75rem; font-weight: 600; color: var(--uss-blue); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--gray-100); }
+        .people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem; }
+        .person { text-align: center; }
+        .person-avatar { width: 80px; height: 80px; background: var(--gray-100); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-weight: 600; color: var(--gray-500); font-size: 1.25rem; }
+        .person-name { font-size: 0.9375rem; font-weight: 600; margin-bottom: 0.25rem; }
+        .person-role { font-size: 0.8125rem; color: var(--gray-500); }
+        footer { padding: 1.5rem 2rem; border-top: 1px solid var(--gray-100); }
+        .footer-copy { font-size: 0.8125rem; color: var(--gray-500); }
+        @media (max-width: 768px) { nav { padding: 1rem; } .nav-links { display: none; } main { padding: 2rem 1rem; } .people-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"/></svg></div>
+            <span class="logo-text">LABDEMGOB</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="vectores.html">Vectores</a></li>
+            <li><a href="ideas.html">Ideas</a></li>
+            <li><a href="equipo.html" class="active">Equipo</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="page-header">
+            <h1>Equipo</h1>
+            <p>Académicos y estudiantes de las sedes de Santiago, Puerto Montt y Concepción.</p>
+        </div>
+
+        <div class="section">
+            <h2>Dirección</h2>
+            <div class="people-grid">
+                <div class="person">
+                    <div class="person-avatar">KB</div>
+                    <div class="person-name">Kenneth Bunker</div>
+                    <div class="person-role">Director</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Investigadores Asociados</h2>
+            <div class="people-grid">
+                <div class="person"><div class="person-avatar">AB</div><div class="person-name">Angélica Basoalto</div></div>
+                <div class="person"><div class="person-avatar">JC</div><div class="person-name">José Miguel Cabezas</div></div>
+                <div class="person"><div class="person-avatar">SC</div><div class="person-name">Sebastián Carrasco</div></div>
+                <div class="person"><div class="person-avatar">RC</div><div class="person-name">Rodolfo de Camargo</div></div>
+                <div class="person"><div class="person-avatar">DJ</div><div class="person-name">Diego Jiménez</div></div>
+                <div class="person"><div class="person-avatar">HJ</div><div class="person-name">Hugo Jofré</div></div>
+                <div class="person"><div class="person-avatar">VM</div><div class="person-name">Vanessa Muñoz</div></div>
+                <div class="person"><div class="person-avatar">JM</div><div class="person-name">Jaquelin Morillo</div></div>
+                <div class="person"><div class="person-avatar">TO</div><div class="person-name">Tito Olavarría</div></div>
+                <div class="person"><div class="person-avatar">LS</div><div class="person-name">Lucas Serrano</div></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Investigadores Asistentes</h2>
+            <div class="people-grid">
+                <div class="person"><div class="person-avatar">FA</div><div class="person-name">Fernanda Arrieta</div></div>
+                <div class="person"><div class="person-avatar">CD</div><div class="person-name">Camila Daza</div></div>
+                <div class="person"><div class="person-avatar">LG</div><div class="person-name">Lorena Galdames</div></div>
+                <div class="person"><div class="person-avatar">FM</div><div class="person-name">Francisca Mejías</div></div>
+                <div class="person"><div class="person-avatar">BV</div><div class="person-name">Benjamín Valdés</div></div>
+                <div class="person"><div class="person-avatar">MV</div><div class="person-name">Maximiliano Vargas</div></div>
+                <div class="person"><div class="person-avatar">JV</div><div class="person-name">Joselyn Vilches</div></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Miembros Permanentes</h2>
+            <div class="people-grid">
+                <div class="person"><div class="person-avatar">TA</div><div class="person-name">Tatiana Aravena</div></div>
+                <div class="person"><div class="person-avatar">VB</div><div class="person-name">Valentina Barraza</div></div>
+                <div class="person"><div class="person-avatar">RC</div><div class="person-name">Rhayza Cifuentes</div></div>
+                <div class="person"><div class="person-avatar">BF</div><div class="person-name">Benjamín Fernández</div></div>
+                <div class="person"><div class="person-avatar">CH</div><div class="person-name">Catalina Helqui</div></div>
+                <div class="person"><div class="person-avatar">NL</div><div class="person-name">Nicolás Lorca</div></div>
+                <div class="person"><div class="person-avatar">RS</div><div class="person-name">Rocío Sánchez</div></div>
+                <div class="person"><div class="person-avatar">AV</div><div class="person-name">Aníbal Valenzuela</div></div>
+                <div class="person"><div class="person-avatar">CV</div><div class="person-name">Constanza Vera</div></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Coordinación y Extensión</h2>
+            <div class="people-grid">
+                <div class="person"><div class="person-avatar">LP</div><div class="person-name">Luz Poblete</div></div>
+                <div class="person"><div class="person-avatar">AS</div><div class="person-name">Anice Saud</div></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span class="footer-copy">© 2026 Laboratorio Democracia y Gobierno · Universidad San Sebastián</span>
+    </footer>
+</body>
+</html>

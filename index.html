@@ -130,8 +130,9 @@
         }
 
         .stats {
-            display: flex;
-            gap: 3rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem 3rem;
             margin-bottom: 2.5rem;
             padding-bottom: 2.5rem;
             border-bottom: 1px solid var(--gray-100);
@@ -258,7 +259,7 @@
             .nav-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
             main { padding: 2rem 1rem; }
             h1 { font-size: 1.75rem; }
-            .stats { gap: 2rem; }
+            .stats { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
             footer { padding: 1rem; flex-direction: column; gap: 1rem; text-align: center; }
             .footer-left { flex-direction: column; gap: 0.75rem; }
             .email-form { flex-direction: column; }
@@ -293,8 +294,24 @@
                     <div class="stat-label">Estudios publicados</div>
                 </div>
                 <div>
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Áreas programáticas</div>
+                </div>
+                <div>
                     <div class="stat-number">20</div>
                     <div class="stat-label">Seminarios realizados</div>
+                </div>
+                <div>
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Áreas de impacto</div>
+                </div>
+                <div>
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Proyecto internacional</div>
+                </div>
+                <div>
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Líneas de investigación</div>
                 </div>
             </div>
 

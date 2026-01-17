@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectores | LABDEMGOB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --uss-blue: #004990;
+            --uss-blue-dark: #003366;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-300: #d1d5db;
+            --gray-500: #6b7280;
+            --gray-700: #374151;
+            --gray-900: #111827;
+            --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font);
+            background: var(--white);
+            color: var(--gray-900);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--gray-900);
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--uss-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg { width: 20px; height: 20px; fill: var(--white); }
+
+        .logo-text { font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; }
+
+        .nav-links { display: flex; gap: 0.25rem; list-style: none; }
+
+        .nav-links a {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--gray-700);
+            text-decoration: none;
+            padding: 0.5rem 0.875rem;
+            border-radius: 6px;
+            transition: all 0.15s ease;
+        }
+
+        .nav-links a:hover { background: var(--gray-50); color: var(--gray-900); }
+        .nav-links a.active { background: var(--gray-100); color: var(--gray-900); }
+
+        main {
+            flex: 1;
+            padding: 3rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .page-header {
+            margin-bottom: 3rem;
+        }
+
+        .page-header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            margin-bottom: 0.75rem;
+        }
+
+        .page-header p {
+            font-size: 1rem;
+            color: var(--gray-500);
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        .seminars-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .seminar-card {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            border: 1px solid var(--gray-100);
+            border-radius: 8px;
+            transition: all 0.15s ease;
+        }
+
+        .seminar-card:hover {
+            border-color: var(--gray-300);
+            background: var(--gray-50);
+        }
+
+        .seminar-number {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--uss-blue);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .seminar-date {
+            font-size: 0.8125rem;
+            color: var(--gray-500);
+            margin-top: 0.25rem;
+        }
+
+        .seminar-content h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        .seminar-presenter {
+            font-size: 0.875rem;
+            color: var(--gray-500);
+        }
+
+        .seminar-presenter strong {
+            color: var(--gray-700);
+            font-weight: 500;
+        }
+
+        footer {
+            padding: 1.5rem 2rem;
+            border-top: 1px solid var(--gray-100);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-left { display: flex; align-items: center; gap: 1.5rem; }
+        .footer-copy { font-size: 0.8125rem; color: var(--gray-500); }
+
+        .footer-uss {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.75rem;
+            color: var(--gray-500);
+            text-decoration: none;
+        }
+
+        .footer-uss:hover { color: var(--gray-700); }
+        .footer-uss-logo { width: 20px; height: 20px; background: var(--uss-blue); border-radius: 4px; }
+
+        .social-links { display: flex; gap: 1rem; }
+        .social-links a { color: var(--gray-500); text-decoration: none; transition: color 0.15s ease; }
+        .social-links a:hover { color: var(--gray-900); }
+        .social-links svg { width: 20px; height: 20px; }
+
+        @media (max-width: 768px) {
+            nav { padding: 1rem; }
+            .nav-links { display: none; }
+            main { padding: 2rem 1rem; }
+            .page-header h1 { font-size: 1.5rem; }
+            .seminar-card { grid-template-columns: 1fr; gap: 0.75rem; }
+            footer { padding: 1rem; flex-direction: column; gap: 1rem; text-align: center; }
+            .footer-left { flex-direction: column; gap: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"/>
+                </svg>
+            </div>
+            <span class="logo-text">LABDEMGOB</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="vectores.html" class="active">Vectores</a></li>
+            <li><a href="ideas.html">Ideas</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>Seminario Vectores</h1>
+            <p>Ciclo de seminarios académicos orientados a la difusión y discusión de investigación sobre instituciones políticas, democracia, comportamiento político y gestión pública.</p>
+        </div>
+
+        <div class="seminars-list">
+            <article class="seminar-card">
+                <div>
+                    <div class="seminar-number">Vectores #20</div>
+                    <div class="seminar-date">Dic 2025</div>
+                </div>
+                <div class="seminar-content">
+                    <h3>Diplomacia cultural y modernización entre EE.UU, Chile y América Latina durante los años sesenta</h3>
+                    <p class="seminar-presenter"><strong>Benedetta Calandra</strong> · Università di Bergamo</p>
+                </div>
+            </article>
+
+            <article class="seminar-card">
+                <div>
+                    <div class="seminar-number">Vectores #19</div>
+                    <div class="seminar-date">Nov 2025</div>
+                </div>
+                <div class="seminar-content">
+                    <h3>El vínculo perdido: El rol de intermediarios digitales en el gobierno electrónico</h3>
+                    <p class="seminar-presenter"><strong>Alejandro Olivares</strong> · Universidad de Chile</p>
+                </div>
+            </article>
+
+            <article class="seminar-card">
+                <div>
+                    <div class="seminar-number">Vectores #18</div>
+                    <div class="seminar-date">Oct 2025</div>
+                </div>
+                <div class="seminar-content">
+                    <h3>Relaciones exteriores de Chile en el siglo XXI: Mirando al mundo desde la carrera diplomática</h3>
+                    <p class="seminar-presenter"><strong>Fabian Tort Kaiser</strong> · Academia Diplomática Andrés Bello</p>
+                </div>
+            </article>
+
+            <article class="seminar-card">
+                <div>
+                    <div class="seminar-number">Vectores #17</div>
+                    <div class="seminar-date">Sep 2025</div>
+                </div>
+                <div class="seminar-content">
+                    <h3>Estabilidad presidencial, coaliciones de gobierno y convivencia con el poder legislativo</h3>
+                    <p class="seminar-presenter"><strong>Christopher Martínez</strong> · Universidad San Sebastián / CRISPOL</p>
+                </div>
+            </article>
+
+            <article class="seminar-card">
+                <div>
+                    <div class="seminar-number">Vectores #16</div>
+                    <div class="seminar-date">Ago 2025</div>
+                </div>
+                <div class="seminar-content">
+                    <h3>Mapas de competencia ideológica en Chile: Tradición y filosofía de la democracia chilena</h3>
+                    <p class="seminar-presenter"><strong>Cristóbal Bellolio</strong> · Universidad Adolfo Ibáñez</p>
+                </div>
+            </article>
+
+            <article class="seminar-card">
+                <div>
+                    <div class="seminar-number">Vectores #15</div>
+                    <div class="seminar-date">Ago 2025</div>
+                </div>
+                <div class="seminar-content">
+                    <h3>Dinámicas de lobby y representación de intereses en Chile</h3>
+                    <p class="seminar-presenter"><strong>Andrés Dockendorff</strong> · Universidad de Chile</p>
+                </div>
+            </article>
+
+            <article class="seminar-card">
+                <div>
+                    <div class="seminar-number">Vectores #14</div>
+                    <div class="seminar-date">Jul 2025</div>
+                </div>
+                <div class="seminar-content">
+                    <h3>Evolución de actitudes democráticas: Herramientas y tendencias en América Latina</h3>
+                    <p class="seminar-presenter"><strong>Ryan Carlin</strong> · Georgia State University</p>
+                </div>
+            </article>
+
+            <article class="seminar-card">
+                <div>
+                    <div class="seminar-number">Vectores #13</div>
+                    <div class="seminar-date">Jun 2025</div>
+                </div>
+                <div class="seminar-content">
+                    <h3>Inversión y gobernabilidad: Análisis de riesgo en Chile y América Latina</h3>
+                    <p class="seminar-presenter"><strong>María Luisa Puig</strong> · Eurasia Group</p>
+                </div>
+            </article>
+
+            <article class="seminar-card">
+                <div>
+                    <div class="seminar-number">Vectores #12</div>
+                    <div class="seminar-date">Jun 2025</div>
+                </div>
+                <div class="seminar-content">
+                    <h3>Identidad local, conflictos regionales y opinión pública sobre la descentralización en Chile</h3>
+                    <p class="seminar-presenter"><strong>Rodolfo Disi</strong> · Universidad Adolfo Ibáñez</p>
+                </div>
+            </article>
+
+            <article class="seminar-card">
+                <div>
+                    <div class="seminar-number">Vectores #11</div>
+                    <div class="seminar-date">Abr 2025</div>
+                </div>
+                <div class="seminar-content">
+                    <h3>Los desafíos de la integridad electoral a 100 años del servicio electoral de Chile</h3>
+                    <p class="seminar-presenter"><strong>Pamela Figueroa</strong> · SERVEL</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <span class="footer-copy">© 2026 Laboratorio Democracia y Gobierno</span>
+            <a href="https://www.uss.cl" class="footer-uss" target="_blank">
+                <div class="footer-uss-logo"></div>
+                Universidad San Sebastián
+            </a>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/company/labdemgob" target="_blank" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/labdemgobuss" target="_blank" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://github.com/labdemgob" target="_blank" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas | LABDEMGOB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --uss-blue: #004990;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-300: #d1d5db;
+            --gray-500: #6b7280;
+            --gray-700: #374151;
+            --gray-900: #111827;
+            --font: 'Inter', -apple-system, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font); background: var(--white); color: var(--gray-900); min-height: 100vh; display: flex; flex-direction: column; }
+        nav { padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--gray-100); }
+        .logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: var(--gray-900); }
+        .logo-icon { width: 36px; height: 36px; background: var(--uss-blue); display: flex; align-items: center; justify-content: center; }
+        .logo-icon svg { width: 20px; height: 20px; fill: var(--white); }
+        .logo-text { font-size: 1rem; font-weight: 700; }
+        .nav-links { display: flex; gap: 0.25rem; list-style: none; }
+        .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--gray-700); text-decoration: none; padding: 0.5rem 0.875rem; border-radius: 6px; }
+        .nav-links a:hover { background: var(--gray-50); }
+        .nav-links a.active { background: var(--gray-100); }
+        main { flex: 1; padding: 3rem 2rem; max-width: 900px; margin: 0 auto; width: 100%; }
+        .page-header { margin-bottom: 3rem; }
+        .page-header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem; }
+        .page-header p { font-size: 1rem; color: var(--gray-500); line-height: 1.6; max-width: 600px; }
+        .studies-list { display: flex; flex-direction: column; gap: 1rem; }
+        .study-card { padding: 1.5rem; border: 1px solid var(--gray-100); border-radius: 8px; }
+        .study-card:hover { border-color: var(--gray-300); background: var(--gray-50); }
+        .study-meta { display: flex; justify-content: space-between; margin-bottom: 0.5rem; }
+        .study-number { font-size: 0.75rem; font-weight: 600; color: var(--uss-blue); }
+        .study-year { font-size: 0.8125rem; color: var(--gray-500); }
+        .study-card h3 { font-size: 1rem; font-weight: 600; line-height: 1.4; margin-bottom: 0.5rem; }
+        .study-authors { font-size: 0.875rem; color: var(--gray-500); margin-bottom: 0.75rem; }
+        .study-link { font-size: 0.8125rem; color: var(--uss-blue); text-decoration: none; font-weight: 500; }
+        .study-link:hover { text-decoration: underline; }
+        footer { padding: 1.5rem 2rem; border-top: 1px solid var(--gray-100); display: flex; justify-content: space-between; align-items: center; }
+        .footer-copy { font-size: 0.8125rem; color: var(--gray-500); }
+        @media (max-width: 768px) { nav { padding: 1rem; } .nav-links { display: none; } main { padding: 2rem 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"/></svg></div>
+            <span class="logo-text">LABDEMGOB</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="vectores.html">Vectores</a></li>
+            <li><a href="ideas.html" class="active">Ideas</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="page-header">
+            <h1>Ideas</h1>
+            <p>Serie de estudios breves en formato de policy briefs orientados a la academia, diseñadores de políticas públicas y ciudadanía.</p>
+        </div>
+        <div class="studies-list">
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #24</span><span class="study-year">2025</span></div>
+                <h3>Debut y despedida en el Congreso de Chile: Trayectorias políticas 1989-2025</h3>
+                <p class="study-authors">Fernanda Arrieta, Kenneth Bunker, Maximiliano Vargas</p>
+                <a href="https://www.researchgate.net/publication/388553889" target="_blank" class="study-link">Ver en ResearchGate →</a>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #23</span><span class="study-year">2025</span></div>
+                <h3>Experiencia legislativa en el Congreso de Chile: Antigüedad por cohorte 1990-2030</h3>
+                <p class="study-authors">Kenneth Bunker, Camila Daza, Maximiliano Vargas</p>
+                <a href="https://www.researchgate.net/publication/388553756" target="_blank" class="study-link">Ver en ResearchGate →</a>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #22</span><span class="study-year">2025</span></div>
+                <h3>Renovación y reemplazo en el Congreso de Chile: Patrones de reelección 1989-2025</h3>
+                <p class="study-authors">Kenneth Bunker, Lorena Galdames, Maximiliano Vargas</p>
+                <a href="https://www.researchgate.net/publication/388553622" target="_blank" class="study-link">Ver en ResearchGate →</a>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #21</span><span class="study-year">2025</span></div>
+                <h3>Sesgo ideológico de votantes chilenos en el exterior: La burbuja europea y el equilibrio americano</h3>
+                <p class="study-authors">Kenneth Bunker, Francisca Mejías, Maximiliano Vargas</p>
+                <a href="https://www.researchgate.net/publication/388553500" target="_blank" class="study-link">Ver en ResearchGate →</a>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #20</span><span class="study-year">2025</span></div>
+                <h3>Simulación legislativa 2025: Posibles resultados y limitaciones</h3>
+                <p class="study-authors">Kenneth Bunker, Maximiliano Vargas, Joselyn Vilches</p>
+                <a href="https://www.researchgate.net/publication/388553400" target="_blank" class="study-link">Ver en ResearchGate →</a>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #19</span><span class="study-year">2025</span></div>
+                <h3>Evolución asimétrica del sistema de partidos de Chile: Una examinación temporal a nivel de distrito</h3>
+                <p class="study-authors">Kenneth Bunker, Benjamín Valdés, Maximiliano Vargas</p>
+                <a href="https://www.researchgate.net/publication/388553300" target="_blank" class="study-link">Ver en ResearchGate →</a>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <span class="footer-copy">© 2026 Laboratorio Democracia y Gobierno · Universidad San Sebastián</span>
+    </footer>
+</body>
+</html>

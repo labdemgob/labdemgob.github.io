@@ -45,25 +45,23 @@
         .social-link { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem; color: var(--gray-700); text-decoration: none; padding: 0.5rem 1rem; border: 1px solid var(--gray-200); border-radius: 6px; }
         .social-link:hover { background: var(--gray-50); border-color: var(--gray-300); }
         .social-link svg { width: 18px; height: 18px; }
-        .btn { display: inline-block; padding: 0.75rem 1.5rem; background: var(--uss-blue); color: var(--white); border-radius: 6px; font-size: 0.9375rem; font-weight: 600; text-decoration: none; }
+        .btn { display: inline-block; padding: 0.75rem 1.5rem; background: var(--uss-blue); color: var(--white); border: none; border-radius: 6px; font-family: var(--font); font-size: 0.9375rem; font-weight: 600; text-decoration: none; cursor: pointer; }
         .btn:hover { background: var(--uss-blue-dark); }
+        .email-form { display: flex; gap: 0.75rem; margin-top: 1rem; flex-wrap: wrap; }
+        .email-input { flex: 1; min-width: 200px; padding: 0.75rem 1rem; border: 1px solid var(--gray-300); border-radius: 6px; font-family: var(--font); font-size: 0.9375rem; }
+        .email-input:focus { outline: none; border-color: var(--uss-blue); box-shadow: 0 0 0 3px rgba(0, 73, 144, 0.1); }
+        .email-input::placeholder { color: var(--gray-500); }
         footer { padding: 1.5rem 2rem; border-top: 1px solid var(--gray-100); }
         .footer-copy { font-size: 0.8125rem; color: var(--gray-500); }
         @media (max-width: 768px) {
-    nav { padding: 1rem; }
-
-    .nav-links {
-        display: flex;      /* was: none */
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-
-    main { padding: 2rem 1rem; }
-    .page-header h1 { font-size: 1.5rem; }
-    .seminar-card { grid-template-columns: 1fr; gap: 0.75rem; }
-    footer { padding: 1rem; flex-direction: column; gap: 1rem; text-align: center; }
-    .footer-left { flex-direction: column; gap: 0.75rem; }
-}
+            nav { padding: 1rem; }
+            .nav-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+            main { padding: 2rem 1rem; }
+            .page-header h1 { font-size: 1.5rem; }
+            footer { padding: 1rem; flex-direction: column; gap: 1rem; text-align: center; }
+            .email-form { flex-direction: column; }
+            .email-input { width: 100%; }
+        }
     </style>
 </head>
 <body>
@@ -77,7 +75,7 @@
             <li><a href="/ideas/">Ideas</a></li>
             <li><a href="/equipo/">Equipo</a></li>
             <li><a href="/proyectos/">Proyectos</a></li>
-            <li><a href="/contacto/">Contacto</a></li>
+            <li><a href="/contacto/" class="active">Contacto</a></li>
         </ul>
     </nav>
     <main>
@@ -138,8 +136,11 @@
 
         <div class="contact-section">
             <h2>Lista de Correo</h2>
-            <p style="font-size: 0.9375rem; color: var(--gray-500); margin-bottom: 1rem;">Recibe actualizaciones sobre nuevos estudios, seminarios y oportunidades.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6pOOzru5N6KQDFBJq2nNopa2AmbwhHM1X8INE-SwIt2skyw/viewform?usp=publish-editor" target="_blank" class="btn">Suscribirse</a>
+            <p style="font-size: 0.9375rem; color: var(--gray-500); margin-bottom: 0.5rem;">Recibe actualizaciones sobre nuevos estudios, seminarios y oportunidades.</p>
+            <form class="email-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe6pOOzru5N6KQDFBJq2nNopa2AmbwhHM1X8INE-SwIt2skyw/formResponse" method="POST" target="_blank">
+                <input type="email" name="entry.1264216490" class="email-input" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="btn">Suscribirse</button>
+            </form>
         </div>
     </main>
     <footer>

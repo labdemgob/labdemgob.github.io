@@ -42,25 +42,21 @@
         .study-year { font-size: 0.8125rem; color: var(--gray-500); }
         .study-card h3 { font-size: 1rem; font-weight: 600; line-height: 1.4; margin-bottom: 0.5rem; }
         .study-authors { font-size: 0.875rem; color: var(--gray-500); margin-bottom: 0.75rem; }
+        .study-links { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
         .study-link { font-size: 0.8125rem; color: var(--uss-blue); text-decoration: none; font-weight: 500; }
         .study-link:hover { text-decoration: underline; }
+        .study-doi { font-size: 0.75rem; color: var(--gray-500); }
+        .study-doi a { color: var(--gray-500); text-decoration: none; }
+        .study-doi a:hover { color: var(--uss-blue); text-decoration: underline; }
         footer { padding: 1.5rem 2rem; border-top: 1px solid var(--gray-100); display: flex; justify-content: space-between; align-items: center; }
         .footer-copy { font-size: 0.8125rem; color: var(--gray-500); }
         @media (max-width: 768px) {
-    nav { padding: 1rem; }
-
-    .nav-links {
-        display: flex;      /* was: none */
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-
-    main { padding: 2rem 1rem; }
-    .page-header h1 { font-size: 1.5rem; }
-    .seminar-card { grid-template-columns: 1fr; gap: 0.75rem; }
-    footer { padding: 1rem; flex-direction: column; gap: 1rem; text-align: center; }
-    .footer-left { flex-direction: column; gap: 0.75rem; }
-}
+            nav { padding: 1rem; }
+            .nav-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+            main { padding: 2rem 1rem; }
+            .page-header h1 { font-size: 1.5rem; }
+            footer { padding: 1rem; flex-direction: column; gap: 1rem; text-align: center; }
+        }
     </style>
 </head>
 <body>
@@ -71,7 +67,7 @@
         </a>
         <ul class="nav-links">
             <li><a href="/vectores/">Vectores</a></li>
-            <li><a href="/ideas/">Ideas</a></li>
+            <li><a href="/ideas/" class="active">Ideas</a></li>
             <li><a href="/equipo/">Equipo</a></li>
             <li><a href="/proyectos/">Proyectos</a></li>
             <li><a href="/contacto/">Contacto</a></li>
@@ -87,37 +83,217 @@
                 <div class="study-meta"><span class="study-number">Ideas #24</span><span class="study-year">2025</span></div>
                 <h3>Debut y despedida en el Congreso de Chile: Trayectorias políticas 1989-2025</h3>
                 <p class="study-authors">Fernanda Arrieta, Kenneth Bunker, Maximiliano Vargas</p>
-                <a href="https://www.researchgate.net/publication/388553889" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/388553889" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.12649.56166" target="_blank">10.13140/RG.2.2.12649.56166</a></span>
+                </div>
             </article>
             <article class="study-card">
                 <div class="study-meta"><span class="study-number">Ideas #23</span><span class="study-year">2025</span></div>
                 <h3>Experiencia legislativa en el Congreso de Chile: Antigüedad por cohorte 1990-2030</h3>
                 <p class="study-authors">Kenneth Bunker, Camila Daza, Maximiliano Vargas</p>
-                <a href="https://www.researchgate.net/publication/388553756" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/388553756" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.14327.28324" target="_blank">10.13140/RG.2.2.14327.28324</a></span>
+                </div>
             </article>
             <article class="study-card">
                 <div class="study-meta"><span class="study-number">Ideas #22</span><span class="study-year">2025</span></div>
                 <h3>Renovación y reemplazo en el Congreso de Chile: Patrones de reelección 1989-2025</h3>
                 <p class="study-authors">Kenneth Bunker, Lorena Galdames, Maximiliano Vargas</p>
-                <a href="https://www.researchgate.net/publication/388553622" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/388553622" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.10971.84006" target="_blank">10.13140/RG.2.2.10971.84006</a></span>
+                </div>
             </article>
             <article class="study-card">
                 <div class="study-meta"><span class="study-number">Ideas #21</span><span class="study-year">2025</span></div>
                 <h3>Sesgo ideológico de votantes chilenos en el exterior: La burbuja europea y el equilibrio americano</h3>
                 <p class="study-authors">Kenneth Bunker, Francisca Mejías, Maximiliano Vargas</p>
-                <a href="https://www.researchgate.net/publication/388553500" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/388553500" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.33621.08166" target="_blank">10.13140/RG.2.2.33621.08166</a></span>
+                </div>
             </article>
             <article class="study-card">
                 <div class="study-meta"><span class="study-number">Ideas #20</span><span class="study-year">2025</span></div>
                 <h3>Simulación legislativa 2025: Posibles resultados y limitaciones</h3>
                 <p class="study-authors">Kenneth Bunker, Maximiliano Vargas, Joselyn Vilches</p>
-                <a href="https://www.researchgate.net/publication/388553400" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/388553400" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.29777.39525" target="_blank">10.13140/RG.2.2.29777.39525</a></span>
+                </div>
             </article>
             <article class="study-card">
                 <div class="study-meta"><span class="study-number">Ideas #19</span><span class="study-year">2025</span></div>
                 <h3>Evolución asimétrica del sistema de partidos de Chile: Una examinación temporal a nivel de distrito</h3>
                 <p class="study-authors">Kenneth Bunker, Benjamín Valdés, Maximiliano Vargas</p>
-                <a href="https://www.researchgate.net/publication/388553300" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/388553300" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.10132.97922" target="_blank">10.13140/RG.2.2.10132.97922</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #18</span><span class="study-year">2024</span></div>
+                <h3>El aumento de los "party switchers" en el Congreso Nacional de Chile, 1990-2024</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/386012303" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.12303.70569" target="_blank">10.13140/RG.2.2.12303.70569</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #17</span><span class="study-year">2024</span></div>
+                <h3>Inestabilidad gubernamental: rotación ministerial, duración de gabinetes y equilibrio partidario</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/385819835" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.35819.35363" target="_blank">10.13140/RG.2.2.35819.35363</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #16</span><span class="study-year">2024</span></div>
+                <h3>Patrones de reelección en las elecciones de alcalde de 2024</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/385295729" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.29108.46727" target="_blank">10.13140/RG.2.2.29108.46727</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #15</span><span class="study-year">2024</span></div>
+                <h3>Coordinación de coaliciones y partidos en las elecciones regionales y locales de 2024</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/383999598" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.32995.98083" target="_blank">10.13140/RG.2.2.32995.98083</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #14</span><span class="study-year">2024</span></div>
+                <h3>El avance de los candidatos independientes en las elecciones locales de 2024</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/383573420" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.25734.59209" target="_blank">10.13140/RG.2.2.25734.59209</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #13</span><span class="study-year">2024</span></div>
+                <h3>Una propuesta de reforma política simple que le puede dar gobernabilidad a Chile</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/380783678" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.36783.34723" target="_blank">10.13140/RG.2.2.36783.34723</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #12</span><span class="study-year">2024</span></div>
+                <h3>¿Cómo se compara el "primer tiempo" de Gabriel Boric con presidentes anteriores?</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/379726843" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.26726.43844" target="_blank">10.13140/RG.2.2.26726.43844</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #11</span><span class="study-year">2024</span></div>
+                <h3>¿Cómo se transfirieron los votos entre los plebiscitos constitucionales de 2020, 2022 y 2023?</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/378397852" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.36397.87526" target="_blank">10.13140/RG.2.2.36397.87526</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #10</span><span class="study-year">2024</span></div>
+                <h3>¿A qué velocidad se escrutan los votos en Chile?</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/377771815" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.15771.23848" target="_blank">10.13140/RG.2.2.15771.23848</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #9</span><span class="study-year">2024</span></div>
+                <h3>¿A qué hora y con qué precisión se conocen los resultados electorales en Chile?</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/377193129" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.29193.01128" target="_blank">10.13140/RG.2.2.29193.01128</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #8</span><span class="study-year">2023</span></div>
+                <h3>¿Cuál fue el nivel de acuerdo en el pleno del consejo constitucional de 2023?</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/376627011" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.27627.11046" target="_blank">10.13140/RG.2.2.27627.11046</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #7</span><span class="study-year">2023</span></div>
+                <h3>¿Cuál fue el nivel de acuerdo en las comisiones del consejo constitucional de 2023?</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/375698255" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.30982.55365" target="_blank">10.13140/RG.2.2.30982.55365</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #6</span><span class="study-year">2023</span></div>
+                <h3>¿Cuál fue el nivel de acuerdo en el pleno de la convención constitucional de 2021-2022?</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/375134576" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.26767.76960" target="_blank">10.13140/RG.2.2.26767.76960</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #5</span><span class="study-year">2023</span></div>
+                <h3>¿Cuál fue el nivel de acuerdo en las comisiones de la convención constitucional de 2021-2022?</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/374813469" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.13345.99688" target="_blank">10.13140/RG.2.2.13345.99688</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #4</span><span class="study-year">2023</span></div>
+                <h3>¿Cuáles son los efectos del sistema electoral propuesto por el Consejo Constitucional de 2023?</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/374474130" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.36681.11361" target="_blank">10.13140/RG.2.2.36681.11361</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #3</span><span class="study-year">2023</span></div>
+                <h3>¿Cuáles son los determinantes de la fragmentación partidaria?</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/374046172" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.30461.74722" target="_blank">10.13140/RG.2.2.30461.74722</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #2</span><span class="study-year">2023</span></div>
+                <h3>¿Chile tiene demasiados o muy pocos legisladores?</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/373976550" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.23750.86087" target="_blank">10.13140/RG.2.2.23750.86087</a></span>
+                </div>
+            </article>
+            <article class="study-card">
+                <div class="study-meta"><span class="study-number">Ideas #1</span><span class="study-year">2023</span></div>
+                <h3>¿Ha aumentado la fragmentación en el sistema de partidos a través de los años?</h3>
+                <p class="study-authors">Kenneth Bunker</p>
+                <div class="study-links">
+                    <a href="https://www.researchgate.net/publication/373976533" target="_blank" class="study-link">Ver en ResearchGate →</a>
+                    <span class="study-doi">DOI: <a href="https://doi.org/10.13140/RG.2.2.37376.65337" target="_blank">10.13140/RG.2.2.37376.65337</a></span>
+                </div>
             </article>
         </div>
     </main>

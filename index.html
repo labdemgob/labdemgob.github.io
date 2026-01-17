@@ -235,24 +235,21 @@
             width: 20px;
             height: 20px;
         }
+@media (max-width: 768px) {
+    nav { padding: 1rem; }
 
-        @media (max-width: 768px) {
-            nav { padding: 1rem; }
-            .nav-links { display: none; }
-            main { padding: 2rem 1rem; }
-            h1 { font-size: 1.875rem; }
-            .stats { gap: 2rem; }
-            footer {
-                padding: 1rem;
-                flex-direction: column;
-                gap: 1rem;
-                text-align: center;
-            }
-            .footer-left {
-                flex-direction: column;
-                gap: 0.75rem;
-            }
-        }
+    .nav-links {
+        display: flex;      /* was: none */
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    main { padding: 2rem 1rem; }
+    .page-header h1 { font-size: 1.5rem; }
+    .seminar-card { grid-template-columns: 1fr; gap: 0.75rem; }
+    footer { padding: 1rem; flex-direction: column; gap: 1rem; text-align: center; }
+    .footer-left { flex-direction: column; gap: 0.75rem; }
+}
     </style>
 </head>
 <body>

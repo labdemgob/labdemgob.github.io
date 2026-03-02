@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHPPDNKH57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XHPPDNKH57');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About · CLPD · Chilean Political Landscape Dataset</title>
+    <meta name="description" content="Learn about the Chilean Political Landscape Dataset (CPLD): comprehensive district-level electoral data, party system indicators, ENP measures, polarization indices, and disproportionality calculations for Chilean democracy research.">
+    <meta name="keywords" content="Chile electoral data methodology, political science research data, ENP calculation, effective number of parties, Laakso Taagepera, Gallagher index, party system research, Chilean democracy data, comparative politics methods, electoral system analysis, district magnitude, seat product model">
+    <meta name="author" content="Kenneth Bunker">
+    
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --blue: #0066CC;
+            --blue-dark: #004080;
+            --black: #000000;
+            --grey-dark: #1a1a1a;
+            --grey-mid: #666666;
+            --grey-light: #e0e0e0;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--white);
+            color: var(--black);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding-top: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem 2rem 3rem;
+            position: relative;
+        }
+
+        .top-line {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            right: 2rem;
+            height: 1px;
+            background: var(--grey-light);
+        }
+
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--grey-light);
+            margin-top: 2rem;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            transition: opacity 0.2s ease;
+        }
+
+        .logo-container:hover {
+            opacity: 0.7;
+        }
+
+        .logo-image {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+        }
+
+        .logo-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-tab {
+            font-size: 1rem;
+            color: var(--grey-mid);
+            text-decoration: none;
+            font-weight: 400;
+            padding-bottom: 0.25rem;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .nav-tab:hover {
+            color: var(--blue);
+        }
+
+        .nav-tab.active {
+            color: var(--black);
+            border-bottom-color: var(--blue);
+            font-weight: 500;
+        }
+
+        .logo {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: var(--black);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--grey-dark);
+            font-weight: 400;
+            letter-spacing: -0.01em;
+        }
+
+        .page-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--grey-mid);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--black);
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        .content {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--grey-dark);
+            font-weight: 300;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .content strong {
+            font-weight: 500;
+            color: var(--black);
+        }
+
+        .content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: #f5f5f5;
+            border-left: 3px solid var(--blue);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-size: 1rem;
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--grey-light);
+            color: var(--grey-mid);
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: var(--grey-mid);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        footer a:hover {
+            color: var(--blue);
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+
+            .logo-image {
+                width: 60px;
+                height: 60px;
+            }
+
+            .tagline {
+                font-size: 0.95rem;
+            }
+
+            .page-title {
+                font-size: 0.8rem;
+            }
+            }
+
+            .page-title {
+                font-size: 2.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-line"></div>
+        <header>
+            <a href="index.html" style="text-decoration: none;">
+                <div class="logo-container">
+                    <img src="logo.svg" alt="CPLD Logo" class="logo-image">
+                    <div class="logo-text">
+                        <h1 class="logo">Chilean Political Landscape Dataset</h1>
+                        <p class="tagline">District-level electoral and party system indicators</p>
+                    </div>
+                </div>
+            </a>
+            <nav class="nav-tabs">
+                <a href="index.html" class="nav-tab">Home</a>
+                <a href="cpld-about.html" class="nav-tab active">About</a>
+                <a href="cpld-contact.html" class="nav-tab">Contact</a>
+                <span style="margin-left: auto; display: flex; gap: 0.5rem; align-items: center; font-size: 0.85rem;">
+                    <span style="color: var(--black); font-weight: 500;">English</span>
+                    <span style="color: var(--grey-light);">|</span>
+                    <a href="cpld-about-es.html" style="color: var(--grey-mid); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--blue)'" onmouseout="this.style.color='var(--grey-mid)'">Español</a>
+                </span>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="page-title">About CPLD</h1>
+
+            <div class="content">
+                <p>The <strong>Chilean Political Landscape Dataset (CPLD)</strong> is the first comprehensive longitudinal database of its kind, consolidating district-level electoral outcomes across more than three decades of Chilean democracy, from 1989 to 2024. <strong>Version 1.0</strong> contains 5,301 observations across 42 variables. The dataset is updated regularly to incorporate new electoral results and refined indicators, with future versions expanding coverage as new elections occur.</p>
+
+                <h2 class="section-title">The Data</h2>
+                
+                <p>This dataset addresses a critical gap in Chilean political research. Much of the existing literature relied on national aggregates that obscured underlying dynamics and variations that district-level data can reveal. The CPLD provides standardized, granular data that enables more nuanced analysis of party system evolution, institutional reforms, and electoral dynamics at the subnational level.</p>
+
+                <p>By offering consistent, comparable measures across varying numbers of districts (depending on election type: 345 for mayors, 28 for deputies since 2017, 60 for deputies 1989-2013) and 35 years, the CPLD allows researchers to detect patterns invisible in aggregate statistics: the early onset of party system fragmentation, ideological drift at the district level, and asymmetric changes across the political spectrum. This level of detail is essential for understanding how Chile's once-stable democracy evolved through periods of institutional reform and political crisis.</p>
+
+                <h2 class="section-title">Dataset Scope</h2>
+
+                <p>The CPLD v1.0 includes <strong>5,301 observations across 42 variables</strong> covering:</p>
+
+                <ul>
+                    <li><strong>Legislative elections:</strong> Chamber of Deputies (Diputados) and Senate (Senadores)</li>
+                    <li><strong>Regional elections:</strong> Governors (Gobernadores) and regional councils (Cores)</li>
+                    <li><strong>Municipal elections:</strong> Mayors (Alcaldes) and municipal councils (Concejales)</li>
+                    <li><strong>Constitutional Conventions:</strong> Constituyentes (2022 and 2023)</li>
+                </ul>
+
+                <p>The number of districts varies by election type and period: 345 districts for mayoral elections, 28 districts for deputies since 2017, 60 districts for deputies 1989-2013, among other configurations reflecting Chile's evolving electoral geography.</p>
+
+                <div class="highlight-box">
+                    <strong>Current version:</strong> v1.0 · <strong>Size:</strong> 1.8MB · <strong>Updated:</strong> November 2025 · <strong>Future versions:</strong> Will expand as new elections occur
+                </div>
+
+                <h2 class="section-title">Key Variables</h2>
+
+                <p>The dataset includes 42 standardized variables organized into several categories:</p>
+
+                <p><strong>Electoral Structure:</strong></p>
+                <ul>
+                    <li>Election type, electoral system, district characteristics</li>
+                    <li>District magnitude (dm), assembly size (as), seat product (sp)</li>
+                    <li>Number of lists, candidates, and independent candidates</li>
+                </ul>
+
+                <p><strong>Party System Indicators:</strong></p>
+                <ul>
+                    <li>Effective number of parties by votes (enpv) and seats (enps)</li>
+                    <li>District-level and national-level ENP measures</li>
+                    <li>Party system nationalization indices (Mainwaring-Jones, Chhibber-Kollman)</li>
+                </ul>
+
+                <p><strong>Disproportionality Indices:</strong></p>
+                <ul>
+                    <li>Rae, Loosemore-Hanby, Lijphart I & II</li>
+                    <li>Gallagher, Cox-Shugart indices</li>
+                </ul>
+
+                <p><strong>Ideological Measures:</strong></p>
+                <ul>
+                    <li>Polarization indices (Dalton) at district and national levels</li>
+                    <li>Average ideological position (av_id)</li>
+                    <li>Minimum and maximum list vote shares</li>
+                </ul>
+
+                <p><strong>Social & Demographic:</strong></p>
+                <ul>
+                    <li>Ethnic fractionalization (ethnic_frac)</li>
+                    <li>Indigenous population percentages (ethnic_number, ethnic_presence)</li>
+                    <li>Valid votes as proxy for district size</li>
+                    <li>Number of subunits (comunas) within districts</li>
+                </ul>
+
+                <h2 class="section-title">Research Applications</h2>
+
+                <p>The CPLD enables researchers to:</p>
+
+                <ul>
+                    <li>Examine the timing and patterns of party system fragmentation</li>
+                    <li>Analyze ideological restructuring at the district level</li>
+                    <li>Assess the impact of electoral reforms (particularly the 2015 reform)</li>
+                    <li>Study asymmetric fragmentation across the political spectrum</li>
+                    <li>Investigate the relationship between social diversity and electoral outcomes</li>
+                    <li>Conduct hierarchical modeling and spatial analysis</li>
+                    <li>Test theories of electoral systems and party competition</li>
+                </ul>
+
+                <h2 class="section-title">Key Findings</h2>
+
+                <p>Research using the CPLD has revealed important insights that challenge conventional wisdom:</p>
+
+                <ul>
+                    <li><strong>Fragmentation began earlier than thought:</strong> District-level evidence shows party system fragmentation was underway by 2009, well before the 2015 electoral reform</li>
+                    <li><strong>Ideological drift:</strong> The party system has experienced a gradual leftward shift at the district level, not captured by national aggregates</li>
+                    <li><strong>Asymmetric fragmentation:</strong> Fragmentation has been disproportionately concentrated on the left, with more but smaller parties compared to the right</li>
+                </ul>
+
+                <h2 class="section-title">Methodology</h2>
+
+                <p>The dataset was constructed using R programming language (version 4.2.3) with key packages including codebookr, dplyr, tidyr, readxl, and officer. All electoral results were systematically collected from official sources (SERVEL) and standardized for cross-temporal comparison.</p>
+
+                <p>All measures follow established comparative politics standards with proper attribution:</p>
+                <ul>
+                    <li><strong>ENP calculations:</strong> Laakso & Taagepera (1979)</li>
+                    <li><strong>Disproportionality indices:</strong> Rae (1967), Loosemore & Hanby (1971), Gallagher (1991), Cox & Shugart (1991), Lijphart (1990, 1994)</li>
+                    <li><strong>Polarization:</strong> Dalton (2008)</li>
+                    <li><strong>Nationalization:</strong> Jones & Mainwaring (2003), Chhibber & Kollman (2004)</li>
+                    <li><strong>Ideological positions:</strong> Bunker (2025)</li>
+                    <li><strong>Ethnic fractionalization:</strong> Alesina et al. (2003), Chilean Census data (2002, 2017)</li>
+                </ul>
+
+                <p>The dataset structure allows for hierarchical modeling, spatial analysis, and time-series cross-sectional analysis. Missing values (NA) reflect genuine data unavailability in historical records and are documented in the codebook.</p>
+
+                <h2 class="section-title">Citation</h2>
+
+                <p>When using the CPLD in your research, please cite both the dataset and the associated publication:</p>
+
+                <div class="highlight-box">
+                    <strong>Dataset:</strong><br>
+                    Bunker, Kenneth. 2025. "Chilean Political Landscape Dataset (CPLD)". Harvard Dataverse, V1.<br>
+                    DOI: <a href="https://doi.org/10.7910/DVN/NGRY3R" style="color: var(--blue);" target="_blank">10.7910/DVN/NGRY3R</a><br><br>
+
+                    <strong>Publication:</strong><br>
+                    Bunker, Kenneth. 2025. "Decades of democracy: insights into the political landscape of Chile." <em>Humanities and Social Sciences Communications</em> 12, Article 1911.<br>
+                    DOI: <a href="https://doi.org/10.1057/s41599-025-06180-1" style="color: var(--blue);" target="_blank">10.1057/s41599-025-06180-1</a>
+                </div>
+
+        </main>
+
+        <footer>
+            <p>Chilean Political Landscape Dataset</p>
+            <p style="margin-top: 0.5rem;">Universidad San Sebastián · Laboratorio Democracia y Gobierno</p>
+            <p style="margin-top: 1.5rem; font-size: 0.85rem;">© 2026 CPLD · Licenciado bajo CC BY-NC-ND 4.0</p>
+        </footer>
+
+            

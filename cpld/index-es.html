@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHPPDNKH57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XHPPDNKH57');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLPD · Chilean Political Landscape Dataset</title>
+    <meta name="description" content="Base de datos longitudinal de resultados electorales a nivel distrital que cubre la democracia chilena 1989-2024. Fragmentación del sistema de partidos, orientación ideológica, medidas ENP y datos de cambio institucional. Lista para análisis en R y Python.">
+    <meta name="keywords" content="datos políticos Chile, base de datos elecciones Chile, fragmentación sistema de partidos, competencia electoral Chile, datos ciencia política, datos política comparada, elecciones América Latina, medidas ENP, datos nivel distrital, dataset R, datos Python pandas, panorama político Chile, datos democracia, datos políticos longitudinales, Harvard Dataverse, sistemas electorales, índices desproporcionalidad, índice Gallagher, nacionalización partidos, polarización ideológica">
+    <meta name="author" content="Kenneth Bunker">
+    <link rel="canonical" href="https://yourdomain.com/">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kennethbunker.github.io/cpld/">
+    <meta property="og:title" content="Chilean Political Landscape Dataset (CPLD) · 1989-2024">
+    <meta property="og:description" content="Datos electorales integrales a nivel distrital que cubren 35 años de democracia chilena. 5.301 observaciones en 42 variables. Dataset de acceso abierto para investigación en ciencia política.">
+    <meta property="og:image" content="https://kennethbunker.github.io/cpld/logo.png">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <meta property="og:image:alt" content="CPLD Logo">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Chilean Political Landscape Dataset (CPLD)">
+    <meta name="twitter:description" content="Datos electorales longitudinales para Chile 1989-2024. Fragmentación partidaria, ENP, índices de polarización. Acceso abierto para investigadores.">
+    <meta name="twitter:image" content="https://kennethbunker.github.io/cpld/logo.png">
+    
+    <!-- Schema.org Dataset -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "Chilean Political Landscape Dataset (CPLD)",
+      "description": "District-level electoral outcomes, party system indicators, and institutional design data across multiple decades of Chilean democracy. Includes effective number of parties (ENP), polarization indices (Dalton), disproportionality measures (Rae, Gallagher, Loosemore-Hanby), party nationalization indices (Mainwaring-Jones, Chhibber-Kollman), and demographic variables including ethnic fractionalization.",
+      "url": "https://doi.org/10.7910/DVN/NGRY3R",
+      "identifier": "https://doi.org/10.7910/DVN/NGRY3R",
+      "keywords": ["Chile", "elections", "political science", "party systems", "electoral data", "democracy", "Latin America", "comparative politics", "district-level data", "ENP", "fragmentation", "polarization", "disproportionality", "electoral reform"],
+      "creator": {
+        "@type": "Person",
+        "name": "Kenneth Bunker",
+        "affiliation": [
+          {"@type": "Organization", "name": "Universidad San Sebastián"},
+          {"@type": "Organization", "name": "University of Verona"}
+        ]
+      },
+      "datePublished": "2025-11",
+      "version": "1.0",
+      "distribution": {
+        "@type": "DataDownload",
+        "encodingFormat": "text/csv",
+        "contentUrl": "https://doi.org/10.7910/DVN/NGRY3R"
+      },
+      "temporalCoverage": "1989/2024",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Chile"
+      },
+      "variableMeasured": ["effective number of parties", "party system fragmentation", "ideological polarization", "electoral disproportionality", "district magnitude", "ethnic fractionalization", "party nationalization"]
+    }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --blue: #0066CC;
+            --blue-dark: #004080;
+            --black: #000000;
+            --grey-dark: #1a1a1a;
+            --grey-mid: #666666;
+            --grey-light: #e0e0e0;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--white);
+            color: var(--black);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding-top: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem 2rem 3rem;
+            position: relative;
+        }
+
+        .top-line {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            right: 2rem;
+            height: 1px;
+            background: var(--grey-light);
+        }
+
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--grey-light);
+            margin-top: 2rem;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .logo-image {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+        }
+
+        .logo-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-tab {
+            font-size: 1rem;
+            color: var(--grey-mid);
+            text-decoration: none;
+            font-weight: 400;
+            padding-bottom: 0.25rem;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .nav-tab:hover {
+            color: var(--blue);
+        }
+
+        .nav-tab.active {
+            color: var(--black);
+            border-bottom-color: var(--blue);
+            font-weight: 500;
+        }
+
+        .logo {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: var(--black);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--grey-dark);
+            font-weight: 400;
+            letter-spacing: -0.01em;
+        }
+
+        .page-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            color: var(--grey-mid);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.9rem;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--grey-dark);
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+
+        .description strong {
+            font-weight: 500;
+            color: var(--black);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+            padding: 2rem 0;
+            border-top: 1px solid var(--grey-light);
+            border-bottom: 1px solid var(--grey-light);
+        }
+
+.mailing-section {
+    margin: 2rem 0 3rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--grey-light);
+    border-bottom: 1px solid var(--grey-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.mailing-section h2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--black);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+}
+
+.mailing-section p {
+    font-size: 0.85rem;
+    color: var(--grey-mid);
+    margin: 0;
+    flex: 1;
+}
+
+.mailing-section form {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 340px;
+    flex-shrink: 0;
+}
+
+.mailing-section input[type="email"] {
+    flex: 1;
+    padding: 0.4rem 0.55rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.8rem;
+    border: 1px solid var(--grey-light);
+    border-radius: 3px;
+    outline: none;
+}
+
+.mailing-section input[type="email"]:focus {
+    border-color: var(--blue);
+}
+
+.mailing-btn {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 3px;
+}
+
+        .stat {
+            text-align: left;
+        }
+
+        .stat-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: var(--blue);
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--grey-mid);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 400;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--grey-mid);
+            margin-bottom: 1.5rem;
+        }
+
+        .link-list {
+            list-style: none;
+        }
+
+        .link-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--grey-light);
+        }
+
+        .link-item:last-child {
+            border-bottom: none;
+        }
+
+        .link-primary {
+            font-size: 1.1rem;
+            color: var(--blue);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            transition: all 0.2s ease;
+        }
+
+        .link-primary:hover {
+            color: var(--blue-dark);
+            transform: translateX(4px);
+        }
+
+        .link-primary:hover::before {
+            content: 'â†’';
+            position: absolute;
+            left: -1.5rem;
+            opacity: 1;
+        }
+
+        .link-meta {
+            font-size: 0.9rem;
+            color: var(--grey-mid);
+            margin-top: 0.25rem;
+            font-weight: 300;
+        }
+
+        .code-block {
+            background: var(--grey-dark);
+            color: var(--white);
+            padding: 1.5rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+
+        .code-block code {
+            color: var(--white);
+        }
+
+        .code-comment {
+            color: var(--grey-mid);
+        }
+
+        .code-keyword {
+            color: #64B5F6;
+        }
+
+        .code-string {
+            color: #81C784;
+        }
+
+        .citation-box {
+            background: #f5f5f5;
+            border-left: 3px solid var(--blue);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--grey-light);
+            color: var(--grey-mid);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--grey-mid);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        footer a:hover {
+            color: var(--blue);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--blue);
+            color: var(--white);
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: 3px;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 1.5rem;
+            }
+
+            .code-block {
+                font-size: 0.75rem;
+                padding: 1rem;
+            }
+
+            .mailing-section {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+            }
+
+            .mailing-section form {
+                width: 100%;
+                max-width: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-line"></div>
+        <header>
+            <div class="logo-container">
+                <img src="logo.svg" alt="CPLD Logo" class="logo-image">
+                <div class="logo-text">
+                    <h1 class="logo">Chilean Political Landscape Dataset</h1>
+                    <p class="tagline">Indicadores electorales y de sistema de partidos a nivel distrital</p>
+                </div>
+            </div>
+            <nav class="nav-tabs">
+                <a href="index-es.html" class="nav-tab active">Inicio</a>
+                <a href="cpld-about-es.html" class="nav-tab">Acerca de</a>
+                <a href="cpld-contact-es.html" class="nav-tab">Contacto</a>
+                <span style="margin-left: auto; display: flex; gap: 0.5rem; align-items: center; font-size: 0.85rem;">
+                    <a href="index.html" style="color: var(--grey-mid); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--blue)'" onmouseout="this.style.color='var(--grey-mid)'">English</a>
+                    <span style="color: var(--grey-light);">|</span>
+                    <span style="color: var(--black); font-weight: 500;">Español</span>
+                </span>
+            </nav>
+        </header>
+
+        <h1 class="page-title">Descripción General</h1>
+
+        <div class="description">
+            <p>El Chilean Political Landscape Dataset (CLPD) es una base de datos longitudinal de resultados electorales a nivel distrital que abarca cuatro décadas de democracia chilena. Contiene medidas estandarizadas de fragmentación del sistema de partidos, orientación ideológica y cambio institucional en contiendas legislativas, regionales y municipales. La versión 1.0 contiene 5.301 observaciones y se expandirá a medida que nuevos datos electorales estén disponibles.</p>
+            <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--grey-mid);">Formatos de datos optimizados para flujos de trabajo en Python (pandas) y R (tidyverse).</p>
+        </div>
+
+        <div class="mailing-section">
+    <h2>Suscríbete a noticias</h2>
+    <p>Nuevas versiones, publicaciones y seminarios.</p>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfrXMlFNZjMrfNgybhZOzF0jwHnFxKxWOrz8E6McFQjmVj8hA/formResponse" 
+          method="POST" target="_blank">
+        <input type="email" name="entry.4236083217395177297" placeholder="Tu e-mail" required>
+        <button type="submit" class="mailing-btn">Subscribe</button>
+    </form>
+</div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">5.300+</div>
+                <div class="stat-label">Observaciones</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">35</div>
+                <div class="stat-label">Años</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">42</div>
+                <div class="stat-label">Variables</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">1,8MB</div>
+                <div class="stat-label">Tamaño</div>
+            </div>
+        </div>
+
+        <section class="section">
+            <h2 class="section-title">Acceso a los Datos</h2>
+            <ul class="link-list">
+                <li class="link-item">
+                    <a href="https://doi.org/10.7910/DVN/NGRY3R" class="link-primary" target="_blank">Base de Datos</a>
+                    <div class="link-meta">Harvard Dataverse · DOI: 10.7910/DVN/NGRY3R</div>
+                </li>
+                <li class="link-item">
+                    <a href="https://doi.org/10.7910/DVN/NGRY3R" class="link-primary" target="_blank">Libro de Códigos</a>
+                    <div class="link-meta">Definiciones de variables y protocolos de medición</div>
+                </li>
+                <li class="link-item">
+                    <a href="https://doi.org/10.7910/DVN/NGRY3R" class="link-primary" target="_blank">Archivos de Replicación</a>
+                    <div class="link-meta">Scripts de R y materiales suplementarios</div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Ejemplos de Código</h2>
+            
+            <div class="code-block">
+<span class="code-comment"># Cargar La base de datos CPLD</span>
+<span class="code-keyword">library</span>(tidyverse)
+
+cpld <span class="code-keyword">&lt;-</span> <span class="code-keyword">read_csv</span>(<span class="code-string">"cpld_1989_2024.csv"</span>)
+
+<span class="code-comment"># Explorar variables clave</span>
+<span class="code-keyword">glimpse</span>(cpld)
+<span class="code-comment"># 5.301 × 42 variables incluyendo:</span>
+<span class="code-comment"># enpv, enps, polarization_district, av_id, ethnic_frac</span>
+            </div>
+
+            <div class="code-block">
+<span class="code-comment"># Calcular nóºmero efectivo de partidos a lo largo del tiempo</span>
+cpld <span class="code-keyword">%&gt;%</span>
+  <span class="code-keyword">filter</span>(type == <span class="code-string">"Diputados"</span>) <span class="code-keyword">%&gt;%</span>
+  <span class="code-keyword">group_by</span>(election) <span class="code-keyword">%&gt;%</span>
+  <span class="code-keyword">summarise</span>(
+    mean_enpv = <span class="code-keyword">mean</span>(enpv, na.rm = TRUE),
+    mean_enps = <span class="code-keyword">mean</span>(enps, na.rm = TRUE)
+  )
+            </div>
+
+            <div class="code-block">
+<span class="code-comment"># Analizar tendencias de fragmentación pre/post reforma 2015</span>
+cpld <span class="code-keyword">%&gt;%</span>
+  <span class="code-keyword">filter</span>(type == <span class="code-string">"Diputados"</span>) <span class="code-keyword">%&gt;%</span>
+  <span class="code-keyword">mutate</span>(period = <span class="code-keyword">if_else</span>(election >= 2017, 
+                            <span class="code-string">"Post-Reforma"</span>, 
+                            <span class="code-string">"Pre-Reforma"</span>)) <span class="code-keyword">%&gt;%</span>
+  <span class="code-keyword">ggplot</span>(<span class="code-keyword">aes</span>(x = election, y = enpv, color = period)) +
+  <span class="code-keyword">geom_point</span>(alpha = 0.4) +
+  <span class="code-keyword">geom_smooth</span>(method = <span class="code-string">"loess"</span>, se = TRUE) +
+  <span class="code-keyword">labs</span>(title = <span class="code-string">"Fragmentación del Sistema de Partidos"</span>)
+            </div>
+
+            <div class="code-block">
+<span class="code-comment"># Examinar polarización ideológica por distrito</span>
+cpld <span class="code-keyword">%&gt;%</span>
+  <span class="code-keyword">filter</span>(type == <span class="code-string">"Diputados"</span>, election >= 2009) <span class="code-keyword">%&gt;%</span>
+  <span class="code-keyword">ggplot</span>(<span class="code-keyword">aes</span>(x = <span class="code-keyword">factor</span>(election), 
+             y = polarization_district)) +
+  <span class="code-keyword">geom_boxplot</span>(fill = <span class="code-string">"steelblue"</span>, alpha = 0.7) +
+  <span class="code-keyword">labs</span>(x = <span class="code-string">"Año Electoral"</span>, 
+       y = <span class="code-string">"Polarización Ideológica (Dalton)"</span>)
+            </div>
+
+            <div class="code-block">
+<span class="code-comment"># Análisis de desproporcionalidad usando índice Gallagher</span>
+cpld <span class="code-keyword">%&gt;%</span>
+  <span class="code-keyword">filter</span>(type == <span class="code-string">"Diputados"</span>) <span class="code-keyword">%&gt;%</span>
+  <span class="code-keyword">group_by</span>(election) <span class="code-keyword">%&gt;%</span>
+  <span class="code-keyword">summarise</span>(
+    mean_gallagher = <span class="code-keyword">mean</span>(Gallagher, na.rm = TRUE),
+    mean_dm = <span class="code-keyword">mean</span>(dm, na.rm = TRUE)
+  ) <span class="code-keyword">%&gt;%</span>
+  <span class="code-keyword">ggplot</span>(<span class="code-keyword">aes</span>(x = mean_dm, y = mean_gallagher)) +
+  <span class="code-keyword">geom_point</span>(size = 3) +
+  <span class="code-keyword">geom_text</span>(<span class="code-keyword">aes</span>(label = election), vjust = -0.5)
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Citación</h2>
+            
+            <p style="color: var(--grey-mid); font-size: 0.95rem; margin-bottom: 1.5rem;">Al utilizar el CPLD en su investigación, por favor cite tanto la base de datos como la publicación asociada.</p>
+            
+            <div class="citation-box">
+<strong>Base de datos:</strong><br>
+Bunker, Kenneth. 2025. "Chilean Political Landscape Dataset (CPLD)". Harvard Dataverse, V1.<br>
+doi: <a href="https://doi.org/10.7910/DVN/NGRY3R" style="color: var(--blue);" target="_blank">10.7910/DVN/NGRY3R</a><br><br>
+
+<strong>Publicación:</strong><br>
+Bunker, Kenneth. 2025. "Decades of democracy: insights into the political landscape of Chile." <em>Humanities and Social Sciences Communications</em> 12, Article 1911.<br>
+doi: <a href="https://doi.org/10.1057/s41599-025-06180-1" style="color: var(--blue);" target="_blank">10.1057/s41599-025-06180-1</a>
+            </div>
+
+            <div class="code-block">
+<span class="code-comment">% BibTeX - Dataset</span>
+@data{bunker2025cpld,
+  author={Bunker, Kenneth},
+  title={{Chilean Political Landscape Dataset (CPLD)}},
+  year={2025},
+  publisher={Harvard Dataverse},
+  version={V1},
+  doi={10.7910/DVN/NGRY3R},
+  url={https://doi.org/10.7910/DVN/NGRY3R}
+}
+
+<span class="code-comment">% BibTeX - Publication</span>
+@article{bunker2025decades,
+  title={Decades of democracy: insights into the political landscape of Chile},
+  author={Bunker, Kenneth},
+  journal={Humanities and Social Sciences Communications},
+  volume={12},
+  number={1911},
+  year={2025},
+  publisher={Palgrave},
+  doi={10.1057/s41599-025-06180-1}
+}
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Publicaciones Relacionadas</h2>
+            <ul class="link-list">
+                <li class="link-item">
+                    <a href="https://doi.org/10.1057/s41599-025-06180-1" class="link-primary" target="_blank">Decades of Democracy </a>
+                    <div class="link-meta">Humanities and Social Sciences Communications · doi: 10.1057/s41599-025-06180-1</div>
+                </li>
+                <li class="link-item">
+                    <a href="https://doi.org/10.1007/978-3-031-96463-3" class="link-primary" target="_blank">Chile's Transformation Amidst Crisis </a>
+                    <div class="link-meta">Palgrave Macmillan · doi: 10.1007/978-3-031-96463-3</div>
+                </li>
+                <li class="link-item">
+                    <a href="https://doi.org/10.1089/elj.2024.0064" class="link-primary" target="_blank">Challenging Conventional Wisdom in New Democracies </a>
+                    <div class="link-meta">Election Law Journal · doi: 10.1089/elj.2024.0064</div>
+                </li>
+                <li class="link-item">
+                    <a href="https://doi.org/10.1080/13569317.2025.2452179" class="link-primary" target="_blank">Mapping Party Systems Over Time </a>
+                    <div class="link-meta">Journal of Political Ideologies · doi: 10.1080/13569317.2025.2452179</div>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="section" style="border-top: 1px solid var(--grey-light); padding-top: 2rem; margin-top: 3rem;">
+            <h2 class="section-title">Palabras Clave y Cobertura del la Base de Datos</h2>
+            <div style="color: var(--grey-mid); font-size: 1rem; line-height: 1.8;">
+                <p><strong>Sistemas Electorales y Medidas:</strong> Número Efectivo de Partidos (NEP), NEPv (votos), NEPs (escaños), índice Laakso-Taagepera, fragmentación del sistema de partidos, magnitud de distrito, tamaño de asamblea, modelo de producto de escaños, representación proporcional, análisis de reforma electoral</p>
+                
+                <p style="margin-top: 1rem;"><strong>Índices de Desproporcionalidad:</strong> Índice Gallagher, índice Loosemore-Hanby, índice Rae, índices Lijphart, medidas Cox-Shugart, desproporcionalidad electoral, relación escaños-votos, equidad representacional</p>
+                
+                <p style="margin-top: 1rem;"><strong>Análisis del Sistema de Partidos:</strong> Nacionalización de partidos (Mainwaring-Jones, Chhibber-Kollman), polarización ideológica (índice Dalton), competencia partidaria, dinámica de coaliciones, sistemas multipartidistas, evolución del sistema de partidos</p>
+                
+                <p style="margin-top: 1rem;"><strong>Geográfico y Demográfico:</strong> Datos a nivel distrital, elecciones municipales, consejos regionales, fraccionamiento étnico (índice Alesina), poblaciones indígenas, datos censo chileno, análisis espacial, política subnacional</p>
+                
+                <p style="margin-top: 1rem;"><strong>Especificaciones Técnicas:</strong> Programación R (tidyverse, dplyr), compatible con Python pandas, formato CSV, análisis de datos longitudinales, datos de series temporales transversales, modelado jerárquico, metodología de política comparada</p>
+                
+                <p style="margin-top: 1rem;"><strong>Tipos de Elecciones Cubiertas:</strong> Cámara de Diputados, Senado, Elecciones alcaldes, Concejos municipales (Concejales), Gobernadores regionales, Consejos regionales (Cores), Convenciones constitucionales (Constituyentes)</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Chilean Political Landscape Dataset</p>
+            <p style="margin-top: 0.5rem;">Universidad San Sebastián · Laboratorio Democracia y Gobierno</p>
+            <p style="margin-top: 1.5rem; font-size: 0.85rem;">© 2026 CPLD · Licenciado bajo CC BY-NC-ND 4.0</p>
+        </footer>
+
+    </div>
+</body>
+</html>

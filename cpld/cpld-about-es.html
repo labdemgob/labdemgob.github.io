@@ -191,6 +191,27 @@
             font-size: 1rem;
         }
 
+        .citation-box {
+            background-color: var(--cream);
+            background-image:
+                linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+            background-size: 1.6em 1.6em;
+            color: var(--grey-dark);
+            border: 1px solid var(--grey-light);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+
+        .citation-box strong {
+            color: var(--black);
+            font-weight: 600;
+        }
+
         footer {
             margin-top: 5rem;
             padding-top: 2rem;
@@ -371,7 +392,7 @@
 
                 <p>Al utilizar el CPLD en su investigación, por favor cite tanto la base de datos como la publicación asociada:</p>
 
-                <div class="highlight-box">
+                <div class="citation-box">
                     <strong>Base de Datos:</strong><br>
                     Bunker, Kenneth. 2025. "Chilean Political Landscape Dataset (CPLD)". Harvard Dataverse, V2.<br>
                     DOI: <a href="https://doi.org/10.7910/DVN/NGRY3R" style="color: var(--blue);" target="_blank">10.7910/DVN/NGRY3R</a><br><br>

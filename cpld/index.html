@@ -221,18 +221,20 @@
         }
 
 .mailing-section {
-    margin: 2rem 0 3rem;
-    padding: 1rem 0;
-    border-top: 1px solid var(--grey-light);
-    border-bottom: 1px solid var(--grey-light);
+    margin: 2.5rem 0 3.5rem;
+    padding: 1.75rem;
+    background: var(--cream);
+    border: 1px solid var(--grey-light);
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 1.25rem 2rem;
+    flex-wrap: wrap;
 }
 
 .mailing-section h2 {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--black);
     margin: 0;
@@ -242,27 +244,29 @@
 }
 
 .mailing-section p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: var(--grey-mid);
     margin: 0;
     flex: 1;
+    min-width: 180px;
 }
 
 .mailing-section form {
     display: flex;
-    gap: 0.5rem;
-    max-width: 340px;
-    flex-shrink: 0;
+    gap: 0.6rem;
+    max-width: 440px;
+    flex: 1 1 320px;
 }
 
 .mailing-section input[type="email"] {
     flex: 1;
-    padding: 0.4rem 0.55rem;
+    padding: 0.6rem 0.8rem;
     font-family: 'Work Sans', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     border: 1px solid var(--grey-light);
-    border-radius: 3px;
+    border-radius: 4px;
     outline: none;
+    background: var(--white);
 }
 
 .mailing-section input[type="email"]:focus {
@@ -270,9 +274,20 @@
 }
 
 .mailing-btn {
-    font-size: 0.75rem;
-    padding: 0.4rem 0.9rem;
-    border-radius: 3px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.6rem 1.4rem;
+    border-radius: 4px;
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    white-space: nowrap;
+}
+
+.mailing-btn:hover {
+    background: var(--blue-dark);
 }
 
         .stat {
@@ -351,8 +366,13 @@
         }
 
         .code-block {
-            background: var(--grey-dark);
-            color: var(--white);
+            background-color: var(--cream);
+            background-image:
+                linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+            background-size: 1.6em 1.6em;
+            color: var(--grey-dark);
+            border: 1px solid var(--grey-light);
             padding: 1.5rem;
             border-radius: 4px;
             font-family: 'JetBrains Mono', monospace;
@@ -360,10 +380,12 @@
             line-height: 1.6;
             overflow-x: auto;
             margin-bottom: 1rem;
+            white-space: pre;
+            tab-size: 2;
         }
 
         .code-block code {
-            color: var(--white);
+            color: var(--grey-dark);
         }
 
         .code-comment {
@@ -371,18 +393,24 @@
         }
 
         .code-keyword {
-            color: #64B5F6;
+            color: var(--blue);
         }
 
         .code-string {
-            color: #81C784;
+            color: #1F8A5B;
         }
 
         .citation-box {
-            background: var(--cream);
-            border-left: 3px solid var(--blue);
+            background-color: var(--cream);
+            background-image:
+                linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+            background-size: 1.6em 1.6em;
+            color: var(--grey-dark);
+            border: 1px solid var(--grey-light);
             padding: 1.5rem;
             margin-bottom: 1rem;
+            border-radius: 4px;
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.85rem;
             line-height: 1.8;
@@ -520,6 +548,10 @@
             <div class="stat">
                 <div class="stat-number">1.8MB</div>
                 <div class="stat-label">Dataset Size</div>
+            </div>
+            <div class="stat" id="dl-stat" style="display: none;">
+                <div class="stat-number" id="dl-count">—</div>
+                <div class="stat-label">Downloads</div>
             </div>
         </div>
 
@@ -696,3 +728,25 @@ doi: <a href="https://doi.org/10.1057/s41599-025-06180-1" style="color: var(--bl
             <p style="margin-top: 1.5rem; font-size: 0.85rem;">© 2026 CPLD · Licensed under CC BY-NC-ND 4.0</p>
         </footer>
 
+    </div>
+
+    <script>
+        (function () {
+            var DOI = 'doi:10.7910/DVN/NGRY3R';
+            var URL = 'https://dataverse.harvard.edu/api/datasets/:persistentId/makeDataCount/downloadsTotal?persistentId=' + DOI;
+            var tile = document.getElementById('dl-stat');
+            var num = document.getElementById('dl-count');
+            if (!tile || !num) return;
+            fetch(URL)
+                .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+                .then(function (j) {
+                    var n = j && j.data && typeof j.data.downloadsTotal === 'number' ? j.data.downloadsTotal : null;
+                    if (n === null || isNaN(n)) throw new Error('no count');
+                    num.textContent = n.toLocaleString('en-US');
+                    tile.style.display = '';
+                })
+                .catch(function () { tile.style.display = 'none'; });
+        })();
+    </script>
+</body>
+</html>

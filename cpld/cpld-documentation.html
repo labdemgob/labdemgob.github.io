@@ -30,7 +30,6 @@
             --grey-mid: #666666;
             --grey-light: #e0e0e0;
             --white: #ffffff;
-            --red-accent: #B91C1C;
             --cream: #faf8f3;
         }
 
@@ -80,7 +79,7 @@
 
         .logo-text { flex: 1; display: flex; flex-direction: column; justify-content: center; }
 
-        .nav-tabs { display: flex; gap: 2rem; }
+        .nav-tabs { display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; }
 
         .nav-tab {
             font-size: 1rem;
@@ -166,7 +165,7 @@
 
         .version-banner {
             background: var(--cream);
-            border-left: 3px solid var(--red-accent);
+            border-left: 3px solid var(--blue);
             padding: 1rem 1.25rem;
             margin-bottom: 2rem;
             font-family: 'JetBrains Mono', monospace;
@@ -174,7 +173,7 @@
         }
 
         .version-banner .label {
-            color: var(--red-accent);
+            color: var(--blue);
             font-weight: 500;
             margin-bottom: 4px;
             letter-spacing: 0.04em;
@@ -205,7 +204,7 @@
         .doc-category {
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.7rem;
-            color: var(--red-accent);
+            color: var(--blue);
             letter-spacing: 0.08em;
             margin-bottom: 8px;
             text-transform: uppercase;
@@ -311,6 +310,7 @@
             .logo { font-size: 1.5rem; }
             .logo-image { width: 60px; height: 60px; }
             .tagline { font-size: 0.95rem; }
+            .nav-tabs { gap: 1.25rem; }
             .doc-grid { grid-template-columns: 1fr; }
             .history-table { font-size: 0.8rem; }
             .history-table thead th { font-size: 0.65rem; }
@@ -323,7 +323,7 @@
         <header>
             <a href="index.html" style="text-decoration: none;">
                 <div class="logo-container">
-                    <img src="logo.png" alt="CPLD Logo" class="logo-image">
+                    <img src="logo.svg" alt="CPLD Logo" class="logo-image">
                     <div class="logo-text">
                         <h1 class="logo">Chilean Political Landscape Dataset</h1>
                         <p class="tagline">District-level electoral and party system indicators</p>

@@ -9,14 +9,14 @@
       gtag('js', new Date());
       gtag('config', 'G-XHPPDNKH57');
     </script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de · CPLD · Chilean Political Landscape Dataset</title>
     <meta name="description" content="Learn about the Chilean Political Landscape Dataset (CPLD): comprehensive district-level electoral data, party system indicators, ENP measures, polarization indices, and disproportionality calculations for Chilean democracy research.">
     <meta name="keywords" content="Chile electoral data methodology, political science research data, ENP calculation, effective number of parties, Laakso Taagepera, Gallagher index, party system research, Chilean democracy data, comparative politics methods, electoral system analysis, district magnitude, seat product model">
     <meta name="author" content="Kenneth Bunker">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -33,6 +33,7 @@
             --grey-mid: #666666;
             --grey-light: #e0e0e0;
             --white: #ffffff;
+            --cream: #faf8f3;
         }
 
         body {
@@ -95,6 +96,8 @@
         .nav-tabs {
             display: flex;
             gap: 2rem;
+            flex-wrap: wrap;
+            align-items: center;
         }
 
         .nav-tab {
@@ -135,14 +138,12 @@
         }
 
         .page-title {
-            font-size: 1.5rem;
+            font-size: 0.9rem;
             font-weight: 500;
             color: var(--grey-mid);
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            font-size: 0.9rem;
             margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
         }
 
         .section {
@@ -183,7 +184,7 @@
         }
 
         .highlight-box {
-            background: #f5f5f5;
+            background: var(--cream);
             border-left: 3px solid var(--blue);
             padding: 1.5rem;
             margin: 2rem 0;
@@ -195,7 +196,7 @@
             padding-top: 2rem;
             border-top: 1px solid var(--grey-light);
             color: var(--grey-mid);
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
 
         footer a {
@@ -215,6 +216,7 @@
 
             .logo {
                 font-size: 1.5rem;
+            }
 
             .logo-image {
                 width: 60px;
@@ -225,13 +227,8 @@
                 font-size: 0.95rem;
             }
 
-            .page-title {
-                font-size: 0.8rem;
-            }
-            }
-
-            .page-title {
-                font-size: 2.25rem;
+            .nav-tabs {
+                gap: 1.25rem;
             }
         }
     </style>
@@ -242,7 +239,7 @@
         <header>
             <a href="index-es.html" style="text-decoration: none;">
                 <div class="logo-container">
-                    <img src="logo.png" alt="CPLD Logo" class="logo-image">
+                    <img src="logo.svg" alt="CPLD Logo" class="logo-image">
                     <div class="logo-text">
                         <h1 class="logo">Chilean Political Landscape Dataset</h1>
                         <p class="tagline">Indicadores electorales y de sistema de partidos a nivel distrital</p>
@@ -269,7 +266,7 @@
                 <p>El <strong>Chilean Political Landscape Dataset (CPLD)</strong> es la primera base de datos longitudinal integral de su tipo, consolidando resultados electorales a nivel distrital a lo largo de más de tres décadas de democracia chilena, desde 1989 hasta 2023. <strong>La versión 2.0</strong> contiene 5.301 observaciones en 43 variables. El dataset se actualiza regularmente para incorporar nuevos resultados electorales e indicadores refinados, con versiones futuras que expandirán la cobertura a medida que ocurran nuevas elecciones.</p>
 
                 <h2 class="section-title">Los Datos</h2>
-                
+
                 <p>Este dataset aborda una brecha crítica en la investigación política chilena. Gran parte de la literatura existente se basa en agregados nacionales que oscurecían dinámicas subyacentes y variaciones que los datos a nivel distrital pueden revelar. El CPLD proporciona datos estandarizados y granulares que permiten un análisis más matizado de la evolución del sistema de partidos, reformas institucionales y dinámicas electorales a nivel subnacional.</p>
 
                 <p>Al ofrecer medidas consistentes y comparables en un número variable de distritos (dependiendo del tipo de elección: 345 para alcaldes, 28 para diputados desde 2017, 60 para diputados 1989-2013) y 35 años, el CPLD permite a los investigadores detectar patrones invisibles en las estadísticas agregadas: el inicio temprano de la fragmentación del sistema de partidos, el desplazamiento ideológico a nivel distrital y cambios asimétricos en todo el espectro político. Este nivel de detalle es esencial para comprender cómo la democracia chilena, alguna vez estable, evolucionó a través de períodos de reforma institucional y crisis política.</p>
@@ -356,7 +353,7 @@
 
                 <h2 class="section-title">Metodología</h2>
 
-                <p>La base de datos fue construido utilizando el lenguaje de programación R (versión 4.2.3) con paquetes clave incluyendo codebookr, dplyr, tidyr, readxl y officer. Todos los resultados electorales fueron recolectados sistemáticamente de fuentes oficiales (SERVEL) y estandarizados para comparación temporal cruzada.</p>
+                <p>La base de datos fue construida utilizando el lenguaje de programación R (versión 4.2.3) con paquetes clave incluyendo codebookr, dplyr, tidyr, readxl y officer. Todos los resultados electorales fueron recolectados sistemáticamente de fuentes oficiales (SERVEL) y estandarizados para comparación temporal cruzada.</p>
 
                 <p>Todas las medidas siguen estándares establecidos de política comparada con la atribución apropiada:</p>
                 <ul>
@@ -383,7 +380,7 @@
                     Bunker, Kenneth. 2025. "Decades of democracy: insights into the political landscape of Chile." <em>Humanities and Social Sciences Communications</em> 12, Article 1911.<br>
                     DOI: <a href="https://doi.org/10.1057/s41599-025-06180-1" style="color: var(--blue);" target="_blank">10.1057/s41599-025-06180-1</a>
                 </div>
-
+            </div>
         </main>
 
         <footer>
@@ -391,4 +388,6 @@
             <p style="margin-top: 0.5rem;">Universidad San Sebastián · Laboratorio Democracia y Gobierno</p>
             <p style="margin-top: 1.5rem; font-size: 0.85rem;">© 2026 CPLD · Licenciado bajo CC BY-NC-ND 4.0</p>
         </footer>
-
+    </div>
+</body>
+</html>

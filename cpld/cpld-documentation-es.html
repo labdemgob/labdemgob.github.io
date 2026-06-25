@@ -30,7 +30,6 @@
             --grey-mid: #666666;
             --grey-light: #e0e0e0;
             --white: #ffffff;
-            --red-accent: #B91C1C;
             --cream: #faf8f3;
         }
 
@@ -52,7 +51,7 @@
         .logo-image { width: 80px; height: 80px; flex-shrink: 0; }
         .logo-text { flex: 1; display: flex; flex-direction: column; justify-content: center; }
 
-        .nav-tabs { display: flex; gap: 2rem; }
+        .nav-tabs { display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; }
         .nav-tab { font-size: 1rem; color: var(--grey-mid); text-decoration: none; font-weight: 400; padding-bottom: 0.25rem; border-bottom: 2px solid transparent; transition: all 0.2s ease; }
         .nav-tab:hover { color: var(--blue); }
         .nav-tab.active { color: var(--black); border-bottom-color: var(--blue); font-weight: 500; }
@@ -68,14 +67,14 @@
         .version-tab:hover { color: var(--black); }
         .version-tab.active { background: var(--black); color: var(--white); }
 
-        .version-banner { background: var(--cream); border-left: 3px solid var(--red-accent); padding: 1rem 1.25rem; margin-bottom: 2rem; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; }
-        .version-banner .label { color: var(--red-accent); font-weight: 500; margin-bottom: 4px; letter-spacing: 0.04em; }
+        .version-banner { background: var(--cream); border-left: 3px solid var(--blue); padding: 1rem 1.25rem; margin-bottom: 2rem; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; }
+        .version-banner .label { color: var(--blue); font-weight: 500; margin-bottom: 4px; letter-spacing: 0.04em; }
         .version-banner .meta { color: var(--grey-dark); }
 
         .doc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 3rem; }
         .doc-card { border: 1px solid var(--grey-light); padding: 1.5rem; border-radius: 4px; display: flex; flex-direction: column; transition: border-color 0.2s ease; }
         .doc-card:hover { border-color: var(--grey-mid); }
-        .doc-category { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--red-accent); letter-spacing: 0.08em; margin-bottom: 8px; text-transform: uppercase; }
+        .doc-category { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--blue); letter-spacing: 0.08em; margin-bottom: 8px; text-transform: uppercase; }
         .doc-title { font-size: 1.05rem; font-weight: 500; margin-bottom: 8px; color: var(--black); }
         .doc-description { font-size: 0.9rem; color: var(--grey-mid); line-height: 1.6; margin-bottom: 1rem; min-height: 4.6em; font-weight: 300; }
         .doc-download { margin-top: auto; font-size: 0.9rem; font-weight: 500; color: var(--blue); text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; transition: all 0.2s ease; align-self: flex-start; }
@@ -96,6 +95,7 @@
             .logo { font-size: 1.5rem; }
             .logo-image { width: 60px; height: 60px; }
             .tagline { font-size: 0.95rem; }
+            .nav-tabs { gap: 1.25rem; }
             .doc-grid { grid-template-columns: 1fr; }
             .history-table { font-size: 0.8rem; }
             .history-table thead th { font-size: 0.65rem; }
@@ -108,7 +108,7 @@
         <header>
             <a href="index-es.html" style="text-decoration: none;">
                 <div class="logo-container">
-                    <img src="logo.png" alt="CPLD Logo" class="logo-image">
+                    <img src="logo.svg" alt="CPLD Logo" class="logo-image">
                     <div class="logo-text">
                         <h1 class="logo">Chilean Political Landscape Dataset</h1>
                         <p class="tagline">Indicadores electorales y de sistema de partidos a nivel distrital</p>

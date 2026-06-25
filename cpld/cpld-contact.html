@@ -9,14 +9,14 @@
       gtag('js', new Date());
       gtag('config', 'G-XHPPDNKH57');
     </script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact · CPLD · Chilean Political Landscape Dataset</title>
     <meta name="description" content="Contact Kenneth Bunker for questions about the Chilean Political Landscape Dataset, research collaborations, dataset support, or electoral data analysis. Open access data available via Harvard Dataverse.">
     <meta name="keywords" content="Chile political data contact, electoral data researcher, political science collaboration, Chilean democracy research, dataset support, Kenneth Bunker contact, Universidad San Sebastián, University of Verona">
     <meta name="author" content="Kenneth Bunker">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -33,6 +33,7 @@
             --grey-mid: #666666;
             --grey-light: #e0e0e0;
             --white: #ffffff;
+            --cream: #faf8f3;
         }
 
         body {
@@ -95,6 +96,8 @@
         .nav-tabs {
             display: flex;
             gap: 2rem;
+            flex-wrap: wrap;
+            align-items: center;
         }
 
         .nav-tab {
@@ -135,14 +138,12 @@
         }
 
         .page-title {
-            font-size: 1.5rem;
+            font-size: 0.9rem;
             font-weight: 500;
             color: var(--grey-mid);
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            font-size: 0.9rem;
             margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
         }
 
         .content {
@@ -154,6 +155,11 @@
 
         .content p {
             margin-bottom: 1.5rem;
+        }
+
+        .content strong {
+            font-weight: 500;
+            color: var(--black);
         }
 
         .contact-grid {
@@ -195,7 +201,7 @@
         }
 
         .info-box {
-            background: #f5f5f5;
+            background: var(--cream);
             padding: 2rem;
             margin: 2rem 0;
             border-left: 3px solid var(--blue);
@@ -222,7 +228,7 @@
             padding-top: 2rem;
             border-top: 1px solid var(--grey-light);
             color: var(--grey-mid);
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
 
         footer a {
@@ -242,6 +248,7 @@
 
             .logo {
                 font-size: 1.5rem;
+            }
 
             .logo-image {
                 width: 60px;
@@ -252,13 +259,8 @@
                 font-size: 0.95rem;
             }
 
-            .page-title {
-                font-size: 0.8rem;
-            }
-            }
-
-            .page-title {
-                font-size: 2.25rem;
+            .nav-tabs {
+                gap: 1.25rem;
             }
 
             .contact-grid {
@@ -273,7 +275,7 @@
         <header>
             <a href="index.html" style="text-decoration: none;">
                 <div class="logo-container">
-                    <img src="logo.png" alt="CPLD Logo" class="logo-image">
+                    <img src="logo.svg" alt="CPLD Logo" class="logo-image">
                     <div class="logo-text">
                         <h1 class="logo">Chilean Political Landscape Dataset</h1>
                         <p class="tagline">District-level electoral and party system indicators</p>
@@ -299,13 +301,12 @@
             <div class="content">
                 <p><strong>Principal Investigator:</strong> Kenneth Bunker</p>
                 <p><strong>Email:</strong> kenneth.bunker@uss.cl</p>
-                
+
                 <p style="margin-top: 2rem;"><strong>Affiliations:</strong></p>
                 <p>Universidad San Sebastián<br>
                 Laboratorio Democracia y Gobierno<br>
                 Santiago, Chile</p>
-                
-                
+
                 <p style="margin-top: 2rem;">For questions about the dataset, research collaborations, or technical support, please reach out directly via email.</p>
             </div>
 
@@ -332,7 +333,6 @@
                 <p>Access: <a href="https://doi.org/10.7910/DVN/NGRY3R" target="_blank" style="color: var(--blue);">doi.org/10.7910/DVN/NGRY3R</a></p>
                 <p>If you use the dataset in your research, please cite the associated publication.</p>
             </div>
-
         </main>
 
         <footer>
@@ -340,4 +340,6 @@
             <p style="margin-top: 0.5rem;">Universidad San Sebastián · Laboratorio Democracia y Gobierno</p>
             <p style="margin-top: 1.5rem; font-size: 0.85rem;">© 2026 CPLD · Licensed under CC BY-NC-ND 4.0</p>
         </footer>
-
+    </div>
+</body>
+</html>

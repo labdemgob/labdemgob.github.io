@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPLD · Chilean Political Landscape Dataset</title>
-    <meta name="description" content="Longitudinal dataset of district-level electoral outcomes covering Chilean democracy 1989-2024. Party system fragmentation, ideological orientation, ENP measures, and institutional change data. Ready for R and Python analysis.">
+    <meta name="description" content="Longitudinal dataset of district-level electoral outcomes covering decades of Chilean democracy. Party system fragmentation, ideological orientation, ENP measures, and institutional change data. Ready for R and Python analysis.">
     <meta name="keywords" content="Chile political data, Chilean elections dataset, party system fragmentation, electoral competition Chile, political science dataset, comparative politics data, Latin America elections, ENP measures, district-level data, R dataset, Python pandas data, political landscape Chile, democracy dataset, longitudinal political data, Harvard Dataverse, electoral systems, disproportionality indices, Gallagher index, party nationalization, ideological polarization">
     <meta name="author" content="Kenneth Bunker">
     <link rel="canonical" href="https://yourdomain.com/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://labdemgob.github.io/cpld/">
     <meta property="og:title" content="Chilean Political Landscape Dataset · CPLD">
-    <meta property="og:description" content="Comprehensive district-level electoral data covering 35 years of Chilean democracy. 5,301 observations across 42 variables. Open access dataset for political science research.">
+    <meta property="og:description" content="Comprehensive district-level electoral data covering decades of Chilean democracy. 5,301 observations across 43 variables. Open access dataset for political science research.">
     <meta property="og:image" content="https://labdemgob.github.io/cpld/logo.png">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="500">
@@ -31,7 +31,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Chilean Political Landscape Dataset (CPLD)">
-    <meta name="twitter:description" content="Longitudinal electoral data for Chile 1989-2024. Party fragmentation, ENP, polarization indices. Open access for researchers.">
+    <meta name="twitter:description" content="Longitudinal electoral data for Chile across decades. Party fragmentation, ENP, polarization indices. Open access for researchers.">
     <meta name="twitter:image" content="https://labdemgob.github.io/cpld/logo.png">
     
     <!-- Schema.org Dataset -->
@@ -59,7 +59,7 @@
         "encodingFormat": "text/csv",
         "contentUrl": "https://doi.org/10.7910/DVN/NGRY3R"
       },
-      "temporalCoverage": "1989/2024",
+      "temporalCoverage": "1989/..",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Chile"
@@ -538,11 +538,11 @@
                 <div class="stat-label">Observations</div>
             </div>
             <div class="stat">
-                <div class="stat-number">35</div>
-                <div class="stat-label">Years</div>
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Decades</div>
             </div>
             <div class="stat">
-                <div class="stat-number">42</div>
+                <div class="stat-number">43</div>
                 <div class="stat-label">Variables</div>
             </div>
             <div class="stat">
@@ -583,11 +583,11 @@
 <span class="code-comment"># Load CPLD dataset</span>
 <span class="code-keyword">library</span>(tidyverse)
 
-cpld <span class="code-keyword">&lt;-</span> <span class="code-keyword">read_csv</span>(<span class="code-string">"cpld_1989_2024.csv"</span>)
+cpld <span class="code-keyword">&lt;-</span> <span class="code-keyword">read_csv</span>(<span class="code-string">"cpld.csv"</span>)
 
 <span class="code-comment"># Explore key variables</span>
 <span class="code-keyword">glimpse</span>(cpld)
-<span class="code-comment"># 5,301 × 42 variables including:</span>
+<span class="code-comment"># 5,301 × 43 variables including:</span>
 <span class="code-comment"># enpv, enps, polarization_district, av_id, ethnic_frac</span>
             </div>
 

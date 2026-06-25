@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHPPDNKH57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XHPPDNKH57');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación · CPLD · Chilean Political Landscape Dataset</title>
+    <meta name="description" content="Documentación del Chilean Political Landscape Dataset (CPLD). Libro de códigos, novedades, notas precautorias y citación sugerida para cada versión.">
+    <meta name="keywords" content="documentación CPLD, libro de códigos, notas precautorias, definiciones de variables, historial de versiones, datos electorales chilenos, Kenneth Bunker">
+    <meta name="author" content="Kenneth Bunker">
+    <link rel="canonical" href="https://labdemgob.github.io/cpld/cpld-documentation-es.html">
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --blue: #0066CC;
+            --blue-dark: #004080;
+            --black: #000000;
+            --grey-dark: #1a1a1a;
+            --grey-mid: #666666;
+            --grey-light: #e0e0e0;
+            --white: #ffffff;
+            --red-accent: #B91C1C;
+            --cream: #faf8f3;
+        }
+
+        body {
+            font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--white);
+            color: var(--black);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding-top: 2rem;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 1rem 2rem 3rem; position: relative; }
+        .top-line { position: absolute; top: 2rem; left: 2rem; right: 2rem; height: 1px; background: var(--grey-light); }
+
+        header { margin-bottom: 3rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--grey-light); margin-top: 2rem; }
+        .logo-container { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem; transition: opacity 0.2s ease; }
+        .logo-container:hover { opacity: 0.7; }
+        .logo-image { width: 80px; height: 80px; flex-shrink: 0; }
+        .logo-text { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+        .nav-tabs { display: flex; gap: 2rem; }
+        .nav-tab { font-size: 1rem; color: var(--grey-mid); text-decoration: none; font-weight: 400; padding-bottom: 0.25rem; border-bottom: 2px solid transparent; transition: all 0.2s ease; }
+        .nav-tab:hover { color: var(--blue); }
+        .nav-tab.active { color: var(--black); border-bottom-color: var(--blue); font-weight: 500; }
+
+        .logo { font-family: 'JetBrains Mono', monospace; font-size: 2.25rem; font-weight: 600; color: var(--black); margin-bottom: 0.5rem; letter-spacing: -0.02em; line-height: 1.1; }
+        .tagline { font-size: 1.1rem; color: var(--grey-dark); font-weight: 400; letter-spacing: -0.01em; }
+
+        .page-title { font-size: 0.9rem; font-weight: 500; color: var(--grey-mid); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem; }
+        .page-intro { font-size: 1rem; color: var(--grey-mid); margin-bottom: 2.5rem; font-weight: 300; line-height: 1.7; }
+
+        .version-tabs { display: inline-flex; gap: 0; border: 1px solid var(--grey-light); border-radius: 4px; padding: 4px; margin-bottom: 1.5rem; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; }
+        .version-tab { padding: 7px 16px; color: var(--grey-mid); cursor: pointer; border-radius: 3px; transition: all 0.2s ease; background: transparent; border: none; font-family: inherit; font-size: inherit; }
+        .version-tab:hover { color: var(--black); }
+        .version-tab.active { background: var(--black); color: var(--white); }
+
+        .version-banner { background: var(--cream); border-left: 3px solid var(--red-accent); padding: 1rem 1.25rem; margin-bottom: 2rem; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; }
+        .version-banner .label { color: var(--red-accent); font-weight: 500; margin-bottom: 4px; letter-spacing: 0.04em; }
+        .version-banner .meta { color: var(--grey-dark); }
+
+        .doc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 3rem; }
+        .doc-card { border: 1px solid var(--grey-light); padding: 1.5rem; border-radius: 4px; display: flex; flex-direction: column; transition: border-color 0.2s ease; }
+        .doc-card:hover { border-color: var(--grey-mid); }
+        .doc-category { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--red-accent); letter-spacing: 0.08em; margin-bottom: 8px; text-transform: uppercase; }
+        .doc-title { font-size: 1.05rem; font-weight: 500; margin-bottom: 8px; color: var(--black); }
+        .doc-description { font-size: 0.9rem; color: var(--grey-mid); line-height: 1.6; margin-bottom: 1rem; min-height: 4.6em; font-weight: 300; }
+        .doc-download { margin-top: auto; font-size: 0.9rem; font-weight: 500; color: var(--blue); text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; transition: all 0.2s ease; align-self: flex-start; }
+        .doc-download:hover { color: var(--blue-dark); gap: 0.6rem; }
+        .doc-download .arrow { font-size: 1rem; transition: transform 0.2s ease; }
+
+        .history-section { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--grey-light); }
+        .history-section h2 { font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--grey-mid); margin-bottom: 1.5rem; }
+        .history-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        .history-table thead th { text-align: left; padding: 12px 0; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--grey-mid); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 1px solid var(--black); }
+        .history-table tbody td { padding: 14px 0; border-bottom: 1px solid var(--grey-light); color: var(--grey-dark); }
+        .history-table tbody td.mono { font-family: 'JetBrains Mono', monospace; }
+
+        footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--grey-light); color: var(--grey-mid); font-size: 0.9rem; }
+
+        @media (max-width: 640px) {
+            .container { padding: 2rem 1.5rem; }
+            .logo { font-size: 1.5rem; }
+            .logo-image { width: 60px; height: 60px; }
+            .tagline { font-size: 0.95rem; }
+            .doc-grid { grid-template-columns: 1fr; }
+            .history-table { font-size: 0.8rem; }
+            .history-table thead th { font-size: 0.65rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-line"></div>
+        <header>
+            <a href="index-es.html" style="text-decoration: none;">
+                <div class="logo-container">
+                    <img src="logo.png" alt="CPLD Logo" class="logo-image">
+                    <div class="logo-text">
+                        <h1 class="logo">Chilean Political Landscape Dataset</h1>
+                        <p class="tagline">Indicadores electorales y de sistema de partidos a nivel distrital</p>
+                    </div>
+                </div>
+            </a>
+            <nav class="nav-tabs">
+                <a href="index-es.html" class="nav-tab">Inicio</a>
+                <a href="cpld-about-es.html" class="nav-tab">Acerca de</a>
+                <a href="cpld-documentation-es.html" class="nav-tab active">Documentación</a>
+                <a href="cpld-contact-es.html" class="nav-tab">Contacto</a>
+                <span style="margin-left: auto; display: flex; gap: 0.5rem; align-items: center; font-size: 0.85rem;">
+                    <a href="cpld-documentation.html" style="color: var(--grey-mid); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--blue)'" onmouseout="this.style.color='var(--grey-mid)'">English</a>
+                    <span style="color: var(--grey-light);">|</span>
+                    <span style="color: var(--black); font-weight: 500;">Español</span>
+                </span>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="page-title">Documentación</h1>
+            <p class="page-intro">Libro de códigos, historial de versiones, notas precautorias y guía de citación para cada versión. Todos los documentos están en formato PDF.</p>
+
+            <div class="version-tabs" role="tablist">
+                <button class="version-tab active" data-version="v2" role="tab">v2.0</button>
+                <button class="version-tab" data-version="v1" role="tab">v1.0</button>
+                <!-- v3 PLACEHOLDER. Descomentar cuando v3.0 sea publicada.
+                <button class="version-tab" data-version="v3" role="tab">v3.0</button>
+                -->
+            </div>
+
+            <!-- VERSIÓN 2.0 -->
+            <section class="version-section" data-version="v2">
+                <div class="version-banner">
+                    <div class="label">VERSIÓN 2.0 · ACTUAL · PUBLICADA 2026-01-16</div>
+                    <div class="meta">5.301 observaciones · 43 variables · cobertura 1989-2023 · versión de metadatos</div>
+                </div>
+
+                <div class="doc-grid">
+                    <div class="doc-card">
+                        <div class="doc-category">Libro de códigos</div>
+                        <div class="doc-title">Definiciones de variables</div>
+                        <div class="doc-description">Define cada variable de la base de datos, organizada por categoría. Cubre estructura electoral, indicadores del sistema de partidos, desproporcionalidad, medidas ideológicas y demografía. Incluye protocolos de medición y atribución de fuentes para cada columna.</div>
+                        <a class="doc-download" href="documents/CPLD_v2__Codebook.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Novedades</div>
+                        <div class="doc-title">Cambios desde v1.0</div>
+                        <div class="doc-description">Documenta las diferencias entre la versión 1.0 y la versión 2.0. La versión 2.0 es una actualización de metadatos sin cambios en observaciones ni en valores de variables. Lista todas las notas arrastradas y refinamientos en la documentación entre versiones.</div>
+                        <a class="doc-download" href="documents/CPLD_v2__Whats_New.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Notas precautorias</div>
+                        <div class="doc-title">Casos límite metodológicos</div>
+                        <div class="doc-description">Decisiones metodológicas, problemas en los datos fuente y casos límite que pueden afectar la interpretación o distorsionar los cálculos del usuario. Cubre exclusión de IFP, asignaciones regionales, reglas de desempate y banderas de datos faltantes. Leer antes de calcular agregados.</div>
+                        <a class="doc-download" href="documents/CPLD_v2__Cautionary_Notes.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Citación sugerida</div>
+                        <div class="doc-title">Cómo citar v2.0</div>
+                        <div class="doc-description">Formato de citación recomendado para la base de datos y la publicación asociada. Incluye entradas BibTeX y enlaces DOI tanto para el depósito en Harvard Dataverse como para el artículo en Humanities and Social Sciences Communications. Usar al publicar investigación.</div>
+                        <a class="doc-download" href="documents/CPLD_v2__Suggested_Citation.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VERSIÓN 1.0 -->
+            <section class="version-section" data-version="v1" style="display: none;">
+                <div class="version-banner">
+                    <div class="label">VERSIÓN 1.0 · ANTERIOR · PUBLICADA 2025-11-05</div>
+                    <div class="meta">5.301 observaciones · 43 variables · cobertura 1989-2023 · versión inicial</div>
+                </div>
+
+                <div class="doc-grid">
+                    <div class="doc-card">
+                        <div class="doc-category">Libro de códigos</div>
+                        <div class="doc-title">Definiciones de variables</div>
+                        <div class="doc-description">Definiciones de variables para la versión inicial de la base de datos, organizadas por categoría. Cubre estructura electoral, sistema de partidos, desproporcionalidad y medidas ideológicas y demográficas. Reemplazada por v2.0 pero conservada para fines de replicación.</div>
+                        <a class="doc-download" href="documents/CPLD_v1__Codebook.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Actualización de versión</div>
+                        <div class="doc-title">Notas de versión inicial</div>
+                        <div class="doc-description">Notas de versión para la publicación de v1.0 el 2025-11-05. Documenta el alcance, la cobertura y las decisiones de diseño de la base de datos original en elecciones legislativas, regionales, municipales y convenciones constitucionales. Útil para replicar análisis basados en la versión original.</div>
+                        <a class="doc-download" href="documents/CPLD_v1__Version_Update.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Notas precautorias</div>
+                        <div class="doc-title">Casos límite metodológicos</div>
+                        <div class="doc-description">Notas metodológicas originales publicadas con v1.0. Todas las notas documentadas aquí siguen siendo aplicables a v2.0 ya que los valores subyacentes de la base de datos no cambian. Proporciona el texto completo de cada nota arrastrada a versiones posteriores.</div>
+                        <a class="doc-download" href="documents/CPLD_v1__Cautionary_Notes.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Citación sugerida</div>
+                        <div class="doc-title">Cómo citar v1.0</div>
+                        <div class="doc-description">Formato de citación para la versión 1.0. Usar cuando se repliquen análisis basados en la publicación original. Para investigación nueva, preferir el archivo de citación de v2.0 ya que refleja los metadatos más recientes y las convenciones de fijación de versiones.</div>
+                        <a class="doc-download" href="documents/CPLD_v1__Suggested_Citation.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- v3 PLACEHOLDER. Descomentar y agregar archivos cuando v3.0 sea publicada.
+            <section class="version-section" data-version="v3" style="display: none;">
+                <div class="version-banner">
+                    <div class="label">VERSIÓN 3.0 · ACTUAL · PUBLICADA YYYY-MM-DD</div>
+                    <div class="meta">6.119 observaciones · 43 variables · cobertura 1989-2025</div>
+                </div>
+                <div class="doc-grid">
+                    <div class="doc-card">
+                        <div class="doc-category">Libro de códigos</div>
+                        <div class="doc-title">Definiciones de variables</div>
+                        <div class="doc-description">Define cada variable de la base de datos v3.0 incluyendo las adiciones para las elecciones municipales y regionales de 2024 y la elección parlamentaria de 2025.</div>
+                        <a class="doc-download" href="documents/CPLD_v3__Codebook.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+                    <div class="doc-card">
+                        <div class="doc-category">Novedades</div>
+                        <div class="doc-title">Cambios desde v2.0</div>
+                        <div class="doc-description">Agrega 818 filas de las elecciones muni/regionales 2024 y parlamentarias 2025, más una corrección de puntajes ideológicos que afecta 2.657 filas existentes.</div>
+                        <a class="doc-download" href="documents/CPLD_v3__Whats_New.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+                    <div class="doc-card">
+                        <div class="doc-category">Notas precautorias</div>
+                        <div class="doc-title">Casos límite metodológicos</div>
+                        <div class="doc-description">Notas precautorias actualizadas para v3.0, arrastrando todas las notas anteriores más cualquier problema nuevo específico de las filas de elecciones 2024 y 2025.</div>
+                        <a class="doc-download" href="documents/CPLD_v3__Cautionary_Notes.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+                    <div class="doc-card">
+                        <div class="doc-category">Citación sugerida</div>
+                        <div class="doc-title">Cómo citar v3.0</div>
+                        <div class="doc-description">Formato de citación para v3.0 con entradas BibTeX actualizadas que reflejan la cobertura ampliada hasta las elecciones parlamentarias 2025.</div>
+                        <a class="doc-download" href="documents/CPLD_v3__Suggested_Citation.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </section>
+            -->
+
+            <section class="history-section">
+                <h2>Historial de Versiones</h2>
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th>Versión</th>
+                            <th>Publicada</th>
+                            <th>Observaciones</th>
+                            <th>Cobertura</th>
+                            <th>Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="mono">2.0</td>
+                            <td>2026-01-16</td>
+                            <td class="mono">5.301</td>
+                            <td>1989-2023</td>
+                            <td>Actualización de metadatos</td>
+                        </tr>
+                        <tr>
+                            <td class="mono">1.0</td>
+                            <td>2025-11-05</td>
+                            <td class="mono">5.301</td>
+                            <td>1989-2023</td>
+                            <td>Versión inicial</td>
+                        </tr>
+                        <!-- v3 PLACEHOLDER. Descomentar cuando sea publicada.
+                        <tr>
+                            <td class="mono">3.0</td>
+                            <td>YYYY-MM-DD</td>
+                            <td class="mono">6.119</td>
+                            <td>1989-2025</td>
+                            <td>Elecciones 2024 y 2025 añadidas</td>
+                        </tr>
+                        -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <p>Chilean Political Landscape Dataset</p>
+            <p style="margin-top: 0.5rem;">Universidad San Sebastián · Laboratorio Democracia y Gobierno</p>
+            <p style="margin-top: 1.5rem; font-size: 0.85rem;">© 2026 CPLD · Licenciado bajo CC BY-NC-ND 4.0</p>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelectorAll('.version-tab').forEach(function (tab) {
+            tab.addEventListener('click', function () {
+                var version = tab.getAttribute('data-version');
+                document.querySelectorAll('.version-tab').forEach(function (t) { t.classList.remove('active'); });
+                tab.classList.add('active');
+                document.querySelectorAll('.version-section').forEach(function (section) {
+                    section.style.display = section.getAttribute('data-version') === version ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -13,16 +13,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPLD · Chilean Political Landscape Dataset</title>
-    <meta name="description" content="Base de datos longitudinal de resultados electorales a nivel distrital que cubre la democracia chilena 1989-2023. Fragmentación del sistema de partidos, orientación ideológica, medidas ENP y datos de cambio institucional. Lista para análisis en R y Python.">
+    <meta name="description" content="Base de datos longitudinal de resultados electorales a nivel distrital que cubre la democracia chilena 1989-2024. Fragmentación del sistema de partidos, orientación ideológica, medidas ENP y datos de cambio institucional. Lista para análisis en R y Python.">
     <meta name="keywords" content="datos políticos Chile, base de datos elecciones Chile, fragmentación sistema de partidos, competencia electoral Chile, datos ciencia política, datos política comparada, elecciones América Latina, medidas ENP, datos nivel distrital, dataset R, datos Python pandas, panorama político Chile, datos democracia, datos políticos longitudinales, Harvard Dataverse, sistemas electorales, índices desproporcionalidad, índice Gallagher, nacionalización partidos, polarización ideológica">
     <meta name="author" content="Kenneth Bunker">
-    <link rel="canonical" href="https://labdemgob.github.io/cpld/index-es.html">
+    <link rel="canonical" href="https://yourdomain.com/">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://labdemgob.github.io/cpld/">
     <meta property="og:title" content="Chilean Political Landscape Dataset · CPLD">
-    <meta property="og:description" content="Datos electorales integrales a nivel distrital que cubren 35 años de democracia chilena. 5.301 observaciones en 43 variables. Dataset de acceso abierto para investigación en ciencia política.">
+    <meta property="og:description" content="Datos electorales integrales a nivel distrital que cubren 35 años de democracia chilena. 5.301 observaciones en 42 variables. Dataset de acceso abierto para investigación en ciencia política.">
     <meta property="og:image" content="https://labdemgob.github.io/cpld/logo.png">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="500">
@@ -31,7 +31,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Chilean Political Landscape Dataset (CPLD)">
-    <meta name="twitter:description" content="Datos electorales longitudinales para Chile 1989-2023. Fragmentación partidaria, ENP, índices de polarización. Acceso abierto para investigadores.">
+    <meta name="twitter:description" content="Datos electorales longitudinales para Chile 1989-2024. Fragmentación partidaria, ENP, índices de polarización. Acceso abierto para investigadores.">
     <meta name="twitter:image" content="https://labdemgob.github.io/cpld/logo.png">
     
     <!-- Schema.org Dataset -->
@@ -52,14 +52,14 @@
           {"@type": "Organization", "name": "University of Verona"}
         ]
       },
-      "datePublished": "2026-01",
-      "version": "2.0",
+      "datePublished": "2025-11",
+      "version": "1.0",
       "distribution": {
         "@type": "DataDownload",
-        "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "encodingFormat": "text/csv",
         "contentUrl": "https://doi.org/10.7910/DVN/NGRY3R"
       },
-      "temporalCoverage": "1989/2023",
+      "temporalCoverage": "1989/2024",
       "spatialCoverage": {
         "@type": "Place",
         "name": "Chile"
@@ -454,7 +454,7 @@
         <div class="top-line"></div>
         <header>
             <div class="logo-container">
-                <img src="logo.png" alt="CPLD Logo" class="logo-image">
+                <img src="logo.svg" alt="CPLD Logo" class="logo-image">
                 <div class="logo-text">
                     <h1 class="logo">Chilean Political Landscape Dataset</h1>
                     <p class="tagline">Indicadores electorales y de sistema de partidos a nivel distrital</p>
@@ -463,7 +463,6 @@
             <nav class="nav-tabs">
                 <a href="index-es.html" class="nav-tab active">Inicio</a>
                 <a href="cpld-about-es.html" class="nav-tab">Acerca de</a>
-                <a href="cpld-documentation-es.html" class="nav-tab">Documentación</a>
                 <a href="cpld-contact-es.html" class="nav-tab">Contacto</a>
                 <span style="margin-left: auto; display: flex; gap: 0.5rem; align-items: center; font-size: 0.85rem;">
                     <a href="index.html" style="color: var(--grey-mid); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--blue)'" onmouseout="this.style.color='var(--grey-mid)'">English</a>
@@ -476,7 +475,7 @@
         <h1 class="page-title">Descripción General</h1>
 
         <div class="description">
-            <p>El Chilean Political Landscape Dataset (CPLD) es una base de datos longitudinal de resultados electorales a nivel distrital que abarca cuatro décadas de democracia chilena. Contiene medidas estandarizadas de fragmentación del sistema de partidos, orientación ideológica y cambio institucional en contiendas legislativas, regionales y municipales. La versión 2.0 contiene 5.301 observaciones y se expandirá a medida que nuevos datos electorales estén disponibles.</p>
+            <p>El Chilean Political Landscape Dataset (CPLD) es una base de datos longitudinal de resultados electorales a nivel distrital que abarca cuatro décadas de democracia chilena. Contiene medidas estandarizadas de fragmentación del sistema de partidos, orientación ideológica y cambio institucional en contiendas legislativas, regionales y municipales. La versión 1.0 contiene 5.301 observaciones y se expandirá a medida que nuevos datos electorales estén disponibles.</p>
             <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--grey-mid);">Formatos de datos optimizados para flujos de trabajo en Python (pandas) y R (tidyverse).</p>
         </div>
 
@@ -493,7 +492,7 @@
 
         <div class="stats">
             <div class="stat">
-                <div class="stat-number">5.301</div>
+                <div class="stat-number">5.300+</div>
                 <div class="stat-label">Observaciones</div>
             </div>
             <div class="stat">
@@ -501,7 +500,7 @@
                 <div class="stat-label">Años</div>
             </div>
             <div class="stat">
-                <div class="stat-number">43</div>
+                <div class="stat-number">42</div>
                 <div class="stat-label">Variables</div>
             </div>
             <div class="stat">
@@ -518,8 +517,8 @@
                     <div class="link-meta">Harvard Dataverse · DOI: 10.7910/DVN/NGRY3R</div>
                 </li>
                 <li class="link-item">
-                    <a href="cpld-documentation-es.html" class="link-primary">Documentación</a>
-                    <div class="link-meta">Libro de códigos, notas precautorias, historial de versiones y citación</div>
+                    <a href="https://doi.org/10.7910/DVN/NGRY3R" class="link-primary" target="_blank">Libro de Códigos</a>
+                    <div class="link-meta">Definiciones de variables y protocolos de medición</div>
                 </li>
                 <li class="link-item">
                     <a href="https://doi.org/10.7910/DVN/NGRY3R" class="link-primary" target="_blank">Archivos de Replicación</a>
@@ -534,13 +533,12 @@
             <div class="code-block">
 <span class="code-comment"># Cargar La base de datos CPLD</span>
 <span class="code-keyword">library</span>(tidyverse)
-<span class="code-keyword">library</span>(readxl)
 
-cpld <span class="code-keyword">&lt;-</span> <span class="code-keyword">read_excel</span>(<span class="code-string">"consolidated_v2_0.xlsx"</span>)
+cpld <span class="code-keyword">&lt;-</span> <span class="code-keyword">read_csv</span>(<span class="code-string">"cpld_1989_2024.csv"</span>)
 
 <span class="code-comment"># Explorar variables clave</span>
 <span class="code-keyword">glimpse</span>(cpld)
-<span class="code-comment"># 5.301 × 43 variables incluyendo:</span>
+<span class="code-comment"># 5.301 × 42 variables incluyendo:</span>
 <span class="code-comment"># enpv, enps, polarization_district, av_id, ethnic_frac</span>
             </div>
 
@@ -601,7 +599,7 @@ cpld <span class="code-keyword">%&gt;%</span>
             
             <div class="citation-box">
 <strong>Base de datos:</strong><br>
-Bunker, Kenneth. 2025. "Chilean Political Landscape Dataset (CPLD)". Harvard Dataverse, V2.<br>
+Bunker, Kenneth. 2025. "Chilean Political Landscape Dataset (CPLD)". Harvard Dataverse, V1.<br>
 doi: <a href="https://doi.org/10.7910/DVN/NGRY3R" style="color: var(--blue);" target="_blank">10.7910/DVN/NGRY3R</a><br><br>
 
 <strong>Publicación:</strong><br>
@@ -611,12 +609,12 @@ doi: <a href="https://doi.org/10.1057/s41599-025-06180-1" style="color: var(--bl
 
             <div class="code-block">
 <span class="code-comment">% BibTeX - Dataset</span>
-@misc{bunker2025cpld,
+@data{bunker2025cpld,
   author={Bunker, Kenneth},
   title={{Chilean Political Landscape Dataset (CPLD)}},
   year={2025},
   publisher={Harvard Dataverse},
-  version={V2},
+  version={V1},
   doi={10.7910/DVN/NGRY3R},
   url={https://doi.org/10.7910/DVN/NGRY3R}
 }
@@ -669,7 +667,7 @@ doi: <a href="https://doi.org/10.1057/s41599-025-06180-1" style="color: var(--bl
                 
                 <p style="margin-top: 1rem;"><strong>Geográfico y Demográfico:</strong> Datos a nivel distrital, elecciones municipales, consejos regionales, fraccionamiento étnico (índice Alesina), poblaciones indígenas, datos censo chileno, análisis espacial, política subnacional</p>
                 
-                <p style="margin-top: 1rem;"><strong>Especificaciones Técnicas:</strong> Programación R (tidyverse, dplyr), compatible con Python pandas, formato XLSX, análisis de datos longitudinales, datos de series temporales transversales, modelado jerárquico, metodología de política comparada</p>
+                <p style="margin-top: 1rem;"><strong>Especificaciones Técnicas:</strong> Programación R (tidyverse, dplyr), compatible con Python pandas, formato CSV, análisis de datos longitudinales, datos de series temporales transversales, modelado jerárquico, metodología de política comparada</p>
                 
                 <p style="margin-top: 1rem;"><strong>Tipos de Elecciones Cubiertas:</strong> Cámara de Diputados, Senado, Elecciones alcaldes, Concejos municipales (Concejales), Gobernadores regionales, Consejos regionales (Cores), Convenciones constitucionales (Constituyentes)</p>
             </div>

@@ -52,8 +52,8 @@
           {"@type": "Organization", "name": "University of Verona"}
         ]
       },
-      "datePublished": "2025-11",
-      "version": "1.0",
+      "datePublished": "2026-01",
+      "version": "2.0",
       "distribution": {
         "@type": "DataDownload",
         "encodingFormat": "text/csv",
@@ -517,7 +517,7 @@
         <h1 class="page-title">Descripción General</h1>
 
         <div class="description">
-            <p>El Chilean Political Landscape Dataset (CPLD) es una base de datos longitudinal de resultados electorales a nivel distrital que abarca cuatro décadas de democracia chilena. Contiene medidas estandarizadas de fragmentación del sistema de partidos, orientación ideológica y cambio institucional en contiendas legislativas, regionales y municipales. La versión 1.0 contiene 5.301 observaciones y se expandirá a medida que nuevos datos electorales estén disponibles.</p>
+            <p>El Chilean Political Landscape Dataset (CPLD) es una base de datos longitudinal de resultados electorales a nivel distrital que abarca más de tres décadas de democracia chilena. Contiene medidas estandarizadas de fragmentación del sistema de partidos, orientación ideológica y cambio institucional en contiendas legislativas, regionales y municipales. La versión 2.0 contiene 5.301 observaciones en 43 variables y se expandirá a medida que nuevos datos electorales estén disponibles.</p>
             <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--grey-mid);">Formatos de datos optimizados para flujos de trabajo en Python (pandas) y R (tidyverse).</p>
         </div>
 
@@ -576,8 +576,7 @@
         <section class="section">
             <h2 class="section-title">Ejemplos de Código</h2>
             
-            <div class="code-block">
-<span class="code-comment"># Cargar La base de datos CPLD</span>
+            <div class="code-block"><span class="code-comment"># Cargar La base de datos CPLD</span>
 <span class="code-keyword">library</span>(tidyverse)
 
 cpld <span class="code-keyword">&lt;-</span> <span class="code-keyword">read_csv</span>(<span class="code-string">"cpld.csv"</span>)
@@ -585,22 +584,18 @@ cpld <span class="code-keyword">&lt;-</span> <span class="code-keyword">read_csv
 <span class="code-comment"># Explorar variables clave</span>
 <span class="code-keyword">glimpse</span>(cpld)
 <span class="code-comment"># 5.301 × 43 variables incluyendo:</span>
-<span class="code-comment"># enpv, enps, polarization_district, av_id, ethnic_frac</span>
-            </div>
+<span class="code-comment"># enpv, enps, polarization_district, av_id, ethnic_frac</span></div>
 
-            <div class="code-block">
-<span class="code-comment"># Calcular nóºmero efectivo de partidos a lo largo del tiempo</span>
+            <div class="code-block"><span class="code-comment"># Calcular nóºmero efectivo de partidos a lo largo del tiempo</span>
 cpld <span class="code-keyword">%&gt;%</span>
   <span class="code-keyword">filter</span>(type == <span class="code-string">"Diputados"</span>) <span class="code-keyword">%&gt;%</span>
   <span class="code-keyword">group_by</span>(election) <span class="code-keyword">%&gt;%</span>
   <span class="code-keyword">summarise</span>(
     mean_enpv = <span class="code-keyword">mean</span>(enpv, na.rm = TRUE),
     mean_enps = <span class="code-keyword">mean</span>(enps, na.rm = TRUE)
-  )
-            </div>
+  )</div>
 
-            <div class="code-block">
-<span class="code-comment"># Analizar tendencias de fragmentación pre/post reforma 2015</span>
+            <div class="code-block"><span class="code-comment"># Analizar tendencias de fragmentación pre/post reforma 2015</span>
 cpld <span class="code-keyword">%&gt;%</span>
   <span class="code-keyword">filter</span>(type == <span class="code-string">"Diputados"</span>) <span class="code-keyword">%&gt;%</span>
   <span class="code-keyword">mutate</span>(period = <span class="code-keyword">if_else</span>(election >= 2017, 
@@ -609,22 +604,18 @@ cpld <span class="code-keyword">%&gt;%</span>
   <span class="code-keyword">ggplot</span>(<span class="code-keyword">aes</span>(x = election, y = enpv, color = period)) +
   <span class="code-keyword">geom_point</span>(alpha = 0.4) +
   <span class="code-keyword">geom_smooth</span>(method = <span class="code-string">"loess"</span>, se = TRUE) +
-  <span class="code-keyword">labs</span>(title = <span class="code-string">"Fragmentación del Sistema de Partidos"</span>)
-            </div>
+  <span class="code-keyword">labs</span>(title = <span class="code-string">"Fragmentación del Sistema de Partidos"</span>)</div>
 
-            <div class="code-block">
-<span class="code-comment"># Examinar polarización ideológica por distrito</span>
+            <div class="code-block"><span class="code-comment"># Examinar polarización ideológica por distrito</span>
 cpld <span class="code-keyword">%&gt;%</span>
   <span class="code-keyword">filter</span>(type == <span class="code-string">"Diputados"</span>, election >= 2009) <span class="code-keyword">%&gt;%</span>
   <span class="code-keyword">ggplot</span>(<span class="code-keyword">aes</span>(x = <span class="code-keyword">factor</span>(election), 
              y = polarization_district)) +
   <span class="code-keyword">geom_boxplot</span>(fill = <span class="code-string">"steelblue"</span>, alpha = 0.7) +
   <span class="code-keyword">labs</span>(x = <span class="code-string">"Año Electoral"</span>, 
-       y = <span class="code-string">"Polarización Ideológica (Dalton)"</span>)
-            </div>
+       y = <span class="code-string">"Polarización Ideológica (Dalton)"</span>)</div>
 
-            <div class="code-block">
-<span class="code-comment"># Análisis de desproporcionalidad usando índice Gallagher</span>
+            <div class="code-block"><span class="code-comment"># Análisis de desproporcionalidad usando índice Gallagher</span>
 cpld <span class="code-keyword">%&gt;%</span>
   <span class="code-keyword">filter</span>(type == <span class="code-string">"Diputados"</span>) <span class="code-keyword">%&gt;%</span>
   <span class="code-keyword">group_by</span>(election) <span class="code-keyword">%&gt;%</span>
@@ -634,8 +625,7 @@ cpld <span class="code-keyword">%&gt;%</span>
   ) <span class="code-keyword">%&gt;%</span>
   <span class="code-keyword">ggplot</span>(<span class="code-keyword">aes</span>(x = mean_dm, y = mean_gallagher)) +
   <span class="code-keyword">geom_point</span>(size = 3) +
-  <span class="code-keyword">geom_text</span>(<span class="code-keyword">aes</span>(label = election), vjust = -0.5)
-            </div>
+  <span class="code-keyword">geom_text</span>(<span class="code-keyword">aes</span>(label = election), vjust = -0.5)</div>
         </section>
 
         <section class="section">
@@ -643,24 +633,21 @@ cpld <span class="code-keyword">%&gt;%</span>
             
             <p style="color: var(--grey-mid); font-size: 0.95rem; margin-bottom: 1.5rem;">Al utilizar el CPLD en su investigación, por favor cite tanto la base de datos como la publicación asociada.</p>
             
-            <div class="citation-box">
-<strong>Base de datos:</strong><br>
-Bunker, Kenneth. 2025. "Chilean Political Landscape Dataset (CPLD)". Harvard Dataverse, V1.<br>
+            <div class="citation-box"><strong>Base de datos:</strong><br>
+Bunker, Kenneth. 2025. "Chilean Political Landscape Dataset (CPLD)". Harvard Dataverse, V2.<br>
 doi: <a href="https://doi.org/10.7910/DVN/NGRY3R" style="color: var(--blue);" target="_blank">10.7910/DVN/NGRY3R</a><br><br>
 
 <strong>Publicación:</strong><br>
 Bunker, Kenneth. 2025. "Decades of democracy: insights into the political landscape of Chile." <em>Humanities and Social Sciences Communications</em> 12, Article 1911.<br>
-doi: <a href="https://doi.org/10.1057/s41599-025-06180-1" style="color: var(--blue);" target="_blank">10.1057/s41599-025-06180-1</a>
-            </div>
+doi: <a href="https://doi.org/10.1057/s41599-025-06180-1" style="color: var(--blue);" target="_blank">10.1057/s41599-025-06180-1</a></div>
 
-            <div class="code-block">
-<span class="code-comment">% BibTeX - Dataset</span>
+            <div class="code-block"><span class="code-comment">% BibTeX - Dataset</span>
 @data{bunker2025cpld,
   author={Bunker, Kenneth},
   title={{Chilean Political Landscape Dataset (CPLD)}},
   year={2025},
   publisher={Harvard Dataverse},
-  version={V1},
+  version={V2},
   doi={10.7910/DVN/NGRY3R},
   url={https://doi.org/10.7910/DVN/NGRY3R}
 }
@@ -675,8 +662,7 @@ doi: <a href="https://doi.org/10.1057/s41599-025-06180-1" style="color: var(--bl
   year={2025},
   publisher={Palgrave},
   doi={10.1057/s41599-025-06180-1}
-}
-            </div>
+}</div>
         </section>
 
         <section class="section">

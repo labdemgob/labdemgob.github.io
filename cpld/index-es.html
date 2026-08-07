@@ -600,12 +600,10 @@
                 <div class="stat-number">42</div>
                 <div class="stat-label">Variables</div>
             </div>
+            <!-- Descargas. Actualizar metrics.json (o el número de abajo) cuando
+                 cambie el conteo en Harvard Dataverse. Conteo bruto de archivos. -->
             <div class="stat">
-                <div class="stat-number">2,1MB</div>
-                <div class="stat-label">Tamaño</div>
-            </div>
-            <div class="stat" id="dl-stat" style="display: none;">
-                <div class="stat-number" id="dl-count">—</div>
+                <div class="stat-number" id="dl-count">263</div>
                 <div class="stat-label">Descargas</div>
             </div>
         </div>
@@ -773,21 +771,19 @@ doi: <a href="https://doi.org/10.1057/s41599-025-06180-1" style="color: var(--bl
     </div>
 
     <script>
+        // Override opcional. Si existe metrics.json junto a este archivo con
+        // {"downloads": N}, ese número manda. Si no, queda el valor fijo.
         (function () {
-            var DOI = 'doi:10.7910/DVN/NGRY3R';
-            var URL = 'https://dataverse.harvard.edu/api/datasets/:persistentId/makeDataCount/downloadsTotal?persistentId=' + DOI;
-            var tile = document.getElementById('dl-stat');
-            var num = document.getElementById('dl-count');
-            if (!tile || !num) return;
-            fetch(URL)
-                .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+            var el = document.getElementById('dl-count');
+            if (!el) return;
+            fetch('metrics.json', { cache: 'no-store' })
+                .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
                 .then(function (j) {
-                    var n = j && j.data && typeof j.data.downloadsTotal === 'number' ? j.data.downloadsTotal : null;
-                    if (n === null || isNaN(n)) throw new Error('no count');
-                    num.textContent = n.toLocaleString('es-ES');
-                    tile.style.display = '';
+                    if (j && typeof j.downloads === 'number') {
+                        el.textContent = j.downloads.toLocaleString('es-CL');
+                    }
                 })
-                .catch(function () { tile.style.display = 'none'; });
+                .catch(function () {});
         })();
     </script>
 </body>

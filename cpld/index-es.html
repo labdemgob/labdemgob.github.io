@@ -42,34 +42,135 @@
     <!-- Schema.org Dataset -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Dataset",
-      "name": "Chilean Political Landscape Dataset (CPLD)",
-      "description": "District-level electoral outcomes, party system indicators, and institutional design data across multiple decades of Chilean democracy. Includes effective number of parties (ENP), polarization indices (Dalton), disproportionality measures (Rae, Gallagher, Loosemore-Hanby), party nationalization indices (Mainwaring-Jones, Chhibber-Kollman), and demographic variables including ethnic fractionalization.",
-      "url": "https://doi.org/10.7910/DVN/NGRY3R",
-      "identifier": "https://doi.org/10.7910/DVN/NGRY3R",
-      "keywords": ["Chile", "elections", "political science", "party systems", "electoral data", "democracy", "Latin America", "comparative politics", "district-level data", "ENP", "fragmentation", "polarization", "disproportionality", "electoral reform"],
-      "creator": {
-        "@type": "Person",
-        "name": "Kenneth Bunker",
-        "affiliation": [
-          {"@type": "Organization", "name": "Universidad San Sebastián"},
-          {"@type": "Organization", "name": "University of Verona"}
-        ]
-      },
-      "datePublished": "2026-08",
-      "version": "3.0",
-      "distribution": {
-        "@type": "DataDownload",
-        "encodingFormat": "text/csv",
-        "contentUrl": "https://doi.org/10.7910/DVN/NGRY3R"
-      },
-      "temporalCoverage": "1989/..",
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Chile"
-      },
-      "variableMeasured": ["effective number of parties", "party system fragmentation", "ideological polarization", "electoral disproportionality", "district magnitude", "ethnic fractionalization", "party nationalization"]
+          "@context": "https://schema.org",
+          "@type": "Dataset",
+          "@id": "https://doi.org/10.7910/DVN/NGRY3R",
+          "name": "Chilean Political Landscape Dataset (CPLD)",
+          "alternateName": "Base de Datos del Panorama Político Chileno",
+          "description": "Resultados electorales a nivel distrital, indicadores del sistema de partidos y datos de diseño institucional a lo largo de varias décadas de democracia chilena. Incluye número efectivo de partidos (ENP), índices de polarización (Dalton), medidas de desproporcionalidad (Rae, Gallagher, Loosemore-Hanby), índices de nacionalización partidaria (Mainwaring-Jones, Chhibber-Kollman) y variables demográficas como fraccionalización étnica.",
+          "url": "https://doi.org/10.7910/DVN/NGRY3R",
+          "sameAs": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/NGRY3R",
+          "identifier": [
+                "https://doi.org/10.7910/DVN/NGRY3R",
+                "doi:10.7910/DVN/NGRY3R"
+          ],
+          "keywords": [
+                "Chile",
+                "elecciones",
+                "ciencia política",
+                "sistemas de partidos",
+                "datos electorales",
+                "democracia",
+                "América Latina",
+                "política comparada",
+                "datos distritales",
+                "ENP",
+                "fragmentación",
+                "polarización",
+                "desproporcionalidad",
+                "reforma electoral"
+          ],
+          "creator": {
+                "@type": "Person",
+                "name": "Kenneth Bunker",
+                "affiliation": [
+                      {
+                            "@type": "Organization",
+                            "name": "Universidad San Sebastián"
+                      },
+                      {
+                            "@type": "Organization",
+                            "name": "University of Verona"
+                      }
+                ]
+          },
+          "publisher": {
+                "@type": "Organization",
+                "name": "Harvard Dataverse",
+                "url": "https://dataverse.harvard.edu"
+          },
+          "provider": {
+                "@type": "Organization",
+                "name": "Laboratorio Democracia y Gobierno, Universidad San Sebastián"
+          },
+          "includedInDataCatalog": {
+                "@type": "DataCatalog",
+                "name": "Harvard Dataverse",
+                "url": "https://dataverse.harvard.edu"
+          },
+          "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+          "isAccessibleForFree": true,
+          "creativeWorkStatus": "Published",
+          "datePublished": "2026-08",
+          "dateModified": "2026-08-07",
+          "version": "3.0",
+          "inLanguage": [
+                "en",
+                "es"
+          ],
+          "distribution": [
+                {
+                      "@type": "DataDownload",
+                      "name": "CPLD v3.0 (tab-delimited)",
+                      "encodingFormat": "text/tab-separated-values",
+                      "contentUrl": "https://doi.org/10.7910/DVN/NGRY3R"
+                },
+                {
+                      "@type": "DataDownload",
+                      "name": "CPLD v3.0 (Excel)",
+                      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                      "contentUrl": "https://doi.org/10.7910/DVN/NGRY3R"
+                }
+          ],
+          "temporalCoverage": "1989/2025",
+          "spatialCoverage": {
+                "@type": "Place",
+                "name": "Chile",
+                "geo": {
+                      "@type": "GeoShape",
+                      "box": "-56.0 -75.7 -17.5 -66.4"
+                }
+          },
+          "measurementTechnique": "Agregación de resultados oficiales a nivel distrital publicados por el Servicio Electoral de Chile (SERVEL), con índices del sistema de partidos calculados por el autor.",
+          "variableMeasured": [
+                "número efectivo de partidos",
+                "fragmentación del sistema de partidos",
+                "polarización ideológica",
+                "desproporcionalidad electoral",
+                "magnitud de distrito",
+                "fraccionalización étnica",
+                "nacionalización partidaria"
+          ],
+          "citation": [
+                {
+                      "@type": "ScholarlyArticle",
+                      "name": "Decades of democracy: insights into the political landscape of Chile",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Kenneth Bunker"
+                      },
+                      "datePublished": "2025",
+                      "isPartOf": {
+                            "@type": "Periodical",
+                            "name": "Humanities and Social Sciences Communications"
+                      },
+                      "identifier": "https://doi.org/10.1057/s41599-025-06180-1"
+                },
+                {
+                      "@type": "ScholarlyArticle",
+                      "name": "Electoral reform and party-system fragmentation: diminishing marginal effects and vote-seat conversion limits in Chile's concurrent local elections",
+                      "author": {
+                            "@type": "Person",
+                            "name": "Kenneth Bunker"
+                      },
+                      "datePublished": "2026",
+                      "isPartOf": {
+                            "@type": "Periodical",
+                            "name": "Local Government Studies"
+                      },
+                      "identifier": "https://doi.org/10.1080/03003930.2026.2704044"
+                }
+          ]
     }
     </script>
     
@@ -791,7 +892,7 @@ doi: <a href="https://doi.org/10.1057/s41599-025-06180-1" style="color: var(--bl
                 
                 <p style="margin-top: 1rem;"><strong>Especificaciones Técnicas:</strong> Programación R (tidyverse, dplyr), compatible con Python pandas, formato CSV, análisis de datos longitudinales, datos de series temporales transversales, modelado jerárquico, metodología de política comparada</p>
                 
-                <p style="margin-top: 1rem;"><strong>Tipos de Elecciones Cubiertas:</strong> Cámara de Diputados, Senado, Elecciones alcaldes, Concejos municipales (Concejales), Gobernadores regionales, Consejos regionales (Cores), Convenciones constitucionales (Constituyentes)</p>
+                <p style="margin-top: 1rem;"><strong>Tipos de Elecciones Cubiertas:</strong> Cámara de Diputados, Senado, Elecciones alcaldes, Concejos municipales (Concejales), Gobernadores regionales, Consejos regionales (Cores), Elecciones municipales (Municipales), Convenciones constitucionales (Constituyentes)</p>
             </div>
         </section>
 

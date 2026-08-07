@@ -349,17 +349,53 @@
             <p class="page-intro">Codebook, version history, cautionary notes, and citation guidance for each release. All documents are PDF.</p>
 
             <div class="version-tabs" role="tablist">
-                <button class="version-tab active" data-version="v2" role="tab">v2.0</button>
+                <button class="version-tab active" data-version="v3" role="tab">v3.0</button>
+                <button class="version-tab" data-version="v2" role="tab">v2.0</button>
                 <button class="version-tab" data-version="v1" role="tab">v1.0</button>
-                <!-- v3 PLACEHOLDER. Uncomment when v3.0 is released.
-                <button class="version-tab" data-version="v3" role="tab">v3.0</button>
-                -->
             </div>
 
-            <!-- VERSION 2.0 -->
-            <section class="version-section" data-version="v2">
+            <!-- VERSION 3.0 -->
+            <section class="version-section" data-version="v3">
                 <div class="version-banner">
-                    <div class="label">VERSION 2.0 · CURRENT · RELEASED 2026-01-16</div>
+                    <div class="label">VERSION 3.0 · CURRENT · RELEASED 2026-08-07</div>
+                    <div class="meta">6,119 observations · 43 variables · coverage 1989-2025 · 42 elections across 8 election types</div>
+                </div>
+
+                <div class="doc-grid">
+                    <div class="doc-card">
+                        <div class="doc-category">Codebook</div>
+                        <div class="doc-title">Variable definitions</div>
+                        <div class="doc-description">Defines every variable in the v3.0 dataset, organized by category. Covers electoral structure, party system indicators, disproportionality, ideological measures, and demographics, including the additions for the 2024 municipal and regional elections and the 2025 parliamentary election.</div>
+                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Codebook.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">What's New</div>
+                        <div class="doc-title">Changes from v2.0</div>
+                        <div class="doc-description">Documents the differences between version 2.0 and version 3.0. Adds 818 new rows from the 2024 municipal and regional elections and the 2025 parliamentary election, bringing the total to 6,119 observations. Also documents an ideological-scores correction affecting 2,657 existing rows and one row-level fix in the 2021 Gobernador second-round data.</div>
+                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Whats%20New.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Cautionary Notes</div>
+                        <div class="doc-title">Methodological edge cases</div>
+                        <div class="doc-description">Methodological decisions, source-data problems, and edge cases that may affect interpretation or distort user calculations. Carries forward all prior notes and adds issues specific to the 2024 and 2025 election rows. Read before computing aggregates.</div>
+                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Cautionary%20Notes.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Suggested Citation</div>
+                        <div class="doc-title">How to cite v3.0</div>
+                        <div class="doc-description">Recommended citation format for the dataset and accompanying publication. Includes BibTeX entries and DOI links for both the Harvard Dataverse deposit and the Humanities and Social Sciences Communications article. Use when publishing research.</div>
+                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Suggested%20Citation.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VERSION 2.0 -->
+            <section class="version-section" data-version="v2" style="display: none;">
+                <div class="version-banner">
+                    <div class="label">VERSION 2.0 · PREVIOUS · RELEASED 2026-01-16</div>
                     <div class="meta">5,301 observations · 43 variables · coverage 1989-2023 · metadata-only release</div>
                 </div>
 
@@ -388,7 +424,7 @@
                     <div class="doc-card">
                         <div class="doc-category">Suggested Citation</div>
                         <div class="doc-title">How to cite v2.0</div>
-                        <div class="doc-description">Recommended citation format for the dataset and accompanying publication. Includes BibTeX entries and DOI links for both the Harvard Dataverse deposit and the Humanities and Social Sciences Communications article. Use when publishing research.</div>
+                        <div class="doc-description">Citation format for the v2.0 release. Use this when replicating analyses based on that version. For new research, prefer the v3.0 citation file since it reflects the most recent release.</div>
                         <a class="doc-download" href="documents/CPLD%20v2%20-%20Suggested%20Citation.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
                     </div>
                 </div>
@@ -426,47 +462,11 @@
                     <div class="doc-card">
                         <div class="doc-category">Suggested Citation</div>
                         <div class="doc-title">How to cite v1.0</div>
-                        <div class="doc-description">Citation format for the v1.0 release. Use this when replicating analyses based on the original publication. For new research, prefer the v2.0 citation file since it reflects the most recent metadata and version pinning conventions.</div>
+                        <div class="doc-description">Citation format for the v1.0 release. Use this when replicating analyses based on the original publication. For new research, prefer the v3.0 citation file since it reflects the most recent release.</div>
                         <a class="doc-download" href="documents/CPLD%20v1%20-%20Suggested%20Citation.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
                     </div>
                 </div>
             </section>
-
-            <!-- v3 PLACEHOLDER SECTION. Uncomment and add files when v3.0 is released.
-            <section class="version-section" data-version="v3" style="display: none;">
-                <div class="version-banner">
-                    <div class="label">VERSION 3.0 · CURRENT · RELEASED YYYY-MM-DD</div>
-                    <div class="meta">6,119 observations · 43 variables · coverage 1989-2025</div>
-                </div>
-
-                <div class="doc-grid">
-                    <div class="doc-card">
-                        <div class="doc-category">Codebook</div>
-                        <div class="doc-title">Variable definitions</div>
-                        <div class="doc-description">Defines every variable in the v3.0 dataset including additions for the 2024 municipal and regional elections and the 2025 parliamentary election.</div>
-                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Codebook.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
-                    </div>
-                    <div class="doc-card">
-                        <div class="doc-category">What's New</div>
-                        <div class="doc-title">Changes from v2.0</div>
-                        <div class="doc-description">Adds 818 rows from 2024 muni/regional and 2025 parliamentary elections plus an ideological-scores correction affecting 2,657 existing rows.</div>
-                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Whats%20New.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
-                    </div>
-                    <div class="doc-card">
-                        <div class="doc-category">Cautionary Notes</div>
-                        <div class="doc-title">Methodological edge cases</div>
-                        <div class="doc-description">Updated cautionary notes for v3.0, carrying forward all prior notes plus any new issues specific to the 2024 and 2025 election rows.</div>
-                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Cautionary%20Notes.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
-                    </div>
-                    <div class="doc-card">
-                        <div class="doc-category">Suggested Citation</div>
-                        <div class="doc-title">How to cite v3.0</div>
-                        <div class="doc-description">Citation format for v3.0 with updated BibTeX entries reflecting the expanded coverage through the 2025 parliamentary elections.</div>
-                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Suggested%20Citation.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
-                    </div>
-                </div>
-            </section>
-            -->
 
             <section class="history-section">
                 <h2>Version History</h2>
@@ -482,6 +482,13 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td class="mono">3.0</td>
+                            <td>2026-08-07</td>
+                            <td class="mono">6,119</td>
+                            <td>1989-2025</td>
+                            <td>2024 + 2025 elections added</td>
+                        </tr>
+                        <tr>
                             <td class="mono">2.0</td>
                             <td>2026-01-16</td>
                             <td class="mono">5,301</td>
@@ -495,15 +502,6 @@
                             <td>1989-2023</td>
                             <td>Initial release</td>
                         </tr>
-                        <!-- v3 PLACEHOLDER ROW. Uncomment when released.
-                        <tr>
-                            <td class="mono">3.0</td>
-                            <td>YYYY-MM-DD</td>
-                            <td class="mono">6,119</td>
-                            <td>1989-2025</td>
-                            <td>2024 + 2025 elections added</td>
-                        </tr>
-                        -->
                     </tbody>
                 </table>
             </section>

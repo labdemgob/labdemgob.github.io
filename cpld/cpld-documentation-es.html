@@ -134,17 +134,53 @@
             <p class="page-intro">Libro de códigos, historial de versiones, notas precautorias y guía de citación para cada versión. Todos los documentos están en formato PDF.</p>
 
             <div class="version-tabs" role="tablist">
-                <button class="version-tab active" data-version="v2" role="tab">v2.0</button>
+                <button class="version-tab active" data-version="v3" role="tab">v3.0</button>
+                <button class="version-tab" data-version="v2" role="tab">v2.0</button>
                 <button class="version-tab" data-version="v1" role="tab">v1.0</button>
-                <!-- v3 PLACEHOLDER. Descomentar cuando v3.0 sea publicada.
-                <button class="version-tab" data-version="v3" role="tab">v3.0</button>
-                -->
             </div>
 
-            <!-- VERSIÓN 2.0 -->
-            <section class="version-section" data-version="v2">
+            <!-- VERSIÓN 3.0 -->
+            <section class="version-section" data-version="v3">
                 <div class="version-banner">
-                    <div class="label">VERSIÓN 2.0 · ACTUAL · PUBLICADA 2026-01-16</div>
+                    <div class="label">VERSIÓN 3.0 · ACTUAL · PUBLICADA 2026-08-07</div>
+                    <div class="meta">6.119 observaciones · 43 variables · cobertura 1989-2025 · 42 elecciones en 8 tipos de elección</div>
+                </div>
+
+                <div class="doc-grid">
+                    <div class="doc-card">
+                        <div class="doc-category">Libro de códigos</div>
+                        <div class="doc-title">Definiciones de variables</div>
+                        <div class="doc-description">Define cada variable de la base de datos v3.0, organizada por categoría. Cubre estructura electoral, indicadores del sistema de partidos, desproporcionalidad, medidas ideológicas y demografía, incluyendo las adiciones para las elecciones municipales y regionales de 2024 y la elección parlamentaria de 2025.</div>
+                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Codebook.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Novedades</div>
+                        <div class="doc-title">Cambios desde v2.0</div>
+                        <div class="doc-description">Documenta las diferencias entre la versión 2.0 y la versión 3.0. Agrega 818 filas nuevas de las elecciones municipales y regionales de 2024 y la elección parlamentaria de 2025, llevando el total a 6.119 observaciones. También documenta una corrección de puntajes ideológicos que afecta 2.657 filas existentes y una corrección a nivel de fila en los datos de segunda vuelta de Gobernador 2021.</div>
+                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Whats%20New.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Notas precautorias</div>
+                        <div class="doc-title">Casos límite metodológicos</div>
+                        <div class="doc-description">Decisiones metodológicas, problemas en los datos fuente y casos límite que pueden afectar la interpretación o distorsionar los cálculos del usuario. Arrastra todas las notas anteriores y agrega los problemas específicos de las filas de elecciones 2024 y 2025. Leer antes de calcular agregados.</div>
+                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Cautionary%20Notes.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Citación sugerida</div>
+                        <div class="doc-title">Cómo citar v3.0</div>
+                        <div class="doc-description">Formato de citación recomendado para la base de datos y la publicación asociada. Incluye entradas BibTeX y enlaces DOI tanto para el depósito en Harvard Dataverse como para el artículo en Humanities and Social Sciences Communications. Usar al publicar investigación.</div>
+                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Suggested%20Citation.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VERSIÓN 2.0 -->
+            <section class="version-section" data-version="v2" style="display: none;">
+                <div class="version-banner">
+                    <div class="label">VERSIÓN 2.0 · ANTERIOR · PUBLICADA 2026-01-16</div>
                     <div class="meta">5.301 observaciones · 43 variables · cobertura 1989-2023 · versión de metadatos</div>
                 </div>
 
@@ -173,7 +209,7 @@
                     <div class="doc-card">
                         <div class="doc-category">Citación sugerida</div>
                         <div class="doc-title">Cómo citar v2.0</div>
-                        <div class="doc-description">Formato de citación recomendado para la base de datos y la publicación asociada. Incluye entradas BibTeX y enlaces DOI tanto para el depósito en Harvard Dataverse como para el artículo en Humanities and Social Sciences Communications. Usar al publicar investigación.</div>
+                        <div class="doc-description">Formato de citación para la versión 2.0. Usar cuando se repliquen análisis basados en esa versión. Para investigación nueva, preferir el archivo de citación de v3.0 ya que refleja la versión más reciente.</div>
                         <a class="doc-download" href="documents/CPLD%20v2%20-%20Suggested%20Citation.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
                     </div>
                 </div>
@@ -211,46 +247,11 @@
                     <div class="doc-card">
                         <div class="doc-category">Citación sugerida</div>
                         <div class="doc-title">Cómo citar v1.0</div>
-                        <div class="doc-description">Formato de citación para la versión 1.0. Usar cuando se repliquen análisis basados en la publicación original. Para investigación nueva, preferir el archivo de citación de v2.0 ya que refleja los metadatos más recientes y las convenciones de fijación de versiones.</div>
+                        <div class="doc-description">Formato de citación para la versión 1.0. Usar cuando se repliquen análisis basados en la publicación original. Para investigación nueva, preferir el archivo de citación de v3.0 ya que refleja la versión más reciente.</div>
                         <a class="doc-download" href="documents/CPLD%20v1%20-%20Suggested%20Citation.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
                     </div>
                 </div>
             </section>
-
-            <!-- v3 PLACEHOLDER. Descomentar y agregar archivos cuando v3.0 sea publicada.
-            <section class="version-section" data-version="v3" style="display: none;">
-                <div class="version-banner">
-                    <div class="label">VERSIÓN 3.0 · ACTUAL · PUBLICADA YYYY-MM-DD</div>
-                    <div class="meta">6.119 observaciones · 43 variables · cobertura 1989-2025</div>
-                </div>
-                <div class="doc-grid">
-                    <div class="doc-card">
-                        <div class="doc-category">Libro de códigos</div>
-                        <div class="doc-title">Definiciones de variables</div>
-                        <div class="doc-description">Define cada variable de la base de datos v3.0 incluyendo las adiciones para las elecciones municipales y regionales de 2024 y la elección parlamentaria de 2025.</div>
-                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Codebook.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
-                    </div>
-                    <div class="doc-card">
-                        <div class="doc-category">Novedades</div>
-                        <div class="doc-title">Cambios desde v2.0</div>
-                        <div class="doc-description">Agrega 818 filas de las elecciones muni/regionales 2024 y parlamentarias 2025, más una corrección de puntajes ideológicos que afecta 2.657 filas existentes.</div>
-                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Whats%20New.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
-                    </div>
-                    <div class="doc-card">
-                        <div class="doc-category">Notas precautorias</div>
-                        <div class="doc-title">Casos límite metodológicos</div>
-                        <div class="doc-description">Notas precautorias actualizadas para v3.0, arrastrando todas las notas anteriores más cualquier problema nuevo específico de las filas de elecciones 2024 y 2025.</div>
-                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Cautionary%20Notes.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
-                    </div>
-                    <div class="doc-card">
-                        <div class="doc-category">Citación sugerida</div>
-                        <div class="doc-title">Cómo citar v3.0</div>
-                        <div class="doc-description">Formato de citación para v3.0 con entradas BibTeX actualizadas que reflejan la cobertura ampliada hasta las elecciones parlamentarias 2025.</div>
-                        <a class="doc-download" href="documents/CPLD%20v3%20-%20Suggested%20Citation.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
-                    </div>
-                </div>
-            </section>
-            -->
 
             <section class="history-section">
                 <h2>Historial de Versiones</h2>
@@ -266,6 +267,13 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td class="mono">3.0</td>
+                            <td>2026-08-07</td>
+                            <td class="mono">6.119</td>
+                            <td>1989-2025</td>
+                            <td>Elecciones 2024 y 2025 añadidas</td>
+                        </tr>
+                        <tr>
                             <td class="mono">2.0</td>
                             <td>2026-01-16</td>
                             <td class="mono">5.301</td>
@@ -279,15 +287,6 @@
                             <td>1989-2023</td>
                             <td>Versión inicial</td>
                         </tr>
-                        <!-- v3 PLACEHOLDER. Descomentar cuando sea publicada.
-                        <tr>
-                            <td class="mono">3.0</td>
-                            <td>YYYY-MM-DD</td>
-                            <td class="mono">6.119</td>
-                            <td>1989-2025</td>
-                            <td>Elecciones 2024 y 2025 añadidas</td>
-                        </tr>
-                        -->
                     </tbody>
                 </table>
             </section>

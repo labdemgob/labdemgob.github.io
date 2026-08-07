@@ -17,6 +17,11 @@
     <meta name="keywords" content="Chile political data, Chilean elections dataset, party system fragmentation, electoral competition Chile, political science dataset, comparative politics data, Latin America elections, ENP measures, district-level data, R dataset, Python pandas data, political landscape Chile, democracy dataset, longitudinal political data, Harvard Dataverse, electoral systems, disproportionality indices, Gallagher index, party nationalization, ideological polarization">
     <meta name="author" content="Kenneth Bunker">
     <link rel="canonical" href="https://labdemgob.github.io/cpld/">
+    <link rel="alternate" hreflang="en" href="https://labdemgob.github.io/cpld/">
+    <link rel="alternate" hreflang="es" href="https://labdemgob.github.io/cpld/index-es.html">
+    <link rel="alternate" hreflang="x-default" href="https://labdemgob.github.io/cpld/">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="alternate icon" href="logo.png">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -365,6 +370,30 @@
             font-weight: 300;
         }
 
+        .code-block { position: relative; }
+        .copy-btn {
+            position: absolute;
+            top: 0.6rem;
+            right: 0.6rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--grey-mid);
+            background: var(--white);
+            border: 1px solid var(--grey-light);
+            border-radius: 3px;
+            padding: 0.3rem 0.6rem;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.15s, color 0.15s, border-color 0.15s;
+        }
+        .code-block:hover .copy-btn,
+        .copy-btn:focus { opacity: 1; }
+        .copy-btn:hover { color: var(--blue); border-color: var(--blue); }
+        .copy-btn.done { color: var(--blue); border-color: var(--blue); opacity: 1; }
+        @media (hover: none) { .copy-btn { opacity: 1; } }
+
         .code-block {
             background-color: var(--cream);
             background-image:
@@ -606,6 +635,10 @@
                 <div class="stat-number" id="dl-count">263</div>
                 <div class="stat-label">Downloads</div>
             </div>
+            <div class="stat" id="cit-stat" style="display: none;">
+                <div class="stat-number" id="cit-count">—</div>
+                <div class="stat-label">Citations</div>
+            </div>
         </div>
 
 
@@ -787,6 +820,48 @@ doi: <a href="https://doi.org/10.1057/s41599-025-06180-1" style="color: var(--bl
                     }
                 })
                 .catch(function () {});
+        })();
+
+        // Copy buttons on code blocks
+        (function () {
+            document.querySelectorAll('.code-block').forEach(function (block) {
+                var btn = document.createElement('button');
+                btn.className = 'copy-btn';
+                btn.type = 'button';
+                btn.textContent = 'Copy';
+                btn.setAttribute('aria-label', 'Copy code to clipboard');
+                btn.addEventListener('click', function () {
+                    var text = block.innerText.replace(/^\s*Copy\s*$/m, '').trim();
+                    navigator.clipboard.writeText(text).then(function () {
+                        btn.textContent = 'Copied';
+                        btn.classList.add('done');
+                        setTimeout(function () {
+                            btn.textContent = 'Copy';
+                            btn.classList.remove('done');
+                        }, 1600);
+                    });
+                });
+                block.appendChild(btn);
+            });
+        })();
+
+        // Citation count from Harvard Dataverse. Tile stays hidden if unavailable.
+        (function () {
+            var tile = document.getElementById('cit-stat');
+            var num = document.getElementById('cit-count');
+            if (!tile || !num) return;
+            var url = 'https://dataverse.harvard.edu/api/datasets/:persistentId/makeDataCount/citations?persistentId=doi:10.7910/DVN/NGRY3R';
+            fetch(url)
+                .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+                .then(function (j) {
+                    var d = j && j.data;
+                    var n = Array.isArray(d) ? d.length
+                          : (d && typeof d.citations === 'number') ? d.citations : null;
+                    if (n === null || isNaN(n) || n <= 0) throw new Error('none');
+                    num.textContent = n;
+                    tile.style.display = '';
+                })
+                .catch(function () { tile.style.display = 'none'; });
         })();
     </script>
 </body>

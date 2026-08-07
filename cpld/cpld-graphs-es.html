@@ -17,6 +17,11 @@
     <meta name="keywords" content="gráficos electorales Chile, fragmentación sistema de partidos, número efectivo de partidos, polarización ideológica, independientes, concejos municipales, consejos regionales, Cámara de Diputados, estadística descriptiva, Kenneth Bunker">
     <meta name="author" content="Kenneth Bunker">
     <link rel="canonical" href="https://labdemgob.github.io/cpld/cpld-graphs-es.html">
+    <link rel="alternate" hreflang="en" href="https://labdemgob.github.io/cpld/cpld-graphs.html">
+    <link rel="alternate" hreflang="es" href="https://labdemgob.github.io/cpld/cpld-graphs-es.html">
+    <link rel="alternate" hreflang="x-default" href="https://labdemgob.github.io/cpld/cpld-graphs.html">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="alternate icon" href="logo.png">
 
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -183,6 +188,16 @@
             <div class="office-eyebrow">Cámara de Diputados · Diputados</div>
             <figure class="chart-figure">
                 <div class="chart-head">
+                    <div class="chart-title">Lo que esconde el promedio nacional</div>
+                    <div class="chart-source">ENPv, nivel distrital · banda percentil 10–90 · 1989–2025</div>
+                </div>
+                <div class="chart-legend" id="legend-disp"></div>
+                <div class="chart-wrap"><div id="chart-disp"></div></div>
+                <figcaption class="chart-caption">La misma medida de fragmentación, calculada <strong>distrito por distrito</strong> y no a nivel nacional. La banda sombreada contiene el 80% central de los distritos y la línea punteada es la cifra nacional. En 2021 los distritos fueron de <strong>2,98 a 7,01</strong> partidos efectivos, una dispersión que el número nacional único de 5,93 no logra expresar. La brecha entre el distrito mediano y el agregado nacional es en sí misma el argumento a favor de los datos distritales.</figcaption>
+            </figure>
+
+            <figure class="chart-figure">
+                <div class="chart-head">
                     <div class="chart-title">Fragmentación: votos vs. escaños</div>
                     <div class="chart-source">ENPv y ENPs, nacional · Laakso–Taagepera · 1989–2025</div>
                 </div>
@@ -290,6 +305,56 @@
         { label: 'Gobernadores', value: 4.84, pr: true }
     ];
 
+    const DISP = [
+        { year:'1989', p10:1.99, p50:2.34, p90:3.12, nat:2.49 },
+        { year:'1993', p10:1.95, p50:2.18, p90:2.44, nat:2.24 },
+        { year:'1997', p10:2.00, p50:2.30, p90:2.96, nat:2.51 },
+        { year:'2001', p10:1.98, p50:2.25, p90:2.56, nat:2.27 },
+        { year:'2005', p10:2.06, p50:2.25, p90:2.68, nat:2.32 },
+        { year:'2009', p10:2.06, p50:2.36, p90:3.09, nat:2.45 },
+        { year:'2013', p10:2.09, p50:2.48, p90:3.14, nat:2.57 },
+        { year:'2017', p10:3.28, p50:3.77, p90:4.43, nat:3.88 },
+        { year:'2021', p10:4.28, p50:5.03, p90:5.95, nat:5.93 },
+        { year:'2025', p10:3.86, p50:4.35, p90:5.04, nat:4.67 }
+    ];
+
+    function bandChart(elId, rows, opt) {
+        const W = 820, H = 360, L = 60, R = 788, T = 30, B = 300;
+        const n = rows.length;
+        const xAt = i => L + (R - L) * (n === 1 ? 0.5 : i / (n - 1));
+        const yAt = v => B - (v - opt.ymin) / (opt.ymax - opt.ymin) * (B - T);
+        let svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="${opt.title || ''}">`;
+        svg += `<g font-family="'JetBrains Mono', monospace" font-size="12" fill="#999">`;
+        opt.yticks.forEach(t => {
+            const y = yAt(t), last = t === opt.yticks[opt.yticks.length - 1];
+            svg += `<line x1="${L}" y1="${y}" x2="${R}" y2="${y}" stroke="${last ? '#d9d9d9' : '#ececec'}"></line>`;
+            svg += `<text x="${L - 12}" y="${y + 4}" text-anchor="end">${t}</text>`;
+        });
+        svg += `</g>`;
+        const i13 = rows.findIndex(r => r.year === '2013'), i17 = rows.findIndex(r => r.year === '2017');
+        if (i13 >= 0 && i17 >= 0) {
+            const rx = (xAt(i13) + xAt(i17)) / 2;
+            svg += `<line x1="${rx}" y1="${T}" x2="${rx}" y2="${B}" stroke="#B91C1C" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.65"></line>`;
+            svg += `<text x="${rx - 4}" y="${T + 16}" text-anchor="end" font-family="'Work Sans',sans-serif" font-size="11.5" fill="#B91C1C" font-weight="600">${opt.reformLabel}</text>`;
+        }
+        const up = rows.map((r, i) => `${xAt(i).toFixed(1)},${yAt(r.p90).toFixed(1)}`);
+        const dn = rows.map((r, i) => `${xAt(i).toFixed(1)},${yAt(r.p10).toFixed(1)}`).reverse();
+        svg += `<path d="M${up.join(' L')} L${dn.join(' L')} Z" fill="#0066CC" fill-opacity="0.13"></path>`;
+        svg += `<polyline points="${rows.map((r,i)=>xAt(i).toFixed(1)+','+yAt(r.p50).toFixed(1)).join(' ')}" fill="none" stroke="#0066CC" stroke-width="2.5" stroke-linejoin="round"></polyline>`;
+        svg += `<polyline points="${rows.map((r,i)=>xAt(i).toFixed(1)+','+yAt(r.nat).toFixed(1)).join(' ')}" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="6 4" stroke-linejoin="round"></polyline>`;
+        rows.forEach((r, i) => {
+            const isEnd = i === n - 1;
+            svg += `<circle cx="${xAt(i).toFixed(1)}" cy="${yAt(r.p50).toFixed(1)}" r="${isEnd ? 4.5 : 3.5}" fill="${isEnd ? '#0066CC' : '#fff'}" stroke="#0066CC" stroke-width="2.5"></circle>`;
+        });
+        const last = rows[n - 1];
+        svg += `<text x="${xAt(n-1).toFixed(1)}" y="${(yAt(last.p90) - 10).toFixed(1)}" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="12" fill="#0066CC" font-weight="600">${last.p90.toFixed(2)}</text>`;
+        svg += `<text x="${xAt(n-1).toFixed(1)}" y="${(yAt(last.p10) + 18).toFixed(1)}" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="12" fill="#0066CC" font-weight="600">${last.p10.toFixed(2)}</text>`;
+        svg += `<g font-family="'JetBrains Mono', monospace" font-size="12" fill="#666" text-anchor="middle">`;
+        rows.forEach((r, i) => { svg += `<text x="${xAt(i)}" y="${B + 24}">'${r.year.slice(2)}</text>`; });
+        svg += `</g></svg>`;
+        document.getElementById(elId).innerHTML = svg;
+    }
+
     function lineChart(elId, opt) {
         const W = 820, H = 360, L = 60, R = 788, T = 30, B = 300;
         const labels = opt.labels, n = labels.length;
@@ -376,6 +441,12 @@
         { name: 'Por voto (ENPv)', color: '#0066CC' },
         { name: 'Por escaño (ENPs)', color: '#1a1a1a', dash: true }
     ]);
+    legend('legend-disp', [
+        { name: '80% central de distritos', color: '#0066CC' },
+        { name: 'Distrito mediano', color: '#0066CC' },
+        { name: 'Cifra nacional', color: '#1a1a1a', dash: true }
+    ]);
+    bandChart('chart-disp', DISP, { ymin: 1.5, ymax: 6.5, yticks: [2, 3, 4, 5, 6], title: 'Dispersión distrital del ENPv', reformLabel: 'reforma 2015' });
     lineChart('chart-frag', {
         title: 'Fragmentación: votos vs escaños', labels: DIP_YEARS, ymin: 1.5, ymax: 6.5, yticks: [2,3,4,5,6], reform: true,
         series: [ { values: DATA.enpv, color: '#0066CC' }, { values: DATA.enps, color: '#1a1a1a', dash: true } ]

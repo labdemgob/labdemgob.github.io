@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://labdemgob.github.io/cpld/sitemap.xml

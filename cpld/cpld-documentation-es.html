@@ -17,6 +17,11 @@
     <meta name="keywords" content="documentación CPLD, libro de códigos, notas precautorias, definiciones de variables, historial de versiones, datos electorales chilenos, Kenneth Bunker">
     <meta name="author" content="Kenneth Bunker">
     <link rel="canonical" href="https://labdemgob.github.io/cpld/cpld-documentation-es.html">
+    <link rel="alternate" hreflang="en" href="https://labdemgob.github.io/cpld/cpld-documentation.html">
+    <link rel="alternate" hreflang="es" href="https://labdemgob.github.io/cpld/cpld-documentation-es.html">
+    <link rel="alternate" hreflang="x-default" href="https://labdemgob.github.io/cpld/cpld-documentation.html">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="alternate icon" href="logo.png">
 
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -134,16 +139,16 @@
             <p class="page-intro">Libro de códigos, historial de versiones, notas precautorias y guía de citación para cada versión. Todos los documentos están en formato PDF.</p>
 
             <div class="version-tabs" role="tablist">
-                <button class="version-tab active" data-version="v3" role="tab">v3.0</button>
-                <button class="version-tab" data-version="v2" role="tab">v2.0</button>
-                <button class="version-tab" data-version="v1" role="tab">v1.0</button>
+                <button class="version-tab active" data-version="v3" role="tab" aria-selected="true" aria-controls="panel-v3" id="tab-v3">v3.0</button>
+                <button class="version-tab" data-version="v2" role="tab" aria-selected="false" aria-controls="panel-v2" id="tab-v2">v2.0</button>
+                <button class="version-tab" data-version="v1" role="tab" aria-selected="false" aria-controls="panel-v1" id="tab-v1">v1.0</button>
             </div>
 
             <!-- VERSIÓN 3.0 -->
-            <section class="version-section" data-version="v3">
+            <section class="version-section" data-version="v3" id="panel-v3" role="tabpanel" aria-labelledby="tab-v3">
                 <div class="version-banner">
                     <div class="label">VERSIÓN 3.0 · ACTUAL · PUBLICADA 2026-08-07</div>
-                    <div class="meta">6.119 observaciones · 42 variables · cobertura 1989-2025 · 42 elecciones en 8 tipos de elección</div>
+                    <div class="meta">6.119 observaciones · 42 variables · cobertura 1989-2025 · 43 elecciones en 8 tipos de elección</div>
                 </div>
 
                 <div class="doc-grid">
@@ -178,7 +183,7 @@
             </section>
 
             <!-- VERSIÓN 2.0 -->
-            <section class="version-section" data-version="v2" style="display: none;">
+            <section class="version-section" data-version="v2" id="panel-v2" role="tabpanel" aria-labelledby="tab-v2" style="display: none;">
                 <div class="version-banner">
                     <div class="label">VERSIÓN 2.0 · ANTERIOR · PUBLICADA 2026-01-16</div>
                     <div class="meta">5.301 observaciones · 42 variables · cobertura 1989-2023 · versión de metadatos</div>
@@ -216,7 +221,7 @@
             </section>
 
             <!-- VERSIÓN 1.0 -->
-            <section class="version-section" data-version="v1" style="display: none;">
+            <section class="version-section" data-version="v1" id="panel-v1" role="tabpanel" aria-labelledby="tab-v1" style="display: none;">
                 <div class="version-banner">
                     <div class="label">VERSIÓN 1.0 · ANTERIOR · PUBLICADA 2025-11-05</div>
                     <div class="meta">5.301 observaciones · 42 variables · cobertura 1989-2023 · versión inicial</div>
@@ -300,16 +305,36 @@
     </div>
 
     <script>
-        document.querySelectorAll('.version-tab').forEach(function (tab) {
-            tab.addEventListener('click', function () {
+        (function () {
+            var tabs = Array.prototype.slice.call(document.querySelectorAll('.version-tab'));
+            function select(tab, focus) {
                 var version = tab.getAttribute('data-version');
-                document.querySelectorAll('.version-tab').forEach(function (t) { t.classList.remove('active'); });
-                tab.classList.add('active');
+                tabs.forEach(function (t) {
+                    var on = t === tab;
+                    t.classList.toggle('active', on);
+                    t.setAttribute('aria-selected', on ? 'true' : 'false');
+                    t.tabIndex = on ? 0 : -1;
+                });
                 document.querySelectorAll('.version-section').forEach(function (section) {
                     section.style.display = section.getAttribute('data-version') === version ? 'block' : 'none';
                 });
+                if (focus) tab.focus();
+            }
+            tabs.forEach(function (tab, i) {
+                tab.tabIndex = tab.classList.contains('active') ? 0 : -1;
+                tab.addEventListener('click', function () { select(tab, false); });
+                tab.addEventListener('keydown', function (e) {
+                    var k = e.key, j = null;
+                    if (k === 'ArrowRight' || k === 'ArrowDown') j = (i + 1) % tabs.length;
+                    else if (k === 'ArrowLeft' || k === 'ArrowUp') j = (i - 1 + tabs.length) % tabs.length;
+                    else if (k === 'Home') j = 0;
+                    else if (k === 'End') j = tabs.length - 1;
+                    if (j === null) return;
+                    e.preventDefault();
+                    select(tabs[j], true);
+                });
             });
-        });
+        })();
     </script>
 </body>
 </html>

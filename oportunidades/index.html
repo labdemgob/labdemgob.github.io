@@ -7,7 +7,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-H1M4QHYR63');
 </script>
     <meta charset="UTF-8">
@@ -16,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <style>
         :root {
             --uss-blue: #004990;
@@ -134,6 +134,9 @@
             box-shadow: 0 2px 12px rgba(0,0,0,0.06);
         }
 
+        .job-card.open { border-left: 3px solid var(--uss-blue); }
+        .job-card.closed { opacity: 0.65; }
+
         .job-meta-top {
             display: flex;
             justify-content: space-between;
@@ -150,6 +153,24 @@
         }
 
         .position-count {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--gray-500);
+            background: var(--gray-100);
+            padding: 0.25rem 0.625rem;
+            border-radius: 100px;
+        }
+
+        .status-open {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #065f46;
+            background: #d1fae5;
+            padding: 0.25rem 0.625rem;
+            border-radius: 100px;
+        }
+
+        .status-closed {
             font-size: 0.75rem;
             font-weight: 600;
             color: var(--gray-500);
@@ -175,6 +196,13 @@
         .call-date {
             font-size: 0.8125rem;
             color: var(--gray-500);
+            margin-bottom: 1.5rem;
+        }
+
+        .deadline {
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: #b45309;
             margin-bottom: 1.5rem;
         }
 
@@ -228,11 +256,20 @@
             border-radius: 100px;
         }
 
+        .tag-required {
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: var(--uss-blue);
+            border: 1.5px solid var(--uss-blue);
+            padding: 0.3rem 0.75rem;
+            border-radius: 100px;
+        }
+
         .apply-section {
             padding-top: 1.25rem;
             border-top: 1px solid var(--gray-100);
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 1rem;
@@ -251,6 +288,28 @@
         .apply-email { font-size: 1rem; font-weight: 600; color: var(--gray-900); text-decoration: none; }
         .apply-email:hover { color: var(--uss-blue); }
         .apply-note { font-size: 0.8125rem; color: var(--gray-500); margin-top: 0.25rem; }
+
+        .apply-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .qr-label {
+            font-size: 0.6875rem;
+            font-weight: 600;
+            color: var(--gray-500);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            text-align: center;
+        }
+
+        .qr-wrapper canvas, .qr-wrapper img {
+            display: block;
+            border-radius: 4px;
+            border: 1px solid var(--gray-100);
+        }
 
         .btn-apply {
             display: inline-block;
@@ -311,10 +370,10 @@
             <li><a href="/equipo/">Equipo</a></li>
             <li><a href="/proyectos/">Proyectos</a></li>
             <li><a href="/contacto/">Contacto</a></li>
-            <li><a href="/oportunidades/">Oportunidades</a></li>
+            <li><a href="/oportunidades/" class="active">Oportunidades</a></li>
         </ul>
     </nav>
-    
+
     <main>
         <div class="container">
             <div class="page-header">
@@ -323,11 +382,69 @@
                 <p>Convocatorias para asistentes de investigación en el laboratorio.</p>
             </div>
 
-            <!-- 01 Datos y Análisis Cuantitativo -->
-            <div class="job-card">
+            <!-- 03 IA Aplicada — NUEVA, ABIERTA -->
+            <div class="job-card open">
                 <div class="job-meta-top">
                     <span class="project-id">Proyecto · USS-FIN-26-PNTE-07</span>
-                    <span class="position-count">01 / 02</span>
+                    <span class="status-open">Abierta</span>
+                </div>
+                <h2>Asistente de Investigación en IA Aplicada</h2>
+                <p class="job-subtitle">Datos Electorales · Ciencia Política Comparada</p>
+                <p class="call-date">Convocatoria: agosto 2026</p>
+                <p class="deadline">Cierre de postulaciones: 4 de septiembre de 2026</p>
+
+                <div class="job-grid">
+                    <div class="job-grid-item">
+                        <label>Dedicación</label>
+                        <div class="value">15 hrs / semana</div>
+                        <div class="sub">Horario flexible</div>
+                    </div>
+                    <div class="job-grid-item">
+                        <label>Período</label>
+                        <div class="value">Septiembre – Diciembre 2026</div>
+                    </div>
+                    <div class="job-grid-item">
+                        <label>Remuneración</label>
+                        <div class="value">Posición remunerada</div>
+                    </div>
+                    <div class="job-grid-item">
+                        <label>Modalidad</label>
+                        <div class="value">Mixta</div>
+                    </div>
+                </div>
+
+                <p class="section-label">El Trabajo</p>
+                <p class="job-description">El trabajo central es la expansión del Chilean Political Landscape Dataset (CPLD), alojado en Harvard Dataverse, que cubre elecciones chilenas entre 1989 y 2025. Implica la recolección, estructuración y construcción metódica de nuevas variables a partir de fuentes primarias (SERVEL, INE, CASEN), apoyándose en herramientas de Inteligencia Artificial para optimizar la extracción, limpieza y procesamiento de la información. El foco es la creación de bases de datos robustas, por lo que se requiere un perfil sumamente ordenado, estructurado y riguroso. Las áreas de trabajo incluyen participación electoral, atributos de candidatos, incumbencia y financiamiento de campañas. Detalles técnicos se darán en entrevista.</p>
+
+                <p class="section-label">Se Requiere / Valora</p>
+                <div class="tags">
+                    <span class="tag-required">Ingeniería (estudiante o egresado)</span>
+                    <span class="tag-required">Construcción de bases de datos</span>
+                    <span class="tag">IA aplicada y automatización</span>
+                    <span class="tag">Python / R / Excel avanzado</span>
+                    <span class="tag">Rigor metodológico</span>
+                    <span class="tag">Documentación de codebooks</span>
+                    <span class="tag">Atención extrema al detalle</span>
+                </div>
+
+                <div class="apply-section">
+                    <div class="apply-info">
+                        <label>Postula aquí</label>
+                        <a href="https://forms.gle/iCPR7U3G8hDMwiAd7" class="apply-email" target="_blank">forms.gle/iCPR7U3G8hDMwiAd7</a>
+                        <p class="apply-note">Envía CV + disponibilidad · Universidad San Sebastián</p>
+                    </div>
+                    <div class="apply-right">
+                        <span class="qr-label">Formulario</span>
+                        <div class="qr-wrapper" id="qr-form-ia"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 01 Datos y Análisis Cuantitativo — CERRADA -->
+            <div class="job-card closed">
+                <div class="job-meta-top">
+                    <span class="project-id">Proyecto · USS-FIN-26-PNTE-07</span>
+                    <span class="status-closed">Posición cubierta</span>
                 </div>
                 <h2>Asistente de Investigación</h2>
                 <p class="job-subtitle">Datos y Análisis Cuantitativo · Ciencia Política Comparada</p>
@@ -346,7 +463,6 @@
                     <div class="job-grid-item">
                         <label>Remuneración</label>
                         <div class="value">Posición remunerada</div>
-                        <div class="sub">Política institucional pregrado</div>
                     </div>
                     <div class="job-grid-item">
                         <label>Modalidad</label>
@@ -373,19 +489,22 @@
 
                 <div class="apply-section">
                     <div class="apply-info">
-                        <label>Consultas e inscripciones</label>
-                        <a href="mailto:kenneth.bunker@uss.cl" class="apply-email">kenneth.bunker@uss.cl</a>
-                        <p class="apply-note">Envía CV + disponibilidad · Universidad San Sebastián</p>
+                        <label>Más oportunidades</label>
+                        <a href="https://labdemgob.github.io/oportunidades/" class="apply-email" target="_blank">labdemgob.github.io/oportunidades</a>
+                        <p class="apply-note">Universidad San Sebastián · Laboratorio Democracia y Gobierno</p>
                     </div>
-                    <a href="https://www.linkedin.com/posts/kennethbunker_estamos-buscando-dos-asistentes-de-investigaci%C3%B3n-activity-7452377046024118272-0exN" target="_blank" class="btn-apply">Ver convocatoria →</a>
+                    <div class="apply-right">
+                        <span class="qr-label">Oportunidades</span>
+                        <div class="qr-wrapper" id="qr-oport-01"></div>
+                    </div>
                 </div>
             </div>
 
-            <!-- 02 Literatura y Apoyo -->
-            <div class="job-card">
+            <!-- 02 Literatura y Apoyo — CERRADA -->
+            <div class="job-card closed">
                 <div class="job-meta-top">
                     <span class="project-id">Proyecto · USS-FIN-26-PNTE-07</span>
-                    <span class="position-count">02 / 02</span>
+                    <span class="status-closed">Posición cubierta</span>
                 </div>
                 <h2>Asistente de Investigación</h2>
                 <p class="job-subtitle">Literatura y Apoyo a la Investigación · Ciencia Política Comparada</p>
@@ -404,7 +523,6 @@
                     <div class="job-grid-item">
                         <label>Remuneración</label>
                         <div class="value">Posición remunerada</div>
-                        <div class="sub">Política institucional pregrado</div>
                     </div>
                     <div class="job-grid-item">
                         <label>Modalidad</label>
@@ -429,11 +547,14 @@
 
                 <div class="apply-section">
                     <div class="apply-info">
-                        <label>Consultas e inscripciones</label>
-                        <a href="mailto:kenneth.bunker@uss.cl" class="apply-email">kenneth.bunker@uss.cl</a>
-                        <p class="apply-note">Envía CV + disponibilidad · Universidad San Sebastián</p>
+                        <label>Más oportunidades</label>
+                        <a href="https://labdemgob.github.io/oportunidades/" class="apply-email" target="_blank">labdemgob.github.io/oportunidades</a>
+                        <p class="apply-note">Universidad San Sebastián · Laboratorio Democracia y Gobierno</p>
                     </div>
-                    <a href="https://www.linkedin.com/posts/kennethbunker_estamos-buscando-dos-asistentes-de-investigaci%C3%B3n-activity-7452377046024118272-0exN" target="_blank" class="btn-apply">Ver convocatoria →</a>
+                    <div class="apply-right">
+                        <span class="qr-label">Oportunidades</span>
+                        <div class="qr-wrapper" id="qr-oport-02"></div>
+                    </div>
                 </div>
             </div>
 
@@ -457,5 +578,13 @@
             </a>
         </div>
     </footer>
+
+    <script>
+        var qrOpts = { width: 80, height: 80, colorDark: '#000000', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M };
+
+        new QRCode(document.getElementById('qr-form-ia'), Object.assign({}, qrOpts, { text: 'https://forms.gle/iCPR7U3G8hDMwiAd7' }));
+        new QRCode(document.getElementById('qr-oport-01'), Object.assign({}, qrOpts, { text: 'https://labdemgob.github.io/oportunidades/' }));
+        new QRCode(document.getElementById('qr-oport-02'), Object.assign({}, qrOpts, { text: 'https://labdemgob.github.io/oportunidades/' }));
+    </script>
 </body>
 </html>

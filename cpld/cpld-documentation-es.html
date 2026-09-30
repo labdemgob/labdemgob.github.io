@@ -140,15 +140,54 @@
             <p class="page-intro">Libro de códigos, historial de versiones, notas precautorias y guía de citación para cada versión. Todos los documentos están en formato PDF.</p>
 
             <div class="version-tabs" role="tablist">
-                <button class="version-tab active" data-version="v3" role="tab" aria-selected="true" aria-controls="panel-v3" id="tab-v3">v3.0</button>
+                <button class="version-tab active" data-version="v4" role="tab" aria-selected="true" aria-controls="panel-v4" id="tab-v4">v4.0</button>
+                <button class="version-tab" data-version="v3" role="tab" aria-selected="false" aria-controls="panel-v3" id="tab-v3">v3.0</button>
                 <button class="version-tab" data-version="v2" role="tab" aria-selected="false" aria-controls="panel-v2" id="tab-v2">v2.0</button>
                 <button class="version-tab" data-version="v1" role="tab" aria-selected="false" aria-controls="panel-v1" id="tab-v1">v1.0</button>
             </div>
 
-            <!-- VERSIÓN 3.0 -->
-            <section class="version-section" data-version="v3" id="panel-v3" role="tabpanel" aria-labelledby="tab-v3">
+            <!-- VERSIÓN 4.0 -->
+            <section class="version-section" data-version="v4" id="panel-v4" role="tabpanel" aria-labelledby="tab-v4">
                 <div class="version-banner">
-                    <div class="label">VERSIÓN 3.0 · ACTUAL · PUBLICADA 2026-08-07</div>
+                    <div class="label">VERSIÓN 4.0 · ACTUAL · PUBLICADA SEPTIEMBRE 2026</div>
+                    <div class="meta">6.119 observaciones · 46 variables · cobertura 1989-2025 · 43 elecciones en 8 tipos de elección</div>
+                </div>
+
+                <div class="doc-grid">
+                    <div class="doc-card">
+                        <div class="doc-category">Libro de códigos</div>
+                        <div class="doc-title">Definiciones de variables</div>
+                        <div class="doc-description">Define cada variable de la base de datos v4.0, organizada por categoría. Agrega cuatro variables de nacionalización del sistema de partidos (pns_weighted, pns_standardised, cox_inflation, territorial_coverage) y una nueva sección que documenta cada patrón de valores faltantes y su causa.</div>
+                        <a class="doc-download" href="documents/CPLD%20v4%20-%20Codebook.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Novedades</div>
+                        <div class="doc-title">Cambios desde v3.0</div>
+                        <div class="doc-description">Documenta las diferencias entre la versión 3.0 y la versión 4.0. Sin filas nuevas. Agrega cuatro variables y reconstruye Mainwaring_Jones, Chhibber_Kollman, Gallagher y Cox_Shugart, que cambian en prácticamente todas las filas. Quienes usaron estas variables de versiones anteriores deben volver a correr sus análisis.</div>
+                        <span class="doc-download" style="color: var(--grey-mid); cursor: default;">Próximamente</span>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Notas precautorias</div>
+                        <div class="doc-title">Casos límite metodológicos</div>
+                        <div class="doc-description">Decisiones metodológicas, problemas en los datos fuente y casos límite que pueden afectar la interpretación o distorsionar los cálculos del usuario. Renumeradas para v4.0, con tres notas agregadas o corregidas. Leer antes de calcular agregados.</div>
+                        <a class="doc-download" href="documents/CPLD%20v4%20-%20Cautionary%20Notes.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Citación sugerida</div>
+                        <div class="doc-title">Cómo citar v4.0</div>
+                        <div class="doc-description">Formato de citación recomendado para la base de datos y la publicación asociada. Incluye entradas BibTeX y enlaces DOI tanto para el depósito en Harvard Dataverse como para el artículo en Humanities and Social Sciences Communications. Usar al publicar investigación.</div>
+                        <a class="doc-download" href="documents/CPLD%20v4%20-%20Suggested%20Citation.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VERSIÓN 3.0 -->
+            <section class="version-section" data-version="v3" id="panel-v3" role="tabpanel" aria-labelledby="tab-v3" style="display: none;">
+                <div class="version-banner">
+                    <div class="label">VERSIÓN 3.0 · ANTERIOR · PUBLICADA 2026-08-07</div>
                     <div class="meta">6.119 observaciones · 42 variables · cobertura 1989-2025 · 43 elecciones en 8 tipos de elección</div>
                 </div>
 
@@ -215,7 +254,7 @@
                     <div class="doc-card">
                         <div class="doc-category">Citación sugerida</div>
                         <div class="doc-title">Cómo citar v2.0</div>
-                        <div class="doc-description">Formato de citación para la versión 2.0. Usar cuando se repliquen análisis basados en esa versión. Para investigación nueva, preferir el archivo de citación de v3.0 ya que refleja la versión más reciente.</div>
+                        <div class="doc-description">Formato de citación para la versión 2.0. Usar cuando se repliquen análisis basados en esa versión. Para investigación nueva, preferir el archivo de citación de v4.0 ya que refleja la versión más reciente.</div>
                         <a class="doc-download" href="documents/CPLD%20v2%20-%20Suggested%20Citation.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
                     </div>
                 </div>
@@ -253,7 +292,7 @@
                     <div class="doc-card">
                         <div class="doc-category">Citación sugerida</div>
                         <div class="doc-title">Cómo citar v1.0</div>
-                        <div class="doc-description">Formato de citación para la versión 1.0. Usar cuando se repliquen análisis basados en la publicación original. Para investigación nueva, preferir el archivo de citación de v3.0 ya que refleja la versión más reciente.</div>
+                        <div class="doc-description">Formato de citación para la versión 1.0. Usar cuando se repliquen análisis basados en la publicación original. Para investigación nueva, preferir el archivo de citación de v4.0 ya que refleja la versión más reciente.</div>
                         <a class="doc-download" href="documents/CPLD%20v1%20-%20Suggested%20Citation.pdf" target="_blank">Descargar PDF <span class="arrow">→</span></a>
                     </div>
                 </div>
@@ -272,6 +311,13 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td class="mono">4.0</td>
+                            <td>2026-09</td>
+                            <td class="mono">6.119</td>
+                            <td>1989-2025</td>
+                            <td>4 variables añadidas, índices reconstruidos</td>
+                        </tr>
                         <tr>
                             <td class="mono">3.0</td>
                             <td>2026-08-07</td>

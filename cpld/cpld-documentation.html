@@ -355,15 +355,54 @@
             <p class="page-intro">Codebook, version history, cautionary notes, and citation guidance for each release. All documents are PDF.</p>
 
             <div class="version-tabs" role="tablist">
-                <button class="version-tab active" data-version="v3" role="tab" aria-selected="true" aria-controls="panel-v3" id="tab-v3">v3.0</button>
+                <button class="version-tab active" data-version="v4" role="tab" aria-selected="true" aria-controls="panel-v4" id="tab-v4">v4.0</button>
+                <button class="version-tab" data-version="v3" role="tab" aria-selected="false" aria-controls="panel-v3" id="tab-v3">v3.0</button>
                 <button class="version-tab" data-version="v2" role="tab" aria-selected="false" aria-controls="panel-v2" id="tab-v2">v2.0</button>
                 <button class="version-tab" data-version="v1" role="tab" aria-selected="false" aria-controls="panel-v1" id="tab-v1">v1.0</button>
             </div>
 
-            <!-- VERSION 3.0 -->
-            <section class="version-section" data-version="v3" id="panel-v3" role="tabpanel" aria-labelledby="tab-v3">
+            <!-- VERSION 4.0 -->
+            <section class="version-section" data-version="v4" id="panel-v4" role="tabpanel" aria-labelledby="tab-v4">
                 <div class="version-banner">
-                    <div class="label">VERSION 3.0 · CURRENT · RELEASED 2026-08-07</div>
+                    <div class="label">VERSION 4.0 · CURRENT · RELEASED SEPTEMBER 2026</div>
+                    <div class="meta">6,119 observations · 46 variables · coverage 1989-2025 · 43 elections across 8 election types</div>
+                </div>
+
+                <div class="doc-grid">
+                    <div class="doc-card">
+                        <div class="doc-category">Codebook</div>
+                        <div class="doc-title">Variable definitions</div>
+                        <div class="doc-description">Defines every variable in the v4.0 dataset, organized by category. Adds four party system nationalization variables (pns_weighted, pns_standardised, cox_inflation, territorial_coverage) and a new section documenting every missing-value pattern in the dataset and its cause.</div>
+                        <a class="doc-download" href="documents/CPLD%20v4%20-%20Codebook.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">What's New</div>
+                        <div class="doc-title">Changes from v3.0</div>
+                        <div class="doc-description">Documents the differences between version 3.0 and version 4.0. No new rows. Adds four variables and rebuilds Mainwaring_Jones, Chhibber_Kollman, Gallagher and Cox_Shugart, which change on essentially every row. Users of these variables from earlier versions should re-run their analyses.</div>
+                        <span class="doc-download" style="color: var(--grey-mid); cursor: default;">Coming soon</span>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Cautionary Notes</div>
+                        <div class="doc-title">Methodological edge cases</div>
+                        <div class="doc-description">Methodological decisions, source-data problems, and edge cases that may affect interpretation or distort user calculations. Renumbered for v4.0, with three notes added or corrected. Read before computing aggregates.</div>
+                        <a class="doc-download" href="documents/CPLD%20v4%20-%20Cautionary%20Notes.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="doc-card">
+                        <div class="doc-category">Suggested Citation</div>
+                        <div class="doc-title">How to cite v4.0</div>
+                        <div class="doc-description">Recommended citation format for the dataset and accompanying publication. Includes BibTeX entries and DOI links for both the Harvard Dataverse deposit and the Humanities and Social Sciences Communications article. Use when publishing research.</div>
+                        <a class="doc-download" href="documents/CPLD%20v4%20-%20Suggested%20Citation.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VERSION 3.0 -->
+            <section class="version-section" data-version="v3" id="panel-v3" role="tabpanel" aria-labelledby="tab-v3" style="display: none;">
+                <div class="version-banner">
+                    <div class="label">VERSION 3.0 · PREVIOUS · RELEASED 2026-08-07</div>
                     <div class="meta">6,119 observations · 42 variables · coverage 1989-2025 · 43 elections across 8 election types</div>
                 </div>
 
@@ -392,7 +431,7 @@
                     <div class="doc-card">
                         <div class="doc-category">Suggested Citation</div>
                         <div class="doc-title">How to cite v3.0</div>
-                        <div class="doc-description">Recommended citation format for the dataset and accompanying publication. Includes BibTeX entries and DOI links for both the Harvard Dataverse deposit and the Humanities and Social Sciences Communications article. Use when publishing research.</div>
+                        <div class="doc-description">Citation format for the v3.0 release. Use this when replicating analyses based on that version. For new research, prefer the v4.0 citation file since it reflects the most recent release.</div>
                         <a class="doc-download" href="documents/CPLD%20v3%20-%20Suggested%20Citation.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
                     </div>
                 </div>
@@ -430,7 +469,7 @@
                     <div class="doc-card">
                         <div class="doc-category">Suggested Citation</div>
                         <div class="doc-title">How to cite v2.0</div>
-                        <div class="doc-description">Citation format for the v2.0 release. Use this when replicating analyses based on that version. For new research, prefer the v3.0 citation file since it reflects the most recent release.</div>
+                        <div class="doc-description">Citation format for the v2.0 release. Use this when replicating analyses based on that version. For new research, prefer the v4.0 citation file since it reflects the most recent release.</div>
                         <a class="doc-download" href="documents/CPLD%20v2%20-%20Suggested%20Citation.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
                     </div>
                 </div>
@@ -468,7 +507,7 @@
                     <div class="doc-card">
                         <div class="doc-category">Suggested Citation</div>
                         <div class="doc-title">How to cite v1.0</div>
-                        <div class="doc-description">Citation format for the v1.0 release. Use this when replicating analyses based on the original publication. For new research, prefer the v3.0 citation file since it reflects the most recent release.</div>
+                        <div class="doc-description">Citation format for the v1.0 release. Use this when replicating analyses based on the original publication. For new research, prefer the v4.0 citation file since it reflects the most recent release.</div>
                         <a class="doc-download" href="documents/CPLD%20v1%20-%20Suggested%20Citation.pdf" target="_blank">Download PDF <span class="arrow">→</span></a>
                     </div>
                 </div>
@@ -487,6 +526,13 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td class="mono">4.0</td>
+                            <td>2026-09</td>
+                            <td class="mono">6,119</td>
+                            <td>1989-2025</td>
+                            <td>4 variables added, indices rebuilt</td>
+                        </tr>
                         <tr>
                             <td class="mono">3.0</td>
                             <td>2026-08-07</td>

@@ -28,7 +28,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://labdemgob.github.io/cpld/">
     <meta property="og:title" content="Chilean Political Landscape Dataset · CPLD">
-    <meta property="og:description" content="Comprehensive district-level electoral data covering decades of Chilean democracy. 6,119 observations across 42 variables. Open access dataset for political science research.">
+    <meta property="og:description" content="Comprehensive district-level electoral data covering decades of Chilean democracy. 6,119 observations across 46 variables. Open access dataset for political science research.">
     <meta property="og:image" content="https://labdemgob.github.io/cpld/logo.png">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="500">
@@ -102,9 +102,9 @@
           "license": "https://creativecommons.org/licenses/by/4.0/",
           "isAccessibleForFree": true,
           "creativeWorkStatus": "Published",
-          "datePublished": "2026-08",
-          "dateModified": "2026-08-07",
-          "version": "3.0",
+          "datePublished": "2026-09",
+          "dateModified": "2026-09-30",
+          "version": "4.0",
           "inLanguage": [
                 "en",
                 "es"
@@ -112,13 +112,13 @@
           "distribution": [
                 {
                       "@type": "DataDownload",
-                      "name": "CPLD v3.0 (tab-delimited)",
+                      "name": "CPLD v4.0 (tab-delimited)",
                       "encodingFormat": "text/tab-separated-values",
                       "contentUrl": "https://doi.org/10.7910/DVN/NGRY3R"
                 },
                 {
                       "@type": "DataDownload",
-                      "name": "CPLD v3.0 (Excel)",
+                      "name": "CPLD v4.0 (Excel)",
                       "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                       "contentUrl": "https://doi.org/10.7910/DVN/NGRY3R"
                 }
@@ -649,7 +649,7 @@
         <h1 class="page-title">Overview</h1>
 
         <div class="description">
-            <p>The Chilean Political Landscape Dataset (CPLD) is a longitudinal dataframe of district-level electoral outcomes spanning across more than three decades of Chilean democracy. It contains standardized measures of party system fragmentation, ideological orientation, and institutional change across legislative, regional, and municipal contests. Version 3.0 contains 6,119 observations across 42 variables and will expand as new electoral data become available.</p>
+            <p>The Chilean Political Landscape Dataset (CPLD) is a longitudinal dataframe of district-level electoral outcomes spanning across more than three decades of Chilean democracy. It contains standardized measures of party system fragmentation, ideological orientation, and institutional change across legislative, regional, and municipal contests. Version 4.0 contains 6,119 observations across 46 variables and will expand as new electoral data become available.</p>
             <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--grey-mid);">Data formats optimized for Python (pandas) and R (tidyverse) workflows.</p>
         </div>
 
@@ -728,7 +728,7 @@
                 <div class="stat-label">Decades</div>
             </div>
             <div class="stat">
-                <div class="stat-number">42</div>
+                <div class="stat-number">46</div>
                 <div class="stat-label">Variables</div>
             </div>
             <!-- Downloads. Update metrics.json (or the number below) when the
@@ -774,7 +774,7 @@ cpld <span class="code-keyword">&lt;-</span> <span class="code-keyword">read_csv
 
 <span class="code-comment"># Explore key variables</span>
 <span class="code-keyword">glimpse</span>(cpld)
-<span class="code-comment"># 6,119 × 42 variables including:</span>
+<span class="code-comment"># 6,119 × 46 variables including:</span>
 <span class="code-comment"># enpv, enps, polarization_district, av_id, ethnic_frac</span></div>
 
             <div class="code-block"><span class="code-comment"># Calculate effective number of parties over time</span>
@@ -825,7 +825,7 @@ cpld <span class="code-keyword">%&gt;%</span>
             <p style="color: var(--grey-mid); font-size: 0.95rem; margin-bottom: 1.5rem;">When using the CPLD in your research, please cite both the dataset and the associated publication.</p>
             
             <div class="citation-box"><strong>Dataset:</strong><br>
-Bunker, Kenneth. 2025. "Chilean Political Landscape Dataset (CPLD)". Harvard Dataverse, V3.<br>
+Bunker, Kenneth. 2026. "Chilean Political Landscape Dataset (CPLD)". Harvard Dataverse, V4.<br>
 doi: <a href="https://doi.org/10.7910/DVN/NGRY3R" style="color: var(--blue);" target="_blank">10.7910/DVN/NGRY3R</a><br><br>
 
 <strong>Publication:</strong><br>
@@ -833,12 +833,12 @@ Bunker, Kenneth. 2025. "Decades of democracy: insights into the political landsc
 doi: <a href="https://doi.org/10.1057/s41599-025-06180-1" style="color: var(--blue);" target="_blank">10.1057/s41599-025-06180-1</a></div>
 
             <div class="code-block"><span class="code-comment">% BibTeX - Dataset</span>
-@data{bunker2025cpld,
+@data{bunker2026cpld,
   author={Bunker, Kenneth},
   title={{Chilean Political Landscape Dataset (CPLD)}},
-  year={2025},
+  year={2026},
   publisher={Harvard Dataverse},
-  version={V3},
+  version={V4},
   doi={10.7910/DVN/NGRY3R},
   url={https://doi.org/10.7910/DVN/NGRY3R}
 }

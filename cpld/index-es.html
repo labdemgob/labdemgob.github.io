@@ -618,8 +618,20 @@
         }
 
     </style>
+<style>
+        .host-ribbon{margin:-2rem 0 2rem;background:var(--black,#000);color:var(--white,#fff);}
+        .host-ribbon a{display:flex;align-items:center;gap:0.9rem;max-width:900px;margin:0 auto;padding:0.6rem 2rem;color:inherit;text-decoration:none;}
+        .host-ribbon .hr-label{font-family:'JetBrains Mono',monospace;font-size:0.66rem;letter-spacing:0.14em;text-transform:uppercase;color:#9a9a9a;white-space:nowrap;}
+        .host-ribbon .hr-rule{width:1px;height:0.9rem;background:#3a3a3a;flex:none;}
+        .host-ribbon .hr-name{font-family:'Work Sans',sans-serif;font-size:0.82rem;font-weight:500;letter-spacing:0.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+        .host-ribbon .hr-go{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:#9a9a9a;white-space:nowrap;transition:color .2s,transform .2s;}
+        .host-ribbon a:hover .hr-go{color:var(--white,#fff);transform:translateX(3px);}
+        .host-ribbon a:hover .hr-name{color:#7fb6ff;}
+        @media (max-width:600px){.host-ribbon a{padding:0.55rem 1rem;gap:0.6rem}.host-ribbon .hr-label,.host-ribbon .hr-rule{display:none}.host-ribbon .hr-go{font-size:0.68rem}}
+    </style>
 </head>
 <body>
+    <div class="host-ribbon"><a href="https://labdemgob.github.io/"><span class="hr-label">Un proyecto del</span><span class="hr-rule"></span><span class="hr-name">Laboratorio Democracia y Gobierno</span><span class="hr-go">Visitar &rarr;</span></a></div>
     <div class="container">
         <div class="top-line"></div>
         <header>
